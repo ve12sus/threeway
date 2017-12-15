@@ -33,7 +33,7 @@
             {.end}
             <!-- collection link -->
             {.section collection}
-              <a class="nav-link {urlId}-nav-link" {.if folderActive} active {.end} href="{fullUrl}"><h3>{navigationTitle}</h3></a>
+              <a class="nav-link {urlId}-nav-link {.if folderActive} active {.end}" href="{fullUrl}"><h3>{navigationTitle}</h3></a>
             {.end}
             </li>
           {.end}
