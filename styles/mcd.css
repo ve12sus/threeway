@@ -1,8 +1,8 @@
 /* Fonts and Styles*/
 
-@font-face {  
-  font-family: 'LovinSansCondensed-Regular' ;  
-  src: url( '../assets/LovinSansCondensed-Regular.woff' ) format('woff');  
+@font-face {
+  font-family: 'LovinSansCondensed-Regular' ;
+  src: url( '../assets/LovinSansCondensed-Regular.woff' ) format('woff');
 }
 
 @font-face {
@@ -45,6 +45,7 @@ body {
 
 h1 {
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -62,14 +63,14 @@ h4 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'LovinSansCondensed-Bold', Sans-serif;  
+  font-family: 'LovinSansCondensed-Bold', Sans-serif;
   font-weight: 400;
   line-height: 1;
-}  
+}
 
 /* Color variables */
 @frog-green: #61b310;
-@frog-green-hover: darken(@frog-green, 20%); 
+@frog-green-hover: darken(@frog-green, 20%);
 
 @easter-purple: #c26fff;
 @easter-purple-hover: darken(@easter-purple, 20%);
@@ -135,25 +136,25 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     z-index: 10;
   }
-  
+
   .navbar {
     padding-top: 2rem;
   }
-  
+
   .navbar-nav {
-  
+
     li {
       margin-top: 9px;
       margin-left: 10px;
     }
-    
+
 	}
-   
+
   /* Override Bootstrap nav style */
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
   }
-  
+
   .navbar-light .navbar-nav .nav-link:focus,
   .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
@@ -192,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     z-index: 10;
 }
-  
+
 @media (max-width: 767px) {
 
   .container {
@@ -217,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   .card-title {
     margin-bottom: 0.5rem;
   }
-  
+
   /* hides carousel indicators */
   .carousel-indicators {
     display: none;
@@ -230,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   .carousel-control-next {
     display: none;
   }
-  
+
 }
 
 @media (max-width: 575px) {
@@ -297,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   .caption {
     margin-top: 80px;
   }
-  
+
 }
 
 /* rule for carousel caption button */
@@ -469,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  
+
   .category-overlay {
     position: absolute;
     left: 0;
@@ -485,14 +486,14 @@ h1, h2, h3, h4, h5, h6 {
   .category-overlay p {
     font-size: 0.875rem;
   }
-  
+
   .category-overlay .nav-item {
     margin-top: 0;
     margin-left: 0;
     padding-left: 17px;
     padding-right: 17px;
   }
-  
+
   .category .nav-link {
     padding: 0;
   }
@@ -511,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 0;
   }
 
-    
+
   .featured-post {
     text-align: center;
     margin-bottom: 40px;
@@ -629,14 +630,14 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 40px;
   }
-  
+
   .category-overlay .nav-item {
     margin-top: 0;
     margin-left: 0;
     padding-left: 33px;
     padding-right: 33px;
   }
-  
+
   .category-overlay h1 {
   font-size: 4.5rem;
   letter-spacing: 1.1px;
@@ -731,4 +732,3 @@ article .post-tag {
   margin-left: 0;
   margin-right: 0;
 }
-
