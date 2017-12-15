@@ -166,19 +166,19 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: transparent solid 2px;
   }
 
-	.news-nav-link:hover {
+	.news-folder-nav-link:hover {
 		border-bottom: @frog-green solid 2px;
 	}
 
-	.food-nav-link:hover {
+	.food-folder-nav-link:hover {
 		border-bottom: @dodger-blue solid 2px;
 	}
 
-	.people-nav-link:hover {
+	.people-folder-nav-link:hover {
 		border-bottom: @easter-purple solid 2px;
 	}
 
-	.events-nav-link:hover {
+	.events-folder-nav-link:hover {
 		border-bottom: @golden solid 2px;
 	}
 
