@@ -469,6 +469,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Category page */
 
+#post-header {
+  height: 400px;
+  img {
+
+  }
+}
+
 #category-header {
   position: relative;
   height: 400px;
@@ -476,6 +483,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url('http://via.placeholder.com/1440x400') center center no-repeat;
     background-size: cover;
   }
+  // jeff: make &.food, &.people, &.events
 }
 
 @media (max-width: 767px) {
