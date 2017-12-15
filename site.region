@@ -8,7 +8,6 @@
 
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
-    <script src="scripts/infinite-scroll.js"></script>
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
@@ -46,8 +45,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
       crossorigin="anonymous"></script>
-    <script src="scripts/infinite-scroll.js"></script>
-    <script src="scripts/imagerefresh.js"></script>
+    <script src="/scripts/infinite-scroll.js"></script>
+    <script src="/scripts/imagerefresh.js"></script>
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
