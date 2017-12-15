@@ -393,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #009bf6;
   font-family: 'LovinSansCondensed-Black', Sans-serif;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hashtag {
