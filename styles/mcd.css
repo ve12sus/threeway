@@ -457,22 +457,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Category page */
 
+#category-header {
+  position: relative;
+  height: 400px;
+  &.news {
+    background: url('http://via.placeholder.com/1440x400') center center no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 767px) {
 
   /* fixed height for mobile category header */
   #category-header {
-    min-height: 180px;
-    overflow: hidden;
-  }
-
-  /* img attributes to fit 180px header div */
-  #category-header img {
-    position: absolute;
-    height: 100%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    height: 180px;
   }
 
   .category-overlay {
@@ -533,10 +531,6 @@ h1, h2, h3, h4, h5, h6 {
   .card-deck {
     margin-top: 0;
   }
-}
-
-#category-header {
-  position: relative;
 }
 
 .category-main {
