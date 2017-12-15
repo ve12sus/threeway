@@ -470,9 +470,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Category page */
 
 #post-header {
+  // jeff: this needs more work, depending on how SS works. let's chat
   height: 400px;
+  overflow: hidden;
   img {
-
+    width: 100%;
   }
 }
 
