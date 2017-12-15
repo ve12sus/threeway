@@ -40,17 +40,6 @@
             {.end}
         </div>
         <div class="col-12 col-md-4 featured-post">
-<<<<<<< HEAD
-	
-=======
-
-          <!--<img src="../assets/tag-national.png">
-          <p class="featured-post-title">Special Tribute to 9/11 McDonad's Owner Opreator Hero Lloyd Frazier
-            at Annual SBU's "give Kids a Smile" Day</p>
-          <p class="supporting-copy">The 5th annual "Give Kids a Smile" Back to School Day took place</p>
-          <a class="btn" href="#" role="button"><h4>READ MORE</h4></a>-->
-
->>>>>>> 6c13ae7f5b05d8e0b0bfaf1b8b3dc31a7aff9d2c
         <img src="../assets/tag-national.png">
 
           <script>console.log({@|json-pretty})</script>
