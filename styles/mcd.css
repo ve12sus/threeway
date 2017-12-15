@@ -751,3 +751,39 @@ article .post-tag {
   right: 3%;
   top: 3%;
 }
+
+.card-body {
+  .social {
+    padding: 0;
+    li {
+      width: 24px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+}
+
+.sprite {
+	display: block;
+	width: 24px;
+	height: 24px;
+
+  &.youtube {
+    background: url('../assets/ic-sprite-youtube@3x.png') no-repeat;
+    background-size: 24px;
+  }
+
+  &.instagram {
+    background: url('../assets/ic-sprite-instagram@3x.png') no-repeat;
+    background-size: 24px;
+  }
+
+  &.twitter {
+    background: url('../assets/ic-sprite-twitter@3x.png') no-repeat;
+    background-size: 24px;
+  }
+
+  &:hover {
+  	background-position: 0 -24px;
+  }
+}
