@@ -711,6 +711,7 @@ article .title {
   /* sets margin between title and post-tag */
   margin-top: 13px;
   text-align: center;
+  line-height: 1.25;
 }
 
 
