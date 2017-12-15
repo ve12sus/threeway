@@ -1,16 +1,3 @@
-<!-- category filters -->
-<!--{.section categoryFilter}
-  <p class="filtered-by">Filtered by Category: {@|safe}</p>
-{.end}
-
-{.section tagFilter}
-  <p class="filtered-by">Filtered by Tag: {@|safe}</p>
-{.end}
-
-{.if authorFilter}
-  <p class="filtered-by">Filtered by Author: {author.displayName}</p>
-  {.end}-->
-
 <div class="container-fluid category-main">
   <div id="category-header">
     <img class="d-block w-100" src="http://via.placeholder.com/1440x400">
@@ -53,12 +40,6 @@
             {.end}
         </div>
         <div class="col-12 col-md-4 featured-post">
-
-          <!--<img src="../assets/tag-national.png">
-          <p class="featured-post-title">Special Tribute to 9/11 McDonad's Owner Opreator Hero Lloyd Frazier
-            at Annual SBU's "give Kids a Smile" Day</p>
-          <p class="supporting-copy">The 5th annual "Give Kids a Smile" Back to School Day took place</p>
-          <a class="btn" href="#" role="button"><h4>READ MORE</h4></a>-->
 	
         <img src="../assets/tag-national.png">
         
@@ -77,155 +58,33 @@
         </div>
       </div>
       <div class="card-deck">
-      {.section items.0}
+    {.repeated section items}
         <div class="card border-0">
-        {.main-image?}
+      {.main-image?}
           <div class="content-fill">
             <img {@|image-meta} />
           </div>
-          <!--<img class="card-img-top" style="height:180px" {@|image-meta} alt="Card image cap">-->
-        {.end}
+      {.end}
           <div class="post-tag-wrapper">
             <img src="../assets/tag-national.png">
           </div>
           <div class="card-body article">
             <p class="card-title">{title}</p>
-            <p class="card-text">{body|safe|truncate 350}
+            <p class="card-text">{body|safe|truncate 350}</p>
             <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
-            </p>
           </div>
         </div>
-      {.end}
-      {.section items.1}
-        <div class="card border-0">
-        {.main-image?}
-          <div class="content-fill">
-            <img {@|image-meta} />
-          </div>
-        {.end}
-          <div class="post-tag-wrapper">
-            <img src="../assets/tag-national.png">
-          </div>
-          <div class="card-body article">
-            <p class="card-title">{title}</p>
-            <p class="card-text">{body|safe|truncate 350}
-            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
-            </p>
-          </div>
-        </div>
-      {.end}
-      {.section items.2}
-        <div class="card border-0">
-        {.main-image?}
-          <div class="content-fill">
-            <img {@|image-meta} />
-          </div>
-        {.end}
-          <div class="post-tag-wrapper">
-            <img src="../assets/tag-national.png">
-          </div>
-          <div class="card-body article">
-            <p class="card-title">{title}</p>
-            <p class="card-text">{body|safe|truncate 350}
-            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
-            </p>
-          </div>
-        </div>
-      {.end}
-      </div>
+        
+      {.equal? @index 3}
+      </div> 
       <div class="card-deck">
-      {.section items.3}
-        <div class="card border-0">
-        {.main-image?}
-          <div class="content-fill">
-            <img {@|image-meta} />
-          </div>
-        {.end}
-          <div class="post-tag-wrapper">
-            <img src="../assets/tag-national.png">
-          </div>
-          <div class="card-body article">
-            <p class="card-title">{title}</p>
-            <p class="card-text">{body|safe|truncate 350}
-            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
-            </p>
-          </div>
-        </div>
+
       {.end}
-      {.section items.4}
-        <div class="card border-0">
-        {.main-image?}
-          <div class="content-fill">
-            <img {@|image-meta} />
-          </div>
-        {.end}
-          <div class="post-tag-wrapper">
-            <img src="../assets/tag-national.png">
-          </div>
-          <div class="card-body article">
-            <p class="card-title">{title}</p>
-            <p class="card-text">{body|safe|truncate 350}
-            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
-            </p>
-          </div>
-        </div>
-      {.end}
-      {.section items.5}
-        <div class="card border-0">
-        {.main-image?}
-          <div class="content-fill">
-            <img {@|image-meta} />
-          </div>
-        {.end}
-          <div class="post-tag-wrapper">
-            <img src="../assets/tag-national.png">
-          </div>
-          <div class="card-body article">
-            <p class="card-title">{title}</p>
-            <p class="card-text">{body|safe|truncate 350}
-            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
-            </p>
-          </div>
-        </div>
-      {.end}
+    {.end}
       </div>
       <div class="see-older-wrapper text-center">
-        <a class="btn" href="#" role="button">SEE OLDER</a>
+        <a class="btn" href={.section pagination}{nextPageUrl}{.end} role="button">SEE OLDER</a>
       </div>
     </div>
   </div>
 </div>
-  <!--{.section pagination}
-    {.if prevPage}
-      <h1>I am the following pages</h1>
-    {.or}
-      <div class="row no-gutters">
-        <div class="col-md-12 col-sm-12">
-          <img src="https://static6.businessinsider.com/image/563bd36c9dd7cc19008c7b37-1190-625/a-large-order-of-mcdonalds-fries-costs-about-126-in-venezuela.jpg">
-        </div>
-      </div>
-    {.end}
-  {.end}
-  <div class="row no-gutters">
-    {.repeated section items}
-      {.main-image?}
-      <div class="col-md-4 col-sm-12">
-        <div class="img-wrap">
-          <img {@|image-meta} />
-          <div class="hilight">
-            <p>{title|truncate 80}</p>
-          </div>
-        </div>
-      </div>
-      {.or}
-      <div class="col-md-4 col-sm-12">
-        <div class="img-wrap">
-          <img src="http://clipart-library.com/img/1791739.jpg" />
-          <div class="hilight">
-            <p>{title|truncate 80}</p>
-          </div>
-        </div>
-      </div>
-      {.end}
-    {.end}
-</div>-->
