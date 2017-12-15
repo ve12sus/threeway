@@ -105,12 +105,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 16px;
   height: 16px;
   border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* main navigation */
 
-.navbar-brand {
-  margin-right: 0;
+#logo {
+  width: 268px;
+  height: 101px;
+  background: url('../assets/logo@2x.png') no-repeat;
+  background-size: 100%;
 }
 
 @media (max-width: 767px) {
@@ -120,6 +125,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
     padding-left: 8px;
     padding-right: 8px;
+  }
+
+  #logo {
+    width: 206px;
+    height: 46px;
+    background: url('../assets/logo-mobile@2x.png') no-repeat;
+    background-size: 100%;
   }
 
 }
@@ -465,22 +477,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Category page */
 
+#post-header {
+  // jeff: this needs more work, depending on how SS works. let's chat
+  height: 400px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+#category-header {
+  position: relative;
+  height: 400px;
+  &.news {
+    background: url('http://via.placeholder.com/1440x400') center center no-repeat;
+    background-size: cover;
+  }
+  // jeff: make &.food, &.people, &.events
+}
+
 @media (max-width: 767px) {
 
   /* fixed height for mobile category header */
   #category-header {
-    min-height: 180px;
-    overflow: hidden;
-  }
-
-  /* img attributes to fit 180px header div */
-  #category-header img {
-    position: absolute;
-    height: 100%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    height: 180px;
   }
 
   .category-overlay {
@@ -541,10 +561,6 @@ h1, h2, h3, h4, h5, h6 {
   .card-deck {
     margin-top: 0;
   }
-}
-
-#category-header {
-  position: relative;
 }
 
 .category-main {
@@ -713,6 +729,7 @@ article .title {
   /* sets margin between title and post-tag */
   margin-top: 13px;
   text-align: center;
+  line-height: 1.25;
 }
 
 
@@ -798,4 +815,8 @@ article .post-tag {
   &:hover {
   	background-position: 0 -24px;
   }
+}
+
+#carouselExampleIndicators {
+  max-height: 620px;
 }

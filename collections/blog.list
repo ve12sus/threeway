@@ -1,7 +1,7 @@
 <div class="container-fluid category-main">
-  <div id="category-header">
-    <img class="d-block w-100" src="http://via.placeholder.com/1440x400">
-    <div class="category-overlay text-center">			
+  <div id="category-header" class="news">
+    <!-- <img src="http://via.placeholder.com/1440x400"> -->
+    <div class="category-overlay text-center">
 			<div class="category">
         {.section collection}
         <h1>{title}</h1>
@@ -40,17 +40,27 @@
             {.end}
         </div>
         <div class="col-12 col-md-4 featured-post">
+<<<<<<< HEAD
 	
+=======
+
+          <!--<img src="../assets/tag-national.png">
+          <p class="featured-post-title">Special Tribute to 9/11 McDonad's Owner Opreator Hero Lloyd Frazier
+            at Annual SBU's "give Kids a Smile" Day</p>
+          <p class="supporting-copy">The 5th annual "Give Kids a Smile" Back to School Day took place</p>
+          <a class="btn" href="#" role="button"><h4>READ MORE</h4></a>-->
+
+>>>>>>> 6c13ae7f5b05d8e0b0bfaf1b8b3dc31a7aff9d2c
         <img src="../assets/tag-national.png">
-        
-          <script>console.log({@|json-pretty})</script>  
+
+          <script>console.log({@|json-pretty})</script>
           <p class="featured-post-title">{title}</p>
-          
+
           <p class="supporting-copy">{body|safe|truncate 400}</p>
-          
+
           <a class="btn" href={fullUrl} role="button">READ MORE</a>
           {.end}
-            
+
         {.end}
 
         </squarespace:query>

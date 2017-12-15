@@ -4,16 +4,7 @@
     <nav class="navbar navbar-expand-md navbar-light">
       <div id="nav" class="container">
         {.section website}
-        <a class="navbar-brand" href="{baseUrl}">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/assets/logo.png">
-            <img
-              src="/assets/logo-mobile.png"
-              alt="logo">
-          </picture>
-        </a>
+        <a class="navbar-brand" href="{baseUrl}"><div id="logo"></div></a>
         {.end}
         <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
