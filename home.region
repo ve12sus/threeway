@@ -6,7 +6,7 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
       crossorigin="anonymous">-->
-      
+
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
     <script>
@@ -17,7 +17,7 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
     <div class="site-container">
-      
+
       <header class="site-header">
         <!-- site navigation -->
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
@@ -30,7 +30,7 @@
       </header>
 
       <main class="content-container" role="main" data-content-field="main-content">
-        <div class="container-fluid">      
+        <div class="container-fluid">
           <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -187,6 +187,10 @@
               </div>
               <div class="card-group">
                 <div class="card twitter">
+                  <img src="assets/ic-twitter-on.png"
+                  		 srcset="assets/ic-twitter-on@2x.png 2x,
+                  					 assets/ic-twitter-on@3x.png 3x"
+                  		 class="ic-twitter-on">
                   <img class="card-img-top" src="https://ve12sus.com/images/frap.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">@McDonalds</h4>
@@ -194,6 +198,10 @@
                   </div>
                 </div>
                 <div class="card twitter d-none d-md-block">
+                  <img src="assets/ic-twitter-on.png"
+                       srcset="assets/ic-twitter-on@2x.png 2x,
+                             assets/ic-twitter-on@3x.png 3x"
+                       class="ic-twitter-on">
                   <img class="card-img-top" src="https://ve12sus.com/images/kitchen.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">@McDonalds</h4>
@@ -201,6 +209,10 @@
                   </div>
                 </div>
                 <div class="card twitter d-none d-md-block">
+                  <img src="assets/ic-twitter-on.png"
+                       srcset="assets/ic-twitter-on@2x.png 2x,
+                             assets/ic-twitter-on@3x.png 3x"
+                       class="ic-twitter-on">
                   <img class="card-img-top" src="https://ve12sus.com/images/mcrib.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">@McDonalds</h4>
@@ -221,13 +233,13 @@
           </div>
         </div>
       </div>
-      
+
       <!--Footer with open block field -->
       <footer class="site-footer">
         <!-- footer navigation -->
         <squarespace:navigation navigationId="footerNav" template="footer-navigation" />
       </footer>
-      
+
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

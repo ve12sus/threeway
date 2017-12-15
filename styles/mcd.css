@@ -733,3 +733,12 @@ article .post-tag {
   margin-left: 0;
   margin-right: 0;
 }
+
+.ic-twitter-on {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
