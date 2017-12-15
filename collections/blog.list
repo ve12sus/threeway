@@ -1,4 +1,5 @@
 <div class="container-fluid category-main">
+  <div id="category-image-overlay"></div>
   <div id="category-header" class="{.section collection}{urlId}{.end}">
     <div class="category-overlay text-center">
 			<div class="category">

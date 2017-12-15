@@ -499,6 +499,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#category-image-overlay {
+  background-color: #000;
+  opacity: 0.7;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
 
   /* fixed height for mobile category header */
@@ -661,6 +670,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 40px;
+    z-index: 2;
   }
 
   .category-overlay .nav-item {
@@ -671,8 +681,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .category-overlay h1 {
-  font-size: 4.5rem;
-  letter-spacing: 1.1px;
+    font-size: 4.5rem;
+    letter-spacing: 1.1px;
   }
 
   .category-content {
