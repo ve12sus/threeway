@@ -791,3 +791,7 @@ article .post-tag {
   	background-position: 0 -24px;
   }
 }
+
+#carouselExampleIndicators {
+  max-height: 620px;
+}
