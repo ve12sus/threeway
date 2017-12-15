@@ -1,54 +1,53 @@
-{.if items}
-<nav id="mainNavigation" class="main-navigation" role="navigation" data-content-field="navigation">
-  {.repeated section items}
-
-    {.collection?}
-      {.folder?}
-        <div class="nav-link--folder{.if folderActive} nav-link--active{.end}{.section collection}{.if homepage} nav-link--homepage{.end}{.end}" id="id{collection.id}" data-controller="Folders">
-          <div for="folder-toggle-{collection.id}" class="folder-toggle">{collection.navigationTitle}</div>
-          <div class="subnav">
-          {.repeated section items}
-            {.collection?}
-            <div class="nav-link--collection{.if active} nav-link--active{.end}" id="id-{collection.id}">
-              <a href="{collection.fullUrl}">
-                <span>{collection.navigationTitle}</span>
-              </a>
-            </div>
-            {.end}
-            {.section externalLink}
-            <div class="nav-link--external">
-              <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                <span>{title}</span>
-              </a>
-            </div>
-            {.end}
-          {.end}
-          </div>
-        </div>
-
-      {.or}
-
-        {.section collection}
-        <div class="nav-link--collection{.if active} nav-link--active{.end}{.if homepage} nav-link--homepage{.end}" id="id-{id}">
-          <a href="{fullUrl}">
-            <span>{navigationTitle}</span>
-          </a>
-        </div>
-        {.end}
-
-      {.end}
-
-    {.or}
-      {.section externalLink}
-      <div class="nav-link--external">
-        <a href="{url}"{.section newWindow} target="_blank"{.end}>
-          <span>{title}</span>
-        </a>
-      </div>
-      {.end}
-
-    {.end}
-
-  {.end}
-</nav>
-{.end}
+<div class="container-fluid footer">
+	<div class="footer-links">
+		<div class="container" id="footer">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="card-body">
+						<h4>ABOUT US</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">Our History</a></li>
+							<li><a href="#">Leadership Team</a></li>
+							<li><a href="#">Values in Action</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card-body">
+						<h4>OPPORTUNITIES</h4>
+						<ul class="list-unstyled">
+							<li><a href="#"	>Meet Our People</a></li>
+							<li><a href="#">For Our Veterans</a></li>
+							<li><a href="#">Apply Now</a></li>
+							<li><a href="#">Education Opportunities</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card-body">
+						<h4>PRESS ROOM</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">Meet Our People</a></li>
+							<li><a href="#">For Our Veterans</a></li>
+							<li><a href="#">Apply Now</a></li>
+							<li><a href="#">This Same Thing Twice</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card-body">
+						<h4>Social</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">YouTube</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>      
+			<div class="footer-copyright">
+				<p class="text-center">© 2017 MCDONALD'S NEW YORK TRI-STATE. ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</div>
+</div>

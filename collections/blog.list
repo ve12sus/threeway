@@ -1,94 +1,231 @@
-  {# Show active filters }
-  {.section categoryFilter}
-  <p class="filter-heading filter-by-category loading" data-controller="FadeInContent">
-    All in <span class="category-name">{@}</span>
-  </p>
-  {.end}
+<!-- category filters -->
+<!--{.section categoryFilter}
+  <p class="filtered-by">Filtered by Category: {@|safe}</p>
+{.end}
 
-  {.section tagFilter}
-  <p class="filter-heading filter-by-tag loading" data-controller="FadeInContent">
-    All tagged <span class="category-name">{@}</span>
-  </p>
-  {.end}
+{.section tagFilter}
+  <p class="filtered-by">Filtered by Tag: {@|safe}</p>
+{.end}
 
-  {.if authorFilter}
-  <div class="filter-heading filter-by-author loading" data-controller="FadeInContent">
-    <p>All by {author.displayName}</p>
-    {.if author.avatarId}
-    <div class="author-avatar content-fill">
-      <img class="author-avatar-image" data-src="{author.avatarAssetUrl}" data-image="{author.avatarAssetUrl}" data-image-focal-point="0.5,0.5">
+{.if authorFilter}
+  <p class="filtered-by">Filtered by Author: {author.displayName}</p>
+  {.end}-->
+
+<div class="container-fluid category-main">
+  <div id="category-header">
+    <img class="d-block w-100" src="http://via.placeholder.com/1440x400">
+    <div class="category-overlay text-center">			
+			<div class="category">
+        {.section collection}
+        <h1>{title}</h1>
+        {.equal?:urlId:"blog"}
+        <p>Local stories, promotions, and sponsorships</p>
+        {.end}
+        {.end}
+        <squarespace:navigation navigationId="siteNav" template="sub-navigation" />
+<!--				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><h3>ALL</h3></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><h3>LOCAL</h3></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><h3>NATIONAL</h3></a>
+					</li>
+				</ul> -->
+      </div>
     </div>
-    {.end}
   </div>
+  <div class="category-content">
+    <div class="container">
+      <div class="row">
+        <squarespace:query collection="{.section collection}{urlId}{.end}" featured="true" limit="1">
+        <div class="col-12 col-md-8">
+        {.section items}
+          {.section 0}
+            {.main-image?}
+          <a href={fullUrl}>
+            <img {@|image-meta} class="img-fluid" />
+          </a>
+            {.or}
+            <img src="http://via.placeholder.com/618x413" class="img-fluid" />
+            {.end}
+        </div>
+        <div class="col-12 col-md-4 featured-post">
+
+          <!--<img src="../assets/tag-national.png">
+          <p class="featured-post-title">Special Tribute to 9/11 McDonad's Owner Opreator Hero Lloyd Frazier
+            at Annual SBU's "give Kids a Smile" Day</p>
+          <p class="supporting-copy">The 5th annual "Give Kids a Smile" Back to School Day took place</p>
+          <a class="btn" href="#" role="button"><h4>READ MORE</h4></a>-->
+	
+        <img src="../assets/tag-national.png">
+        
+          <script>console.log({@|json-pretty})</script>  
+          <p class="featured-post-title">{title}</p>
+          
+          <p class="supporting-copy">{body|safe|truncate 400}</p>
+          
+          <a class="btn" href={fullUrl} role="button">READ MORE</a>
+          {.end}
+            
+        {.end}
+
+        </squarespace:query>
+
+        </div>
+      </div>
+      <div class="card-deck">
+      {.section items.0}
+        <div class="card border-0">
+        {.main-image?}
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
+          <!--<img class="card-img-top" style="height:180px" {@|image-meta} alt="Card image cap">-->
+        {.end}
+          <div class="post-tag-wrapper">
+            <img src="../assets/tag-national.png">
+          </div>
+          <div class="card-body article">
+            <p class="card-title">{title}</p>
+            <p class="card-text">{body|safe|truncate 350}
+            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
+            </p>
+          </div>
+        </div>
+      {.end}
+      {.section items.1}
+        <div class="card border-0">
+        {.main-image?}
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
+        {.end}
+          <div class="post-tag-wrapper">
+            <img src="../assets/tag-national.png">
+          </div>
+          <div class="card-body article">
+            <p class="card-title">{title}</p>
+            <p class="card-text">{body|safe|truncate 350}
+            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
+            </p>
+          </div>
+        </div>
+      {.end}
+      {.section items.2}
+        <div class="card border-0">
+        {.main-image?}
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
+        {.end}
+          <div class="post-tag-wrapper">
+            <img src="../assets/tag-national.png">
+          </div>
+          <div class="card-body article">
+            <p class="card-title">{title}</p>
+            <p class="card-text">{body|safe|truncate 350}
+            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
+            </p>
+          </div>
+        </div>
+      {.end}
+      </div>
+      <div class="card-deck">
+      {.section items.3}
+        <div class="card border-0">
+        {.main-image?}
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
+        {.end}
+          <div class="post-tag-wrapper">
+            <img src="../assets/tag-national.png">
+          </div>
+          <div class="card-body article">
+            <p class="card-title">{title}</p>
+            <p class="card-text">{body|safe|truncate 350}
+            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
+            </p>
+          </div>
+        </div>
+      {.end}
+      {.section items.4}
+        <div class="card border-0">
+        {.main-image?}
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
+        {.end}
+          <div class="post-tag-wrapper">
+            <img src="../assets/tag-national.png">
+          </div>
+          <div class="card-body article">
+            <p class="card-title">{title}</p>
+            <p class="card-text">{body|safe|truncate 350}
+            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
+            </p>
+          </div>
+        </div>
+      {.end}
+      {.section items.5}
+        <div class="card border-0">
+        {.main-image?}
+          <div class="content-fill">
+            <img {@|image-meta} />
+          </div>
+        {.end}
+          <div class="post-tag-wrapper">
+            <img src="../assets/tag-national.png">
+          </div>
+          <div class="card-body article">
+            <p class="card-title">{title}</p>
+            <p class="card-text">{body|safe|truncate 350}
+            <a href={fullUrl}><span class="article-read-more">READ MORE ⇾</span></a>
+            </p>
+          </div>
+        </div>
+      {.end}
+      </div>
+      <div class="see-older-wrapper text-center">
+        <a class="btn" href="#" role="button">SEE OLDER</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--{.section pagination}
+    {.if prevPage}
+      <h1>I am the following pages</h1>
+    {.or}
+      <div class="row no-gutters">
+        <div class="col-md-12 col-sm-12">
+          <img src="https://static6.businessinsider.com/image/563bd36c9dd7cc19008c7b37-1190-625/a-large-order-of-mcdonalds-fries-costs-about-126-in-venezuela.jpg">
+        </div>
+      </div>
+    {.end}
   {.end}
-  <div class="loading-spinner"></div>
-  <div class="blog-list blog-wrapper" id="blogList" data-controller="BlogLayout">{.repeated section items}<article class="entry entry--list h-entry grid-hidden {.main-image?} has-main-image {.end}{@|item-classes}" id="article-{id}" label="Blog Post" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
-    <div class="thumbnail-title-wrapper">
+  <div class="row no-gutters">
+    {.repeated section items}
       {.main-image?}
-      <div class="excerpt-thumb">
-        <a href="{fullUrl}" class="excerpt-image content-fill">
-          <img {@|image-meta} data-load="false" />
-          <div class="thumb-overlay"></div>
-        </a>
+      <div class="col-md-4 col-sm-12">
+        <div class="img-wrap">
+          <img {@|image-meta} />
+          <div class="hilight">
+            <p>{title|truncate 80}</p>
+          </div>
+        </div>
       </div>
       {.or}
-      <div class="entry-title-wrapper">
-        <div class="title-bg-wrapper">
-          <h2 class="entry-title entry-title--list" data-content-field="title">
-            {.passthrough?}
-            <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
-            {.or}
-            <a href="{fullUrl}" class="u-url" rel="bookmark">
-            {.end}
-              <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
-                <div class="date-wrapper">
-                  <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}</span>
-                </div>
-              </time>
-              <time class="dt-published date-highlight" itemprop="datePublished" datetime="{addedOn|date %F}" pubdate>{addedOn|date %b %e} </time>{title}
-            </a>
-          </h2>
+      <div class="col-md-4 col-sm-12">
+        <div class="img-wrap">
+          <img src="http://clipart-library.com/img/1791739.jpg" />
+          <div class="hilight">
+            <p>{title|truncate 80}</p>
+          </div>
         </div>
       </div>
       {.end}
-    </div>
-
-    <div class="entry-text">
-      {.main-image?}
-      <header class="entry-header">
-        <time class="dt-published date-callout" datetime="{addedOn|date %F}" pubdate>
-          <div class="date-wrapper">
-            <span class="month">{addedOn|date %b} </span><span class="day">{addedOn|date %e}</span>
-          </div>
-        </time>
-        <h2 class="entry-title entry-title--list p-name" itemprop="headline" data-content-field="title" >
-          {.passthrough?}
-          <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">
-          {.or}
-          <a href="{fullUrl}" class="u-url" rel="bookmark">
-          {.end}
-            <time class="dt-published date-highlight" datetime="{addedOn|date %F}" pubdate>{addedOn|date %b %e} </time>
-            {title}
-          </a>
-        </h2>
-      </header>
-      {.or}
-      {.end}
-
-      <div class="entry-content">
-        {.section author}<div class="blog-meta-item blog-meta-author"><a href="{collection.fullUrl}?author={author.id}" class="blog-author-name">{displayName}</a> </div>{.end}
-
-        {.section categories}<div class="blog-meta-item blog-categories">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="blog-category blog-category--{@}">{@}</a>{.alternates with}<span class="blog-meta-delimiter">, </span>{.end}</div>{.end}
-
-        {.excerpt?}
-          <div class="entry-excerpt p-summary">{excerpt}</div>
-        {.end}
-      </div>
-    </div>
-  </article>{.end}
-
-</div>
-{.if pagination}
-{.if pagination.nextPage}<div class="load-more-wrapper"><a class="load-more" href="{pagination.nextPageUrl}">Load More</a></div>{.end}
-{.end}
-<div class="breaker"></div>
+    {.end}
+</div>-->

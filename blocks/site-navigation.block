@@ -1,0 +1,45 @@
+<div class="container-fluid main">
+  <script>console.log({@|json-pretty})</script>
+  <div class="navbar-wrapper">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div id="nav" class="container">
+        {.section website}
+        <a class="navbar-brand" href="{baseUrl}">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/logo.png">
+            <img
+              src="/assets/logo-mobile.png"
+              alt="logo">
+          </picture>
+        </a>
+        {.end}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto justify-content-end">
+          {.repeated section items}
+            <script>console.log({@|json-pretty})</script>
+            <li class="nav-item {.section active} active-link {.end}">
+
+            <!-- external link -->
+            {.section externalLink}
+              <a class="nav-link {title}-nav-link" href="{url}"><h3 class="text-uppercase">{title}</h3></a>
+            {.end}
+            <!-- collection link -->
+            {.section collection}
+              <a class="nav-link {urlId}-nav-link" href="{fullUrl}"><h3 class="text-uppercase">{navigationTitle}</h3></a>
+            {.end}
+            </li>
+          {.end}	
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
