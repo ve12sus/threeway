@@ -15,8 +15,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto justify-content-end">
           {.repeated section items}
-            <script>console.log({@|json-pretty})</script>
-            <li class="nav-item {.section active} active-link {.end}">
+            <li class="{.section active} active-link {.end}">
 
             <!-- external link -->
             {.section externalLink}
