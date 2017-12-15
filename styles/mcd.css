@@ -162,18 +162,10 @@ h1, h2, h3, h4, h5, h6 {
 
 	}
 
-  /* Override Bootstrap nav style */
-  .navbar-link.active {
-    color: #fff;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    color: #fff;
-  }
-
-  .navbar-light .navbar-nav .nav-link:focus,
-  .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff;
+  #navbarNavDropdown {
+    .nav-link {
+      color: #fff;
+    }
   }
 
   /* border bottom style */
@@ -490,13 +482,36 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   height: 400px;
   &.news {
-    background: url('http://via.placeholder.com/1440x400') center center no-repeat;
+    background: url('../assets/category-news.jpg') center center no-repeat;
     background-size: cover;
   }
-  // jeff: make &.food, &.people, &.events
+  &.food {
+    background: url('../assets/category-food.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  &.people {
+    background: url('../assets/category-people.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  &.events {
+    background: url('../assets/category-events.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+#category-image-overlay {
+  background-color: #000;
+  opacity: 0.7;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {
+  #category-image-overlay {
+    height: 180px;
+}
 
   /* fixed height for mobile category header */
   #category-header {
@@ -508,6 +523,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 23px;
+    z-index: 2;
   }
 
   .category-overlay h1 {
@@ -658,6 +674,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 40px;
+    z-index: 2;
   }
 
   .category-overlay .nav-item {
@@ -668,8 +685,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .category-overlay h1 {
-  font-size: 4.5rem;
-  letter-spacing: 1.1px;
+    font-size: 4.5rem;
+    letter-spacing: 1.1px;
   }
 
   .category-content {

@@ -1,6 +1,6 @@
 <div class="container-fluid category-main">
-  <div id="category-header" class="news">
-    <!-- <img src="http://via.placeholder.com/1440x400"> -->
+  <div id="category-image-overlay"></div>
+  <div id="category-header" class="{.section collection}{urlId}{.end}">
     <div class="category-overlay text-center">
 			<div class="category">
         {.section collection}
@@ -10,17 +10,6 @@
         {.end}
         {.end}
         <squarespace:navigation navigationId="siteNav" template="sub-navigation" />
-<!--				<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a class="nav-link" href="#"><h3>ALL</h3></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><h3>LOCAL</h3></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><h3>NATIONAL</h3></a>
-					</li>
-				</ul> -->
       </div>
     </div>
   </div>

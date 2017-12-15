@@ -1,33 +1,29 @@
-
-
 <ul class="nav justify-content-center">
 
   {.repeated section items}
-  
+
     {.folder?}
       {.if folderActive}
-        
+
         {.repeated section items}
           <li class="nav-item">
-          
+
           {.section collection}
             <a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
-            
+
           {.end}
-          
+
           {.section externalLink}
-            <a class="nav-link {title}-nav-link" href={url}>{title}</a>
-            
+            <a class="nav-link {title}-nav-link" href={url}><h3>{title}</h3></a>
+
           {.end}
-          
+
           </li>
         {.end}
-        
+
       {.end}
     {.end}
-    
+
   {.end}
-  
+
 </ul>
-
-
