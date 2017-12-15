@@ -37,14 +37,14 @@
 				<div class="col-sm-3">
 					<div class="card-body">
 						<h4>Social</h4>
-						<ul class="list-unstyled">
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Instagram</a></li>
-							<li><a href="#">YouTube</a></li>
+						<ul class="social">
+							<li><a href="https://www.instagram.com/mcdnytristate/" target="_blank" class="sprite instagram"></a></li>
+							<li><a href="https://twitter.com/McDNYTristate" target="_blank" class="sprite twitter"></a></li>
+							<li><a href="https://www.youtube.com/user/mcdonaldsnytristate" target="_blank" class="sprite youtube"></a></li>
 						</ul>
 					</div>
 				</div>
-			</div>      
+			</div>
 			<div class="footer-copyright">
 				<p class="text-center">© 2017 MCDONALD'S NEW YORK TRI-STATE. ALL RIGHTS RESERVED</p>
 			</div>
