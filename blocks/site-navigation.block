@@ -15,7 +15,7 @@
           </picture>
         </a>
         {.end}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,14 +29,14 @@
 
             <!-- external link -->
             {.section externalLink}
-              <a class="nav-link {title}-nav-link" href="{url}"><h3 class="text-uppercase">{title}</h3></a>
+              <a class="nav-link {title}-nav-link" href="{url}"><h3>{title}</h3></a>
             {.end}
             <!-- collection link -->
             {.section collection}
-              <a class="nav-link {urlId}-nav-link" href="{fullUrl}"><h3 class="text-uppercase">{navigationTitle}</h3></a>
+              <a class="nav-link {urlId}-nav-link" href="{fullUrl}"><h3>{navigationTitle}</h3></a>
             {.end}
             </li>
-          {.end}	
+          {.end}
           </ul>
         </div>
       </div>
