@@ -56,7 +56,7 @@
 
         </div>
       </div>
-      <div class="row">
+      <div class="row posts">
     {.repeated section items}
         <div class="card border-0 col-12 col-md-4">
       {.main-image?}

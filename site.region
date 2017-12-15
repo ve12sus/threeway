@@ -8,6 +8,7 @@
 
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
+    <script src="scripts/infinite-scroll.js"></script>
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
