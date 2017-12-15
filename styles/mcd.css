@@ -742,3 +742,12 @@ article .post-tag {
   right: 3%;
   top: 3%;
 }
+
+.ic-instagram-on {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
