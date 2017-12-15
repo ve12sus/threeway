@@ -1,6 +1,5 @@
 <div class="container-fluid category-main">
-  <div id="category-header" class="news">
-    <!-- <img src="http://via.placeholder.com/1440x400"> -->
+  <div id="category-header" class="{.section collection}{urlId}{.end}">
     <div class="category-overlay text-center">
 			<div class="category">
         {.section collection}

@@ -482,10 +482,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   height: 400px;
   &.news {
-    background: url('http://via.placeholder.com/1440x400') center center no-repeat;
+    background: url('../assets/category-news.jpg') center center no-repeat;
     background-size: cover;
   }
-  // jeff: make &.food, &.people, &.events
+  &.food {
+    background: url('../assets/category-food.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  &.people {
+    background: url('../assets/category-people.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  &.events {
+    background: url('../assets/category-events.jpg') center center no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 767px) {
