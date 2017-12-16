@@ -890,6 +890,9 @@ article .post-tag {
       margin-right: 20px;
     }
   }
+  &.article {
+    padding: 20px 0 20px 0;
+  }
 }
 
 .sprite {
