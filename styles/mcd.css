@@ -428,6 +428,17 @@ h4 {
   background-color: #282828;
   color: #fff;
   margin-top: 118px;
+
+  .card-body {
+    padding: 0;
+  }
+
+  @media (max-width: 320px) {
+    .card-body {
+      padding: 1rem;
+    }
+  }
+
 }
 
 .footer-links {
