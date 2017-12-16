@@ -66,9 +66,6 @@
         </div>
     {.end}
       </div>
-      <div class="see-older-wrapper text-center">
-        <a class="btn" href={.section pagination}{nextPageUrl}{.end} role="button">SEE OLDER</a>
-      </div>
     </div>
   </div>
 </div>
