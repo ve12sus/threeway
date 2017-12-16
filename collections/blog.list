@@ -21,7 +21,7 @@
           {.section 0}
             {.main-image?}
           <a href="{fullUrl}">
-            <img src="{assetUrl}?format=750w" class="img-fluid" />
+            <img src="{assetUrl}?format=1500w" class="img-fluid" />
           </a>
             {.or}
           <a href="{fullUrl}">
