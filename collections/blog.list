@@ -14,7 +14,7 @@
     <div class="container">
       <div class="row category-featured-post">
         <!-- returns first post tagged "featured" in collection -->
-        <squarespace:query collection="{.section collection}{urlId}?category={categoryFilter}{.end}" featured="true" limit="1">
+        <squarespace:query collection="{.section collection}{urlId}{.end}" featured="true" limit="1">
         <div class="col-12 col-md-8">
         {.section items}
           {.section 0}
