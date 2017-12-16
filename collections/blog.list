@@ -1,8 +1,9 @@
 <div class="container-fluid category-main">
   <div id="category-image-overlay"></div>
+  {.var @collectionClass collection.urlId}
   <squarespace:query collection="header-images" category="{.section collection}{title}{.end}" limit="1">
   <script>console.log({@|json-pretty})</script>
-  <div id="category-header" class="{.section collection}{urlId}{.end}"
+  <div id="category-header" class="{@collectionClass}"
       style="background-image:url({.section items}{.section 0}{assetUrl}{.end}{.end})">
   </squarespace:query>  
     <div class="category-overlay text-center">
