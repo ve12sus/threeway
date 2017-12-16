@@ -32,16 +32,17 @@
         <div class="col-12 col-md-4 featured-post">
           {.repeated section categories}
             {.equal?:@:"Local"}
-        <img src="/assets/tag-local.png" alt="local tag">
+          <img src="/assets/tag-local.png" alt="local tag">
             {.end}   
             {.equal?:@:"National"}
-        <img src="/assets/tag-national.png" alt="national tag">
+          <img src="/assets/tag-national.png" alt="national tag">
             {.end} 
           {.end}
 
           <script>console.log({@|json-pretty})</script>
-          <p class="featured-post-title">{title}</p>
-
+          <a href-"{fullUrl}">
+            <p class="featured-post-title">{title}</p>
+          </a>    
           <p class="supporting-copy">{body|safe|truncate 400}</p>
 
           <a class="btn" href="{fullUrl}" role="button">READ MORE</a>
@@ -56,9 +57,11 @@
     {.repeated section items}
         <div class="card border-0 col-12 col-md-4">
       {.main-image?}
+          <a href="{fullUrl}">
           <div class="content-fill">
             <img {@|image-meta} />
           </div>
+          </a>
       {.or}
           <img src="http://via.placeholder.com/300x200">
       {.end}
@@ -73,7 +76,7 @@
       {.end}
           </div>
           <div class="card-body article">
-            <p class="card-title">{title}</p>
+            <a href="{fullUrl}"><p class="card-title">{title}</p></a>
             <p class="card-text">{body|safe|truncate 350}</p>
             <a href="{fullUrl}"><span class="article-read-more">READ MORE ⇾</span></a>
           </div>
