@@ -83,6 +83,7 @@
                         <p class="card-text large">Local stories, promotions, and sponsorships</p>
                       </div>
                   {.end}
+                  </squarespace:query>
                     </div>
                   </div>
                 </div>
