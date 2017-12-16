@@ -124,6 +124,56 @@ h4 {
 
 @media (max-width: 767px) {
 
+  #navbarNavDropdown {
+
+    li {
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eaeaea;
+      position: relative;
+
+      &:first-child {
+        border-top: 1px solid #eaeaea;
+        padding-top: 20px;
+        .caret {
+          position: absolute;
+          top: 18px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .caret {
+        width: 14px;
+        height: 24px;
+        object-fit: contain;
+        background-color: #f00;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &.news-folder {
+          background: url('../assets/ic-caret-right-mobile-green.svg');
+        }
+
+        &.food-folder {
+          background: url('../assets/ic-caret-right-mobile-blue.svg');
+        }
+
+        &.people-folder {
+          background: url('../assets/ic-caret-right-mobile-purple.svg');
+        }
+
+        &.events-folder {
+          background: url('../assets/ic-caret-right-mobile-yellow.svg');
+        }
+      }
+    }
+  }
+
   .navbar {
     background-color: #fff;
     color: #4a4a4a;
