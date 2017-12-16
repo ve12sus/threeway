@@ -511,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   #category-image-overlay {
     height: 180px;
-}
+  }
 
   /* fixed height for mobile category header */
   #category-header {
@@ -836,4 +836,13 @@ article .post-tag {
 
 #carouselExampleIndicators {
   max-height: 620px;
+}
+
+.news-nav-link.active,
+.news-nav-link:hover,
+.Local-nav-link.active,
+.Local-nav-link:hover,
+.National-nav-link.active,
+.National-nav-link:hover {
+  border-bottom: @frog-green solid 2px;
 }
