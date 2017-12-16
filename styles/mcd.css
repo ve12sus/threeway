@@ -920,3 +920,7 @@ article .post-tag {
 #carouselExampleIndicators {
   max-height: 620px;
 }
+
+.category-featured-post {
+  margin-bottom: 30px;
+}
