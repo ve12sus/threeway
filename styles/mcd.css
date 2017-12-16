@@ -488,6 +488,15 @@ h4 {
   &.news {
     background: url('../assets/category-news.jpg') center center no-repeat;
     background-size: cover;
+
+    .news-nav-link.active,
+    .news-nav-link:hover,
+    .Local-nav-link.active,
+    .Local-nav-link:hover,
+    .National-nav-link.active,
+    .National-nav-link:hover {
+      border-bottom: @frog-green solid 2px;
+    }
   }
   &.food {
     background: url('../assets/category-food.jpg') center center no-repeat;
@@ -500,6 +509,15 @@ h4 {
   &.events {
     background: url('../assets/category-events.jpg') center center no-repeat;
     background-size: cover;
+
+    .events-nav-link.active,
+    .events-nav-link:hover,
+    .Local-nav-link.active,
+    .Local-nav-link:hover,
+    .National-nav-link.active,
+    .National-nav-link:hover {
+      border-bottom: @golden solid 2px;
+    }
   }
 }
 
@@ -840,13 +858,4 @@ article .post-tag {
 
 #carouselExampleIndicators {
   max-height: 620px;
-}
-
-.news-nav-link.active,
-.news-nav-link:hover,
-.Local-nav-link.active,
-.Local-nav-link:hover,
-.National-nav-link.active,
-.National-nav-link:hover {
-  border-bottom: @frog-green solid 2px;
 }
