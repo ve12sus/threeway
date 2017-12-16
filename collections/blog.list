@@ -15,7 +15,7 @@
   </div>
   <div class="category-content">
     <div class="container">
-      <div class="row">
+      <div class="row category-featured-post">
         <squarespace:query collection="{.section collection}{urlId}{.end}" featured="true" limit="1">
         <div class="col-12 col-md-8">
         {.section items}
