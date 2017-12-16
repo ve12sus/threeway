@@ -43,8 +43,18 @@ body {
   font-size: 1.125rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LovinSansCondensed-Bold', Sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 h1 {
   font-size: 4rem;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.5),
+              0 0 20px rgba(0,0,0,0.2);
+
 }
 
 h2 {
@@ -61,12 +71,6 @@ h4 {
   letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'LovinSansCondensed-Bold', Sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
-}
 
 /* Color variables */
 @frog-green: #61b310;
@@ -119,6 +123,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+
+  #navbarNavDropdown {
+
+    li {
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eaeaea;
+      position: relative;
+
+      &:first-child {
+        border-top: 1px solid #eaeaea;
+        padding-top: 20px;
+        .caret {
+          position: absolute;
+          top: 18px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .caret {
+        width: 14px;
+        height: 24px;
+        object-fit: contain;
+        background-color: #f00;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &.news-folder {
+          background: url('../assets/ic-caret-right-mobile-green.svg');
+        }
+
+        &.food-folder {
+          background: url('../assets/ic-caret-right-mobile-blue.svg');
+        }
+
+        &.people-folder {
+          background: url('../assets/ic-caret-right-mobile-purple.svg');
+        }
+
+        &.events-folder {
+          background: url('../assets/ic-caret-right-mobile-yellow.svg');
+        }
+      }
+    }
+  }
 
   .navbar {
     background-color: #fff;
@@ -424,6 +478,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #282828;
   color: #fff;
   margin-top: 118px;
+
+  .card-body {
+    padding: 0;
+  }
+
+  @media (max-width: 320px) {
+    .card-body {
+      padding: 1rem;
+    }
+  }
+
 }
 
 .footer-links {
@@ -484,6 +549,15 @@ h1, h2, h3, h4, h5, h6 {
   &.news {
     background: url('../assets/category-news.jpg') center center no-repeat;
     background-size: cover;
+
+    .news-nav-link.active,
+    .news-nav-link:hover,
+    .Local-nav-link.active,
+    .Local-nav-link:hover,
+    .National-nav-link.active,
+    .National-nav-link:hover {
+      border-bottom: @frog-green solid 2px;
+    }
   }
   &.food {
     background: url('../assets/category-food.jpg') center center no-repeat;
@@ -496,6 +570,15 @@ h1, h2, h3, h4, h5, h6 {
   &.events {
     background: url('../assets/category-events.jpg') center center no-repeat;
     background-size: cover;
+
+    .events-nav-link.active,
+    .events-nav-link:hover,
+    .Local-nav-link.active,
+    .Local-nav-link:hover,
+    .National-nav-link.active,
+    .National-nav-link:hover {
+      border-bottom: @golden solid 2px;
+    }
   }
 }
 
@@ -511,7 +594,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   #category-image-overlay {
     height: 180px;
-}
+  }
 
   /* fixed height for mobile category header */
   #category-header {
