@@ -7,6 +7,7 @@
     <div class="category-overlay text-center">
 			<div class="category">
   {.var @collectName collection.urlId}
+  {.var @categoryF categoryFilter}
       {.section collection}
         <h1>{title}</h1>
         <script>console.log({@collectName|json-pretty});</script>
@@ -76,6 +77,7 @@
           <div class="post-tag-wrapper">
       {.repeated section categories}
         <script>console.log({@collectName|json-pretty});</script>
+        <script>console.log({@categoryF|json-pretty});</script>
         {.equal?:@:"Local"}
             <img src="/assets/tag-local.png" alt="local tag">
         {.end}   
