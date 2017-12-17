@@ -77,10 +77,8 @@
         </div>
       </div>
       <div class="row posts">
-  {.var @categoryF categoryFilter}
     {.repeated section items}
         <div class="card border-0 col-12 col-md-4">
-        <p>{@categoryF}</p>
       {.main-image?}
           <a href="{fullUrl}">
           <div class="content-fill">
