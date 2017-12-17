@@ -97,19 +97,35 @@
           <img src="http://via.placeholder.com/300x200">
       {.end}
           <div class="post-tag-wrapper">
-      {.repeated section categories}
-        {.equal?:@collectName:"news"}
-          <script>console.log('equal news');</script>
-        {.end}
-        {.equal?:@collectName:"events"}
-          <script>console.log('equal events');</script>
-        {.end}  
-        {.equal?:@:"Local"}
+      {.equal?:@collectName:"news"}
+          <script>console.log('news post');</script>
+        {.repeated section categories}
+          {.equal?:@:"Local"}
+            <script>console.log('news local');</script>            
             <img src="/assets/tag-local.png" alt="local tag">
-        {.end}   
-        {.equal?:@:"National"}
+          {.end}   
+          {.equal?:@:"National"}
+            <script>console.log('news national');</script>            
             <img src="/assets/tag-national.png" alt="national tag">
-        {.end} 
+          {.end} 
+        {.end}
+      {.end}
+      {.equal?:@collectName:"food"}
+        <script>console.log('food post');</script>
+      {.end}   
+      {.equal?:@collectName:"people"}
+        <script>console.log('people post');</script>
+      {.end}   
+      {.equal?:@collectName:"events"}
+        <script>console.log('events post');</script>
+        {.repeated section categories}
+          {.equal?:@:"Local"}
+            <script>console.log('local events post');</script>
+          {.end}   
+          {.equal?:@:"National"}
+            <script>console.log('national events post');</script>
+          {.end} 
+        {.end}
       {.end}
           </div>
           <div class="card-body article">
