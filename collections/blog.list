@@ -18,9 +18,10 @@
       <div class="row category-featured-post">
         <!-- returns first post tagged "featured" in collection -->
         {.var @collectName collection.urlId}
+        <script>console.log({@collectName});</script>
         <squarespace:query collection="{.section collection}{urlId}{.end}" 
             category="{categoryFilter}" featured="true" limit="1">
-        <script>console.log({@collectName|json-pretty});</script>
+        <script>console.log({@collectName});</script>
         <div class="col-12 col-md-8">
         {.section items}
           {.section 0}
