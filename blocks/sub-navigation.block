@@ -11,14 +11,22 @@
 
           {.section collection}
             {.section urlId}
-              {.equal?:@:"events"}
+              {.equal?:@:"news"}
+            <a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
                 <script>console.log('events subnav');</script>
               {.end}
-              {.equal?:@:"news"}              
+              {.equal?:@:"food"}              
+            <a hidden class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
                 <script>console.log('newss subnav');</script>
               {.end}
-            {.end}
+              {.equal?:@:"people"}
+            <a hidden class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
+              {.end}
+              {.equal?:@:"events"}
             <a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
+              {.end}
+            {.end}
+            <!--<a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>-->
 
           {.end}
 
