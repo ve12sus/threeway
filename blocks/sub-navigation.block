@@ -16,7 +16,7 @@
                 <script>console.log('events subnav');</script>
               {.end}
               {.equal?:@:"food"}              
-            <a hidden class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
+            <a class="nav-link {urlId}-nav-link" style="visibility: hidden;" href={fullUrl}><h3>ALL</h3></a>
                 <script>console.log('newss subnav');</script>
               {.end}
               {.equal?:@:"people"}
