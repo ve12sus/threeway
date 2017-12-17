@@ -823,11 +823,12 @@ article .title {
 
   color: #111111;
   font-family: 'LovinSans-Light', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   /* sets margin between title and post-tag */
   margin-top: 13px;
   text-align: center;
   line-height: 1.25;
+  padding: 0 10px 0 10px;
 }
 
 

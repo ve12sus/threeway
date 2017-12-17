@@ -4,7 +4,6 @@
   <!--WRAPPER-->
   <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
     <div class="container-fluid">
-      <div id="category-image-overlay"></div>
       <div id="post-header" style="background-image: url({assetUrl})"></div>
     </div>
     <div class="container">
