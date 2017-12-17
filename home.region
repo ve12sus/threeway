@@ -115,25 +115,41 @@
               <div class="row no-gutters justify-content-center">
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
-                    <img class="card-img h-100" src="assets/category-people.jpg" alt="Card image">
+                  <squarespace:query collection="header-images" category="people" limit="1">
+                  {.section items}
+                    {.section 0}
+                    {.main-image?}
+                    <img class="card-img h-100" src="{assetUrl}?format=500w" alt="Card image">
+                    {.end}
                     <div class="card-img-overlay d-flex featured-people">
                       <a href="/people" class="btn">READ MORE</a>
                       <div class="featured-overlay-content my-auto mx-auto">
                         <h2 class="card-title">PEOPLE</h2>
                         <p class="card-text large ">Meet our crew</p>
                       </div>
+                    {.end}
+                  {.end}
+                  </squarespace:query>
                     </div>
                   </div>
                 </div>
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
-                    <img class="card-img h-100" src="assets/category-events.jpg" alt="Card image">
+                  <squarespace:query collection="header-images" category="events" limit="1">
+                  {.section items}
+                    {.section 0}
+                    {.main-image?}
+                    <img class="card-img h-100" src="{assetUrl}?format=500w" alt="Card image">
+                    {.end}
                     <div class="card-img-overlay d-flex featured-events">
                       <a href="/events" class="btn">READ MORE</a>
                       <div class="featured-overlay-content my-auto mx-auto">
                         <h2 class="card-title">EVENTS</h2>
                         <p class="card-text large">Local events near you</p>
                       </div>
+                    {.end}
+                  {.end}
+                  </squarespace:query>
                     </div>
                   </div>
                 </div>
