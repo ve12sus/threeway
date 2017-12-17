@@ -890,6 +890,9 @@ article .post-tag {
       margin-right: 20px;
     }
   }
+  &.article {
+    padding: 20px 0 20px 0;
+  }
 }
 
 .sprite {
@@ -919,4 +922,8 @@ article .post-tag {
 
 #carouselExampleIndicators {
   max-height: 620px;
+}
+
+.category-featured-post {
+  margin-bottom: 30px;
 }
