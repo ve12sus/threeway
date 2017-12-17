@@ -111,18 +111,22 @@
         {.end}
       {.end}
       {.equal?:@collectName:"food"}
-        <script>console.log('food post');</script>
+            <script>console.log('food post');</script>
+            <img src="/assets/tag-food.png" alt="food tag">
       {.end}   
       {.equal?:@collectName:"people"}
-        <script>console.log('people post');</script>
+            <script>console.log('people post');</script>
+            <img src="/assets/tag-people.png" alt="people tag">
       {.end}   
       {.equal?:@collectName:"events"}
         <script>console.log('events post');</script>
         {.repeated section categories}
           {.equal?:@:"Local"}
+            <img src="/assets/tag-events-local.png" alt="events local tag">
             <script>console.log('local events post');</script>
           {.end}   
           {.equal?:@:"National"}
+            <img src="/assets/tag-events-national.png" alt="events national tag">
             <script>console.log('national events post');</script>
           {.end} 
         {.end}
