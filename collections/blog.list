@@ -1,7 +1,6 @@
 <div class="container-fluid category-main">
   <div id="category-image-overlay"></div>
   <squarespace:query collection="header-images" category="{.section collection}{urlId}{.end}" limit="1">
-  <script>console.log({@|json-pretty})</script>
   <div id="category-header" class="{.section items}{.section 0}{.section categories}{.section 0}{@}{.end}{.end}{.end}{.end}"
       style="background-image:url({.section items}{.section 0}{assetUrl}{.end}{.end})">
   </squarespace:query>  
@@ -43,7 +42,6 @@
             {.end} 
           {.end}
 
-          <script>console.log({@|json-pretty})</script>
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
           </a>    

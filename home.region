@@ -73,7 +73,6 @@
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
                   <squarespace:query collection="header-images" category="news" limit="1">
-                  <script>console.log({@|json-pretty})</script>
                   {.section items}
                     {.section 0}
                     {.main-image?}
