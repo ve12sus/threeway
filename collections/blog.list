@@ -23,7 +23,6 @@
             category="{categoryFilter}" featured="true" limit="1">
         <div class="col-12 col-md-8">
         {.var @featuredCol collection.urlId}
-          <script>console.log({@|json-pretty});</script>
         {.section items}
           {.section 0}
             {.main-image?}
@@ -38,36 +37,28 @@
         </div>
         <div class="col-12 col-md-4 featured-post">
         {.equal?:@featuredCol:"news"}
-          <script>console.log('featured news');</script>
           {.repeated section categories}
             {.equal?:@:"Local"}
           <img src="/assets/tag-local.png" alt="local tag">
-          <script>console.log('local news');</script>
             {.end}   
             {.equal?:@:"National"}
           <img src="/assets/tag-national.png" alt="national tag">
-          <script>console.log('national news');</script>
             {.end} 
           {.end}
         {.end}
         {.equal?:@featuredCol:"food"}
           <img src="/assets/tag-food.png" alt="food tag">
-          <script>console.log('featured food');</script>
         {.end}
         {.equal?:@featuredCol:"people"}
           <img src="/assets/tag-people.png" alt="people tag">
-          <script>console.log('featured people');</script>
         {.end}  
         {.equal?:@featuredCol:"events"}
-          <script>console.log('featured events');</script>
           {.repeated section categories}
             {.equal?:@:"Local"}
           <img src="/assets/tag-events-local.png" alt="events local tag">
-          <script>console.log('local events');</script>
             {.end}   
             {.equal?:@:"National"}
           <img src="/assets/tag-events-national.png" alt="events national tag">
-          <script>console.log('national events');</script>
             {.end} 
           {.end}
         {.end}  
