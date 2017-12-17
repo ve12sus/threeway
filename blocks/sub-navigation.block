@@ -5,11 +5,19 @@
 
     {.folder?}
       {.if folderActive}
-
+        {.var @collectName collection.title}
         {.repeated section items}
           <li class="nav-item">
 
           {.section collection}
+            {.section urlId}
+              {.equal?:@:"events"}
+                <script>console.log('events subnav');</script>
+              {.end}
+              {.equal?:@:"news"}              
+                <script>console.log('newss subnav');</script>
+              {.end}
+            {.end}
             <a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
 
           {.end}
