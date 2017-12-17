@@ -75,6 +75,7 @@
       {.end}
           <div class="post-tag-wrapper">
       {.repeated section categories}
+        <script>console.log({@collectName|json-pretty});</script>
         {.equal?:@:"Local"}
             <img src="/assets/tag-local.png" alt="local tag">
         {.end}   
