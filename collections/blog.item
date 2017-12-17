@@ -12,30 +12,30 @@
   {.equal?:@collectionName:"news"}
     {.repeated section categories}
       {.equal?:@:"Local"}
-       <img src="/assets/tag-local@2x.png" alt="local tag">
+       <img src="/assets/tag-local@2x.png" class="post-tag" alt="local tag">
       {.end}   
       {.equal?:@:"National"}
-       <img src="/assets/tag-national@2x.png" alt="national tag">
+       <img src="/assets/tag-national@2x.png" class="post-tag" alt="national tag">
       {.end} 
     {.end}
   {.end}
-  {.equal?:@featuredCol:"food"}
-      <img src="/assets/tag-food@2x.png" alt="food tag">
+  {.equal?:@collectionName:"food"}
+      <img src="/assets/tag-food@2x.png" class="post-tag" alt="food tag">
   {.end}
-  {.equal?:@featuredCol:"people"}
-      <img src="/assets/tag-people@2x.png" alt="people tag">
+  {.equal?:@collectionName:"people"}
+      <img src="/assets/tag-people@2x.png" class="post-tag" alt="people tag">
   {.end}  
-  {.equal?:@featuredCol:"events"}
+  {.equal?:@collectionName:"events"}
     {.repeated section categories}
       {.equal?:@:"Local"}
-      <img src="/assets/tag-events-local@2x.png" alt="events local tag">
+      <img src="/assets/tag-events-local@2x.png" class="post-tag" alt="events local tag">
       {.end}   
       {.equal?:@:"National"}
-      <img src="/assets/tag-events-national@2x.png" alt="events national tag">
+      <img src="/assets/tag-events-national@2x.png" class="post-tag" alt="events national tag">
       {.end} 
     {.end}
   {.end}
-      !<--<img src="/assets/tag-national.png" class="post-tag">-->
+      <!--<img src="/assets/tag-national.png" class="post-tag">-->
       <!--POST TILE-->
       <p class="title" data-content-field="title">
         {.passthrough?}
