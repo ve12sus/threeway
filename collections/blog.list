@@ -6,9 +6,11 @@
   </squarespace:query>  
     <div class="category-overlay text-center">
 			<div class="category">
+  {.var @collectName collection.urlId}
+  {.var @categoryF categoryFilter}
       {.section collection}
         <h1>{title}</h1>
-        {.end}
+      {.end}
         <squarespace:navigation navigationId="siteNav" template="sub-navigation" />
       </div>
     </div>
@@ -20,6 +22,7 @@
         <squarespace:query collection="{.section collection}{urlId}{.end}" 
             category="{categoryFilter}" featured="true" limit="1">
         <div class="col-12 col-md-8">
+        {.var @featuredCol collection.urlId}
         {.section items}
           {.section 0}
             {.main-image?}
@@ -33,6 +36,7 @@
             {.end}
         </div>
         <div class="col-12 col-md-4 featured-post">
+        {.equal?:@featuredCol:"news"}
           {.repeated section categories}
             {.equal?:@:"Local"}
           <img src="/assets/tag-local.png" alt="local tag">
@@ -41,7 +45,24 @@
           <img src="/assets/tag-national.png" alt="national tag">
             {.end} 
           {.end}
-
+        {.end}
+        {.equal?:@featuredCol:"food"}
+          <img src="/assets/tag-food.png" alt="food tag">
+        {.end}
+        {.equal?:@featuredCol:"people"}
+          <img src="/assets/tag-people.png" alt="people tag">
+        {.end}  
+        {.equal?:@featuredCol:"events"}
+          {.repeated section categories}
+            {.equal?:@:"Local"}
+          <img src="/assets/tag-events-local.png" alt="events local tag">
+            {.end}   
+            {.equal?:@:"National"}
+          <img src="/assets/tag-events-national.png" alt="events national tag">
+            {.end} 
+          {.end}
+        {.end}  
+        
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
           </a>    
@@ -68,13 +89,31 @@
           <img src="http://via.placeholder.com/300x200">
       {.end}
           <div class="post-tag-wrapper">
-      {.repeated section categories}
-        {.equal?:@:"Local"}
+      {.equal?:@collectName:"news"}
+        {.repeated section categories}
+          {.equal?:@:"Local"}
             <img src="/assets/tag-local.png" alt="local tag">
-        {.end}   
-        {.equal?:@:"National"}
+          {.end}   
+          {.equal?:@:"National"}
             <img src="/assets/tag-national.png" alt="national tag">
-        {.end} 
+          {.end} 
+        {.end}
+      {.end}
+      {.equal?:@collectName:"food"}
+            <img src="/assets/tag-food.png" alt="food tag">
+      {.end}   
+      {.equal?:@collectName:"people"}
+            <img src="/assets/tag-people.png" alt="people tag">
+      {.end}   
+      {.equal?:@collectName:"events"}
+        {.repeated section categories}
+          {.equal?:@:"Local"}
+            <img src="/assets/tag-events-local.png" alt="events local tag">
+          {.end}   
+          {.equal?:@:"National"}
+            <img src="/assets/tag-events-national.png" alt="events national tag">
+          {.end} 
+        {.end}
       {.end}
           </div>
           <div class="card-body article">
