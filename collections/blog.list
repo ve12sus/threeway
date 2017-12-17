@@ -62,14 +62,6 @@
             {.end} 
           {.end}
         {.end}  
-          <!--{.repeated section categories}
-            {.equal?:@:"Local"}
-          <img src="/assets/tag-local.png" alt="local tag">
-            {.end}   
-            {.equal?:@:"National"}
-          <img src="/assets/tag-national.png" alt="national tag">
-            {.end} 
-            {.end}-->
         
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
@@ -98,36 +90,28 @@
       {.end}
           <div class="post-tag-wrapper">
       {.equal?:@collectName:"news"}
-          <script>console.log('news post');</script>
         {.repeated section categories}
           {.equal?:@:"Local"}
-            <script>console.log('news local');</script>            
             <img src="/assets/tag-local.png" alt="local tag">
           {.end}   
           {.equal?:@:"National"}
-            <script>console.log('news national');</script>            
             <img src="/assets/tag-national.png" alt="national tag">
           {.end} 
         {.end}
       {.end}
       {.equal?:@collectName:"food"}
-            <script>console.log('food post');</script>
             <img src="/assets/tag-food.png" alt="food tag">
       {.end}   
       {.equal?:@collectName:"people"}
-            <script>console.log('people post');</script>
             <img src="/assets/tag-people.png" alt="people tag">
       {.end}   
       {.equal?:@collectName:"events"}
-        <script>console.log('events post');</script>
         {.repeated section categories}
           {.equal?:@:"Local"}
             <img src="/assets/tag-events-local.png" alt="events local tag">
-            <script>console.log('local events post');</script>
           {.end}   
           {.equal?:@:"National"}
             <img src="/assets/tag-events-national.png" alt="events national tag">
-            <script>console.log('national events post');</script>
           {.end} 
         {.end}
       {.end}
