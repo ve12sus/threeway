@@ -6,9 +6,9 @@
   </squarespace:query>  
     <div class="category-overlay text-center">
 			<div class="category">
+  {.var @collectName collection.urlId}
       {.section collection}
         <h1>{title}</h1>
-        {.var @collectName urlId}
         <script>console.log({@collectName|json-pretty});</script>
       {.end}
         <squarespace:navigation navigationId="siteNav" template="sub-navigation" />
