@@ -19,13 +19,13 @@
 				</div>
 				<div class="col-sm-3">
 					<div class="card-body">
-						<h4>OPPORTUNITIES</h4>
-						<ul class="list-unstyled">
-							<li><a href="#"	>Meet Our People</a></li>
-							<li><a href="#">For Our Veterans</a></li>
-							<li><a href="#">Apply Now</a></li>
-							<li><a href="#">Education Opportunities</a></li>
-						</ul>
+      <squarespace:query collection="press-room" limit="100">
+        {.section collection}
+            <a href="{fullUrl}">
+						  <h4>{title}</h4>
+            </a>
+        {.end}
+      </squarespace:query>
 					</div>
 				</div>
 				<div class="col-sm-3">
