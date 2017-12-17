@@ -22,9 +22,8 @@
         <squarespace:query collection="{.section collection}{urlId}{.end}" 
             category="{categoryFilter}" featured="true" limit="1">
         <div class="col-12 col-md-8">
-        {.var @queryCol collection.urlId}
+        {.var @featuredCol collection.urlId}
           <script>console.log({@|json-pretty});</script>
-        {.end}
         {.section items}
           {.section 0}
             {.main-image?}
@@ -38,14 +37,33 @@
             {.end}
         </div>
         <div class="col-12 col-md-4 featured-post">
-        {.equal?:@queryCol:"news"}
+        {.equal?:@featuredCol:"news"}
           <script>console.log('inside equal news');</script>
+          {.repeated section categories}
+            {.equal?:@:"Local"}
+          <script>console.log('cat equals local');</script>
+            {.end}   
+            {.equal?:@:"National"}
+          <script>console.log('cat equal national');</script>
+            {.end} 
+          {.end}
         {.end}
-        {.equal?:@queryCol:"events"}
-          <script>console.log('inside equal events');</script>
-        {.end}  
-        {.equal?:@queryCol:"people"}
+        {.equal?:@featuredCol:"food"}
+          <script>console.log('inside equal food');</script>
+        {.end}
+        {.equal?:@featuredCol:"people"}
           <script>console.log('inside equal people');</script>
+        {.end}  
+        {.equal?:@featuredCol:"events"}
+          {.repeated section categories}
+            {.equal?:@:"Local"}
+          <script>console.log('cat equals events local');</script>
+            {.end}   
+            {.equal?:@:"National"}
+          <script>console.log('cat equal events national');</script>
+            {.end} 
+          {.end}
+          <script>console.log('inside equal events');</script>
         {.end}  
           {.repeated section categories}
             {.equal?:@:"Local"}
