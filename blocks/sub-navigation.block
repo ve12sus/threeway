@@ -11,11 +11,9 @@
             {.section urlId}
               {.equal?:@:"news"}
             <a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
-                <script>console.log('events subnav');</script>
               {.end}
               {.equal?:@:"food"}              
             <a class="nav-link {urlId}-nav-link" style="visibility: hidden;" href={fullUrl}><h3>ALL</h3></a>
-                <script>console.log('newss subnav');</script>
               {.end}
               {.equal?:@:"people"}
             <a class="nav-link {urlId}-nav-link" style="visibility: hidden;" href={fullUrl}><h3>ALL</h3></a>
