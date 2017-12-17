@@ -38,41 +38,41 @@
         </div>
         <div class="col-12 col-md-4 featured-post">
         {.equal?:@featuredCol:"news"}
-          <script>console.log('inside equal news');</script>
+          <script>console.log('featured news');</script>
           {.repeated section categories}
             {.equal?:@:"Local"}
-          <script>console.log('cat equals local');</script>
+          <script>console.log('local news');</script>
             {.end}   
             {.equal?:@:"National"}
-          <script>console.log('cat equal national');</script>
+          <script>console.log('national news');</script>
             {.end} 
           {.end}
         {.end}
         {.equal?:@featuredCol:"food"}
-          <script>console.log('inside equal food');</script>
+          <script>console.log('featured food');</script>
         {.end}
         {.equal?:@featuredCol:"people"}
-          <script>console.log('inside equal people');</script>
+          <script>console.log('featured people');</script>
         {.end}  
         {.equal?:@featuredCol:"events"}
+          <script>console.log('featured events');</script>
           {.repeated section categories}
             {.equal?:@:"Local"}
-          <script>console.log('cat equals events local');</script>
+          <script>console.log('local events');</script>
             {.end}   
             {.equal?:@:"National"}
-          <script>console.log('cat equal events national');</script>
+          <script>console.log('national events');</script>
             {.end} 
           {.end}
-          <script>console.log('inside equal events');</script>
         {.end}  
-          {.repeated section categories}
+          <!--{.repeated section categories}
             {.equal?:@:"Local"}
           <img src="/assets/tag-local.png" alt="local tag">
             {.end}   
             {.equal?:@:"National"}
           <img src="/assets/tag-national.png" alt="national tag">
             {.end} 
-          {.end}
+            {.end}-->
         
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
