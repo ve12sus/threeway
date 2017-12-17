@@ -78,6 +78,7 @@
       </div>
       <div class="row posts">
     {.repeated section items}
+        <script>console.log({@categoryF});</script>
         <div class="card border-0 col-12 col-md-4">
       {.main-image?}
           <a href="{fullUrl}">
@@ -122,7 +123,6 @@
             <a href="{fullUrl}"><span class="article-read-more">READ MORE ⇾</span></a>
           </div>
         </div>
-        <script>console.log({@categoryF|json-pretty});</script>
     {.end}
       </div>
     </div>
