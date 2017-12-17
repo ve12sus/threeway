@@ -537,10 +537,13 @@ h4 {
 #post-header {
   // jeff: this needs more work, depending on how SS works. let's chat
   height: 400px;
-  overflow: hidden;
-  img {
+  /* overflow: hidden; */
+  /* img {
     width: 100%;
-  }
+  } */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #category-header {
@@ -592,7 +595,7 @@ h4 {
 }
 
 @media (max-width: 767px) {
-  #category-image-overlay {
+  #category-image-overlay, #post-header {
     height: 180px;
   }
 
