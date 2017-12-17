@@ -653,6 +653,7 @@ h4 {
     right: 0;
     top: -11px;
     margin: auto;
+    height: 22px;
   }
 
   .card-deck {
@@ -836,6 +837,7 @@ article .post-tag {
   display: block;
   margin: auto;
   margin-top: -11px;
+  height: 22px;
 }
 
 .post-divider {
