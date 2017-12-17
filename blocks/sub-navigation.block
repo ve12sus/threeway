@@ -1,4 +1,5 @@
 <ul class="nav justify-content-center">
+<script>console.log({@|json-pretty});</script>
 
   {.repeated section items}
 
