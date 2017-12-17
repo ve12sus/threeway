@@ -14,6 +14,7 @@
 							<li><a href="{fullUrl}">{title}</a></li>
           {.end}
 						</ul>
+      </squarespace:query>
 					</div>
 				</div>
 				<div class="col-sm-3">
