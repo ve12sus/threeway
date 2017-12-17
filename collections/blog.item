@@ -8,7 +8,7 @@
     </div>
     <div class="container">
       <!--POST TAG-->
-      <script>console.log({@collectionName});</script>
+      <script>console.log({@collectionName|json-pretty});</script>
       <img src="/assets/tag-national.png" class="post-tag">
       <!--POST TILE-->
       <p class="title" data-content-field="title">
