@@ -30,13 +30,16 @@
 				</div>
 				<div class="col-sm-3">
 					<div class="card-body">
-						<h4>PRESS ROOM</h4>
+      <squarespace:query collection="information" limit="100">
+        {.section collection}
+						<h4>{title}</h4>
+        {.end}
 						<ul class="list-unstyled">
-							<li><a href="#">Meet Our People</a></li>
-							<li><a href="#">For Our Veterans</a></li>
-							<li><a href="#">Apply Now</a></li>
-							<li><a href="#">This Same Thing Twice</a></li>
+          {.repeated section items}
+							<li><a href="{fullUrl}">{title}</a></li>
+          {.end}
 						</ul>
+      </squarespace:query>
 					</div>
 				</div>
 				<div class="col-sm-3">
