@@ -21,6 +21,7 @@
         <!-- returns first post tagged "featured" in collection -->
         <squarespace:query collection="{.section collection}{urlId}{.end}" 
             category="{categoryFilter}" featured="true" limit="1">
+        <script>console.log({@collectName|json-pretty});</script>
         <div class="col-12 col-md-8">
         {.section items}
           {.section 0}
@@ -36,7 +37,6 @@
         </div>
         <div class="col-12 col-md-4 featured-post">
           {.repeated section categories}
-        <script>console.log({@collectName|json-pretty});</script>
             {.equal?:@:"Local"}
           <img src="/assets/tag-local.png" alt="local tag">
             {.end}   
