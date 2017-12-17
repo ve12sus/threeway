@@ -93,13 +93,21 @@
                 </div>
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
-                    <img class="card-img h-100" src="assets/category-food.jpg" alt="Card image">
+                  <squarespace:query collection="header-images" category="food" limit="1">
+                  {.section items}
+                    {.section 0}
+                    {.main-image?}
+                    <img class="card-img h-100" src="{assetUrl}?format=500w" alt="Card image">
+                    {.end}
                     <div class="card-img-overlay d-flex featured-food">
                       <a href="/food" class="btn">READ MORE</a>
                       <div class="featured-overlay-content my-auto mx-auto">
                         <h2 class="card-title">FOOD</h2>
                         <p class="card-text large">Explore our new products and nutrition facts</p>
                       </div>
+                    {.end}
+                  {.end}
+                  </squarespace:query>
                     </div>
                   </div>
                 </div>
