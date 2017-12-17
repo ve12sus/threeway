@@ -36,7 +36,7 @@
         </div>
         <div class="col-12 col-md-4 featured-post">
           {.repeated section categories}
-          <script>console.log({@collectName|json-pretty});</script>
+          <script>console.log({@collectName});</script>
             {.equal?:@:"Local"}
           <img src="/assets/tag-local.png" alt="local tag">
             {.end}   
