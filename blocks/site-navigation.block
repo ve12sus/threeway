@@ -1,5 +1,4 @@
 <div class="container-fluid main">
-  <script>console.log({@|json-pretty})</script>
   <div class="navbar-wrapper">
     <nav class="navbar navbar-expand-md navbar-light">
       <div id="nav" class="container">
