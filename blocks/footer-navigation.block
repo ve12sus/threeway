@@ -5,11 +5,14 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="card-body">
-						<h4>ABOUT US</h4>
+      <squarespace:query collection="about-us" limit="100">
+        {.section collection}
+						<h4>{title}</h4>
+        {.end}
 						<ul class="list-unstyled">
-							<li><a href="#">Our History</a></li>
-							<li><a href="#">Leadership Team</a></li>
-							<li><a href="#">Values in Action</a></li>
+          {.repeated section items}
+							<li><a href="{fullUrl}">{title}</a></li>
+          {.end}
 						</ul>
 					</div>
 				</div>
