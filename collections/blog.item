@@ -9,7 +9,33 @@
     <div class="container">
       <!--POST TAG-->
       <script>console.log({@collectionName|json-pretty});</script>
-      <img src="/assets/tag-national.png" class="post-tag">
+  {.equal?:@collectionName:"news"}
+    {.repeated section categories}
+      {.equal?:@:"Local"}
+       <img src="/assets/tag-local@2x.png" alt="local tag">
+      {.end}   
+      {.equal?:@:"National"}
+       <img src="/assets/tag-national@2x.png" alt="national tag">
+      {.end} 
+    {.end}
+  {.end}
+  {.equal?:@featuredCol:"food"}
+      <img src="/assets/tag-food@2x.png" alt="food tag">
+  {.end}
+  {.equal?:@featuredCol:"people"}
+      <img src="/assets/tag-people@2x.png" alt="people tag">
+  {.end}  
+  {.equal?:@featuredCol:"events"}
+    {.repeated section categories}
+      {.equal?:@:"Local"}
+      <img src="/assets/tag-events-local@2x.png" alt="events local tag">
+      {.end}   
+      {.equal?:@:"National"}
+      <img src="/assets/tag-events-national@2x.png" alt="events national tag">
+      {.end} 
+    {.end}
+  {.end}
+      !<--<img src="/assets/tag-national.png" class="post-tag">-->
       <!--POST TILE-->
       <p class="title" data-content-field="title">
         {.passthrough?}
