@@ -1,11 +1,9 @@
 <ul class="nav justify-content-center">
-<script>console.log({@|json-pretty});</script>
 
   {.repeated section items}
 
     {.folder?}
       {.if folderActive}
-        {.var @collectName collection.title}
         {.repeated section items}
           <li class="nav-item">
 
@@ -20,13 +18,12 @@
                 <script>console.log('newss subnav');</script>
               {.end}
               {.equal?:@:"people"}
-            <a hidden class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
+            <a class="nav-link {urlId}-nav-link" style="visibility: hidden;" href={fullUrl}><h3>ALL</h3></a>
               {.end}
               {.equal?:@:"events"}
             <a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>
               {.end}
             {.end}
-            <!--<a class="nav-link {urlId}-nav-link" href={fullUrl}><h3>ALL</h3></a>-->
 
           {.end}
 
