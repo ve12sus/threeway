@@ -41,6 +41,9 @@
         {.equal?:@collectName:"events"}
           <script>console.log('equal events');</script>
         {.end}  
+        {.equal?:@collectName:"people"}
+          <script>console.log('equal people');</script>
+        {.end}  
           {.repeated section categories}
             {.equal?:@:"Local"}
           <img src="/assets/tag-local.png" alt="local tag">
