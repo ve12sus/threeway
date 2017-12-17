@@ -77,6 +77,12 @@
       {.end}
           <div class="post-tag-wrapper">
       {.repeated section categories}
+        {.equal?:@collectName:"news"}
+          <script>console.log('equal news');</script>
+        {.end}
+        {.equal?:@collectName:"events"}
+          <script>console.log('equal events');</script>
+        {.end}  
         {.equal?:@:"Local"}
             <img src="/assets/tag-local.png" alt="local tag">
         {.end}   
