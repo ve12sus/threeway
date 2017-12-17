@@ -54,7 +54,6 @@ h1 {
   font-size: 4rem;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.5),
               0 0 20px rgba(0,0,0,0.2);
-
 }
 
 h2 {
@@ -925,4 +924,39 @@ article .post-tag {
 
 .category-featured-post {
   margin-bottom: 30px;
+}
+
+.field-list {
+
+  .title {
+    font-size: 1.125rem;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .caption {
+    margin: 0;
+  }
+}
+
+.form-button-wrapper {
+  input {
+    &.button.sqs-system-button.sqs-editable-button {
+      border: 0;
+      border-radius: 37px;
+      color: #fff;
+      font-family: 'LovinSansCondensed-Bold', Sans-serif;
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+      width: 140px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #4a4a4a;
+      &:hover {
+        background-color: darken(#4a4a4a, 20%);
+      }
+    }
+  }
+
 }
