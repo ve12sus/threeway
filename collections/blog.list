@@ -22,7 +22,9 @@
         <squarespace:query collection="{.section collection}{urlId}{.end}" 
             category="{categoryFilter}" featured="true" limit="1">
         <div class="col-12 col-md-8">
+        {.var @queryCol collection.urlId}
           <script>console.log({@|json-pretty});</script>
+        {.end}
         {.section items}
           {.section 0}
             {.main-image?}
@@ -36,14 +38,14 @@
             {.end}
         </div>
         <div class="col-12 col-md-4 featured-post">
-        {.equal?:@collectName:"news"}
-          <script>console.log('equal news');</script>
+        {.equal?:@queryCol:"news"}
+          <script>console.log('inside equal news');</script>
         {.end}
-        {.equal?:@collectName:"events"}
-          <script>console.log('equal events');</script>
+        {.equal?:@queryCol:"events"}
+          <script>console.log('inside equal events');</script>
         {.end}  
-        {.equal?:@collectName:"people"}
-          <script>console.log('equal people');</script>
+        {.equal?:@queryCol:"people"}
+          <script>console.log('inside equal people');</script>
         {.end}  
           {.repeated section categories}
             {.equal?:@:"Local"}
