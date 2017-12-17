@@ -1,7 +1,7 @@
 <div class="container-fluid category-main">
   <div id="category-image-overlay"></div>
   <squarespace:query collection="header-images" category="{.section collection}{urlId}{.end}" limit="1">
-  <div id="category-header" class="{.section items}{.section 0}{.section categories}{.section 0}{@}{.end}{.end}{.end}{.end}"
+  <div id="category-header" class="{.section items 0}{.section categories}{.section 0}{@}{.end}{.end}{.end}"
       style="background-image:url({.section items}{.section 0}{assetUrl}{.end}{.end})">
   </squarespace:query>  
     <div class="category-overlay text-center">
