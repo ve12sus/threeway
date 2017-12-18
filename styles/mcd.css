@@ -1259,6 +1259,7 @@ article .post-tag {
   }
 
   .dotdl {
+    height: 300px;
     text-align: left;
 
     h2 {
