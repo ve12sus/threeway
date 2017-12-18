@@ -1219,6 +1219,25 @@ article .post-tag {
   height: 106px;
 }
 
+@media (min-width: 767px) {
+  .ic-mcd{
+    height: 90px;
+    margin-top:110px;
+    margin-left: 10px;
+  }
+
+  .dotdl {
+
+    h2 {
+      margin-top: 95px;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .ic-mcd{
     height: 106px;
