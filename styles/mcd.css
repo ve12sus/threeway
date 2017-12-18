@@ -988,6 +988,19 @@ article .post-tag {
 .ub-content {
   text-align: center;
   margin-left: 0;
+
+  .btn {
+    color: @easter-purple;
+    position: relative;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 767px) {
