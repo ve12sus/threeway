@@ -1124,4 +1124,29 @@ article .post-tag {
     width: 100%;
   }
 
+  .rmhc-logo {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    margin-left: 150px;
+  }
+
+  .rmhc-content {
+    background-color: none;
+    position: absolute;
+    text-align: left;
+  
+
+    h2 {
+      font-size: 2rem;
+      margin-left: 150px;
+      margin-top: 50px;  
+      text-align: left;
+    }
+
+    .btn {
+      font-size: 0.875rem;
+      width: 140px;
+    }
+  }
 }
