@@ -26,7 +26,6 @@
 }
 
 body {
-  color: #fff;
   font-family: 'LovinSans-Regular', Sans-serif;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
@@ -665,6 +664,7 @@ h4 {
 }
 
 .category-overlay h1 {
+  color: #fff;
   font-size: 2.25rem;
   letter-spacing: 0.6px;
 }
@@ -1178,5 +1178,4 @@ article .post-tag {
 
 #collection-5a33153b652dea7bc2a7c596 {
   padding-top: 0px;
-  color: #fff;
 }
