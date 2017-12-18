@@ -1092,9 +1092,9 @@ article .post-tag {
     background-color: #fff;
     bottom: 0;
     color: @golden;
-    font-size: 24px;
+    /*font-size: 24px;*/
     position: relative;
-    width: 210px;
+    /*width: 210px;*/
     margin-top: 5%;
     margin-bottom: 5%;
   }
