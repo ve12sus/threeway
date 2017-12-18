@@ -59,7 +59,11 @@
                     <h1>WELCOME TO OUR NEW<br>WEBSITE.</h1>
                   {.end}
                     <p class="welcome-readmore">
-                      <a class="btn" href="#" role="button">READ MORE</a>
+                  {.section sourceUrl}
+                      <a class="btn" href="{@}" role="button">READ MORE</a>
+                  {.or}
+                      <a class="btn" href="/news" role="button">READ MORE</a>
+                  {.end}
                     </p>
                   </div>
                 </div>
