@@ -1090,6 +1090,7 @@ article .post-tag {
 
   .btn {
     background-color: #fff;
+    bottom: 0;
     color: @golden;
     font-size: 24px;
     position: relative;
