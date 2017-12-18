@@ -1218,11 +1218,11 @@ article .post-tag {
 
 .ic-mcd {
   height: 106px;
+  margin-top: 20px
 }
 
 @media (max-width: 340px) {
   .ic-mcd{
-    margin-top: 20px;
     height: 80px;
   }
 
