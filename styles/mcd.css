@@ -1023,10 +1023,11 @@ article .post-tag {
 
     .btn {
       background-color: @easter-purple;
-      font-size: 24px;
+      font-size: 0.875rem;
       margin-top: 35px;
       padding: 10px;
       position: relative;
+      width: 140px;
     } 
 
     h2 {
