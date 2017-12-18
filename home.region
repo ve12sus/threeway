@@ -173,20 +173,22 @@
                   <a href="/" class="btn">READ MORE</a>
                 </div>
               </div>
-                <div>
-                  <div class="card text-white text-center border-0">
+              <div>
+                <div class="card text-white text-center border-0">
+                  <div class="rmhc-img-top">
                     <img class="card-img" src="/assets/img-family@2x.png" alt="Card image">
                     <div class="card-img-overlay d-flex featured-events">
                       <div class="featured-overlay-content my-auto mx-auto">
                         <img src="assets/logo-rmhc@2x.png">
                       </div>
                     </div>
-                    <div class="rmhc-content">
-                      <h2>Baby Everett needed surgery 1,000 miles from home</h2>
-                      <a href="/" class="btn">READ MORE</a>
-                    </div>
+                  </div>
+                  <div class="rmhc-content">
+                    <h2>Baby Everett needed surgery 1,000 miles from home</h2>
+                    <a href="/" class="btn">READ MORE</a>
                   </div>
                 </div>
+              </div>
               <picture>
                 <source
                   media="(min-width: 768px)"
