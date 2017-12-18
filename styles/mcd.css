@@ -1060,3 +1060,12 @@ article .post-tag {
 .rmhc img {
   width: 100%;
 }
+
+.rmhc-content {
+  background-color: @golden;
+
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
