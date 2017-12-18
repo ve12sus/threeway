@@ -178,7 +178,7 @@
                 <div class="col-12 col-md-6">
                   <div class="ub-content">
                     <h2>MCDELIVERY</h2>
-                    <p>Order your McDonald's faves on UberEATS</p>
+                    <p class="large">Order your McDonald's faves on UberEATS</p>
                     <a href="/" class="btn" role="button">DOWNLOAD THE APP</a>
                   </div>
                 </div>
