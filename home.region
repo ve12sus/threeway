@@ -167,16 +167,10 @@
               </div>
               <div class="row rmhc">
                 <div class="col-12">
-                  <div class="card text-white text-center border-0">
-                    <div class="rmhc-img">
-                      <img src="/assets/img-family@2x.png" alt="Card image">
-                      <div class="card-img-overlay d-flex"></div>
-                    </div>
-                    <div class="rmhc-content">
-                      <h2 class="card-title">EVENTS</h2>
-                      <p class="card-text large">Local events near you</p>
-                      <a href="/events" class="btn">READ MORE</a>
-                    </div>
+                  <img src="/assets/img-family@2x.png" alt="Card image">
+                  <div class="rmhc-content">
+                    <h2>Baby Everett needed surgery 1,000 miles from home</h2>
+                    <a href="/" class="btn">READ MORE</a>
                   </div>
                 </div>
               </div>
