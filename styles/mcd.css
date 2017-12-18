@@ -1008,12 +1008,16 @@ article .post-tag {
 @media (min-width: 767px) {
 
   .ub-img {
-    height: 166px;
+    height: 126px;
     width: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 
   .ub-content {
-    margin-left: -50px;
+    // margin-left: -50px;
     text-align: left;
 
     .btn {
