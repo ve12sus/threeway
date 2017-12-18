@@ -44,7 +44,9 @@
               {.section items}
                 {.section 0}
                   {.excerpt?}
+                    {.section excerpt}
                     <script>console.log({@|json-pretty});</script>
+                    {.end}
                   {.end}
                 <div id="caption" class="container">
                   <div class="caption">
