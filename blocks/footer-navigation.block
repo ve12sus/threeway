@@ -19,13 +19,16 @@
 				</div>
 				<div class="col-sm-3">
 					<div class="card-body">
-      <squarespace:query collection="press-room" limit="100">
+            <a href="/press-room">
+						  <h4>Press Room</h4>
+            </a>
+      <!--<squarespace:query collection="press-room" limit="100">
         {.section collection}
             <a href="{fullUrl}">
 						  <h4>{title}</h4>
             </a>
         {.end}
-      </squarespace:query>
+      </squarespace:query>-->
 					</div>
 				</div>
 				<div class="col-sm-3">
