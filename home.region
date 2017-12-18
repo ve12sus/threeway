@@ -181,7 +181,7 @@
                   </div>
                 </div>
               </div>
-              <picture>
+              <!--<picture<>
                 <source
                   media="(min-width: 768px)"
                   srcset="/assets/rmhc.jpg">
@@ -189,7 +189,7 @@
                   src="/assets/rmhc-mobile@3x.jpg"
                   class="img-fluid"
                   alt="logo">
-              </picture>
+                  </picture>-->
               <div class="card-group">
                 <div class="card text-white">
                   <img class="card-img h-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e15/23594243_401385300275853_5632111106257321984_n.jpg" alt="Card image">
