@@ -283,6 +283,9 @@
                 </div>
               </div>
               <div class="dotdl">
+                <img src="/assets/ic-mcd@2x.png" class="ic-mcd">
+                <h2>Deals on the download</h2>
+                <a class="btn" role="button">Download the app</a>
               </div>
               <picture>
                 <source
