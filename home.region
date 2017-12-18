@@ -39,6 +39,8 @@
             </ol>
             <div class="carousel-inner">
               <div class="caption-wrapper">
+              <squarespace:query collection="carousel-images" featured="true">
+              <script>console.log({@|json-pretty});</script>
                 <div id="caption" class="container">
                   <div class="caption">
                     <h1>WELCOME TO OUR NEW<br>WEBSITE.</h1>
@@ -47,9 +49,9 @@
                     </p>
                   </div>
                 </div>
+              </squarespace:query>
               </div>
               <squarespace:query collection="carousel-images">
-              <script>console.log({@|json-pretty});</script>
               {.section items}
               <div class="carousel-item active">
                 {.section 0}
