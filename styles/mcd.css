@@ -991,11 +991,15 @@ article .post-tag {
 
   .btn {
     background-color: @easter-purple;
+    font-size: 25px;
+    margin-top: 35px;
+    padding: 10px;
     position: relative;
-  }
+  } 
 
   p {
     font-size: 2rem;
+    letter-spacing: 0.7px;
   }
 
   h2 {
@@ -1014,9 +1018,10 @@ article .post-tag {
   .ub-content {
     margin-left: -50px;
     text-align: left;
+    padding: 10px;
 
     h2 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     p {
@@ -1032,7 +1037,7 @@ article .post-tag {
   }
 
   .ub-content {
-  margin-left: -70px;
+    margin-left: -70px;
   }
 }  
 
