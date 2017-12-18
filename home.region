@@ -288,7 +288,7 @@
                 </div>
                 <div class="col-12 col-md-10">
                   <h2>Deals on the download</h2>
-                  <a class="btn" role="button">DOWNLOAD THE APP</a>
+                  <a class="btn" href="/" role="button">DOWNLOAD THE APP</a>
                 </div>
               </div>
               <picture>
