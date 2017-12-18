@@ -1170,12 +1170,3 @@ article .post-tag {
     }
   }
 }
-
-/* single page fix */
-.collection-type-page {
-  padding-top: 180px;
-}
-
-#homepage {
-  padding-top: 0;
-}
