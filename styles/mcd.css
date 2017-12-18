@@ -971,9 +971,22 @@ article .post-tag {
 
 }
 
-.uber-asset {
-  height: 200px;
-  background: url('/assets/img-mcd@2x.png') no-repeat;
-  background-size: contain;
+.ub-img {
+  width: 100%;
+  padding: 50px;
 }
+
+@media (min-width: 767px) {
+
+  .ub-img {
+    height: 166px;
+  }
+}  
+
+@media (min-width: 992px) {
+
+  .ub-img {
+    height: 200px;
+  }
+}  
 
