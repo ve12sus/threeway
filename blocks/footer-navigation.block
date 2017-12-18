@@ -1,3 +1,4 @@
+<script>console.log({@|json-pretty});</script>
 <div class="container-fluid footer">
 	<div class="footer-links">
 		<div class="container" id="footer">
