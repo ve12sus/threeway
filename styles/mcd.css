@@ -985,6 +985,7 @@ article .post-tag {
   .ub-img {
     height: 166px;
     padding: 0;
+    width: auto;
   }
 }  
 
@@ -992,7 +993,6 @@ article .post-tag {
 
   .ub-img {
     height: 200px;
-    padding: 0;
   }
 }  
 
