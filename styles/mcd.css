@@ -1059,14 +1059,15 @@ article .post-tag {
 
 .rmhc-img-wrapper {
   position: relative;
+  min-height: 275px;
 }
 
 .rmhc-img {
-  width: 100%;
+  width: 120%;
 }
 
 .rmhc-logo {
-  width: 110px;
+  width: 100px;
 }
 
 .rmhc-overlay {
@@ -1085,4 +1086,18 @@ article .post-tag {
     font-size: 4rem;
     text-align: center;
   }
+
+  .btn {
+    background-color: #fff;
+    color: @golden;
+    position: relative;
+    width: 210px;
+  }
+}
+
+@media (min-width: 767px) {
+  .rmhc-img {
+    width: 100%;
+  }
+
 }
