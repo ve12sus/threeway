@@ -6,11 +6,11 @@
 
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
-    <script>
+    <!--<script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="scripts/picturefill.min.js" async></script>
+    <script src="scripts/picturefill.min.js" async></script>-->
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
     <div class="site-container">
@@ -199,15 +199,6 @@
                   </div>
                 </div>
               </div>
-              <!--<picture<>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="/assets/rmhc.jpg">
-                <img
-                  src="/assets/rmhc-mobile@3x.jpg"
-                  class="img-fluid"
-                  alt="logo">
-                  </picture>-->
               <div class="card-group">
                 <div class="card text-white">
                   <img class="card-img h-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e15/23594243_401385300275853_5632111106257321984_n.jpg" alt="Card image">
@@ -291,15 +282,6 @@
                   <a class="btn" href="/" role="button">DOWNLOAD THE APP</a>
                 </div>
               </div>
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="/assets/gma.jpg">
-                <img
-                  src="/assets/gma-mobile@3x.jpg"
-                  class="img-fluid"
-                  alt="logo">
-              </picture>
             </div>
           </div>
         </div>
