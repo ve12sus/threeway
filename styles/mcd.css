@@ -1181,11 +1181,15 @@ article .post-tag {
   /* trans faked with gradient */ 
 
   linear-gradient(
-    rgba(255, 0, 0, 0.45), 
-    rgba(255, 0, 0, 0.45)
+    rgba(57, 120, 191, 0.7),
+    rgba(57, 120, 191, 0.7)
   ),
   /* bottom, image */
   url(/assets/img-mobile-hand@2x.png);
+
+  background-size: cover;
+
+  height: 300px;
 }
 
 /* pages fix*/
