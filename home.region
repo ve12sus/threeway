@@ -154,14 +154,14 @@
                 </div>
               </div>
               <div class="row no-gutters">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                   <img src="/assets/img-mcd.png">
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-666666">
                   <div class="uber-content">
                     <h2>MCDELIVERY</h2>
-                    <p>Order your McDonadl's faves on UberEATS</p>
-                    <a href="/" class="btn" role="button">DOWNLOAD THE APP</a>
+                    <p>Order your McDonald's faves on UberEATS</p>
+                    <a href="/" role="button">DOWNLOAD THE APP</a>
                   </div>
                 </div>
               </div>
