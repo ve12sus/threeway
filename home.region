@@ -153,6 +153,16 @@
                   </div>
                 </div>
               </div>
+              <div class="row no-gutters">
+                <div class="col-12 col-md-4">
+                  <img src="/assets/img-mcd@2x.png">
+                </div>
+                <div class="col-12 col-md-8">
+                  <h1>MCDELIVERY</h1>
+                  <p>Order your McDonadl's faves on UberEATS</p>
+                  <a href="/" class="btn">DOWNLOAD THE APP</a>
+                </div>
+              </div>
               <picture>
                 <source
                   media="(min-width: 768px)"
