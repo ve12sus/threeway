@@ -169,8 +169,8 @@
                 <div class="card text-white text-center border-0">
                   <div class="rmhc-img-wrapper">
                     <img class="card-img rmhc-img" src="/assets/img-family@2x.png" alt="Card image">
-                    <div class="card-img-overlay d-flex featured-events">
-                      <div class="featured-overlay-content my-auto mx-auto">
+                    <div class="card-img-overlay featured-events">
+                      <div class="featured-overlay-content">
                         <img src="assets/logo-rmhc@2x.png" class="rmhc-logo">
                       </div>
                     </div>
