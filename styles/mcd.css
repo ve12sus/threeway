@@ -985,6 +985,11 @@ article .post-tag {
   padding: 50px;
 }
 
+.ub-content {
+  text-align: center;
+  margin-left: 0;
+}
+
 @media (min-width: 767px) {
 
   .ub-img {
@@ -992,12 +997,21 @@ article .post-tag {
     padding: 0;
     width: auto;
   }
+
+  .ub-content {
+    margin-left: -50px;
+    text-align: left;
+  }
 }  
 
 @media (min-width: 992px) {
 
   .ub-img {
     height: 200px;
+  }
+
+  .ub-content {
+  margin-left: -70px;
   }
 }  
 
