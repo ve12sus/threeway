@@ -177,11 +177,13 @@
                   <div class="card text-white text-center border-0">
                     <img class="card-img" src="/assets/img-family@2x.png" alt="Card image">
                     <div class="card-img-overlay d-flex featured-events">
-                      <a href="/events" class="btn">READ MORE</a>
                       <div class="featured-overlay-content my-auto mx-auto">
-                        <h2 class="card-title">EVENTS</h2>
-                        <p class="card-text large">Local events near you</p>
+                        <img src="assets/logo-rmhc@2x.png">
                       </div>
+                    </div>
+                    <div class="rmhc-content">
+                      <h2>Baby Everett needed surgery 1,000 miles from home</h2>
+                      <a href="/" class="btn">READ MORE</a>
                     </div>
                   </div>
                 </div>
