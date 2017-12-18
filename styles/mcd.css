@@ -1057,8 +1057,16 @@ article .post-tag {
   }
 }  
 
-.rmhc img {
+.rmhc-img-wrapper {
+  position: relative;
+}
+
+.rmhc-img {
   width: 100%;
+}
+
+.rmhc-logo {
+  width: 110px;
 }
 
 .rmhc-overlay {
