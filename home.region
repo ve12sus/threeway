@@ -57,10 +57,14 @@
                 {.end}
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/McCafe_LineUp_16x9.jpg" alt="Second slide">
+                {.section 1}
+                <img class="d-block w-100" src="{assetUrl}" alt="Second slide">
+                {.end}
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/Szechuan.jpg" alt="Third slide">
+                {.section 2}
+                <img class="d-block w-100" src="{assetUrl}" alt="Third slide">
+                {.end}
               </div>
               {.end}
               </squarespace:query>
