@@ -972,6 +972,8 @@ article .post-tag {
 }
 
 .uber-asset {
+  height: 200px;
+  width: 380px;
   background: url('/assets/img-mcd@2x.png');
   background-size: 100%;
 }
