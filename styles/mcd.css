@@ -1175,3 +1175,7 @@ article .post-tag {
 .collection-type-page {
   padding-top: 180px;
 }
+
+#homepage {
+  padding-top: 0;
+}
