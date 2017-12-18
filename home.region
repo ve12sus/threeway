@@ -282,10 +282,14 @@
                   </div>
                 </div>
               </div>
-              <div class="dotdl">
-                <img src="/assets/ic-mcd@2x.png" class="ic-mcd">
-                <h2>Deals on the download</h2>
-                <a class="btn" role="button">Download the app</a>
+              <div class="row dotdl">
+                <div class="col-12 col-md-2">
+                  <img src="/assets/ic-mcd@2x.png" class="ic-mcd">
+                </div>
+                <div class="col-12 col-md-10">
+                  <h2>Deals on the download</h2>
+                  <a class="btn" role="button">DOWNLOAD THE APP</a>
+                </div>
               </div>
               <picture>
                 <source
