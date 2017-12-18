@@ -996,6 +996,10 @@ article .post-tag {
     padding: 10px;
     position: relative;
     width: 210px;
+
+    &:hover {
+      background-color: @easter-purple-hover;
+    }
   } 
 
   p {
