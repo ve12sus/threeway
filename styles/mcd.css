@@ -1157,13 +1157,16 @@ article .post-tag {
     width: 120px;
   }
 
-  h2 {
-    font-size: 3rem;
-    margin-left: 200px;
-  }
+  .rmhc-content {
 
-  .btn {
-    margin-left: 200px;
+    h2 {
+      font-size: 3rem;
+      margin-left: 200px;
+    }
+
+    .btn {
+      margin-left: 200px;
+    }
   }
 }
 
