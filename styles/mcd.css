@@ -1212,14 +1212,30 @@ article .post-tag {
 
   h2 {
     color: #fff;
-    margin-top: 110px;
   }
 }
 
 .ic-mcd {
   height: 106px;
-  margin-top: 110px;
-  margin-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .ic-mcd{
+    height: 106px;
+    margin-top:110px;
+    margin-left: 20px;
+  }
+
+  .rmhc-content {
+
+    h2 {
+      margin-top: 110px;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
 }
 
 /* pages fix*/
