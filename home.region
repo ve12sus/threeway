@@ -44,7 +44,7 @@
               {.section items}
                 {.section 0}
                   {.excerpt?}
-                    <script>console.log({@|safe});</script>
+                    <script>console.log({@|safe|json-pretty});</script>
                   {.end}
                 <div id="caption" class="container">
                   <div class="caption">
