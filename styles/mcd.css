@@ -1197,6 +1197,7 @@ article .post-tag {
 
   margin-right: 0;
   margin-left: 0;
+  text-align: center;
 
   .btn {
     color: #fff !important;
@@ -1225,10 +1226,6 @@ article .post-tag {
     height: 80px;
   }
 
-  .dotdl {
-
-    text-align: center;
-  }
 }
 
 @media (min-width: 767px) {
@@ -1239,6 +1236,7 @@ article .post-tag {
   }
 
   .dotdl {
+    text-align: left;
 
     h2 {
       margin-top: 95px;
