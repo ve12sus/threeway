@@ -1133,6 +1133,7 @@ article .post-tag {
   .rmhc-content {
     background-color: transparent;
     position: absolute;
+    top: 0;
     text-align: left;
   
 
