@@ -155,7 +155,7 @@
               </div>
               <div class="row no-gutters">
                 <div class="col-12 col-md-6">
-                  <img src="/assets/img-mcd.png">
+                  <div class="uber-asset"></div>
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="uber-content">
