@@ -1151,3 +1151,19 @@ article .post-tag {
     }
   }
 }
+
+@media (min-width: 767px) {
+  .rmhc-logo {
+    width: 120px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-left: 200px;
+  }
+
+  .btn {
+    margin-left: 200px;
+  }
+}
+
