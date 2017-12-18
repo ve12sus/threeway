@@ -168,15 +168,6 @@
               <picture>
                 <source
                   media="(min-width: 768px)"
-                  srcset="/assets/uber.jpg">
-                <img
-                  src="/assets/uber-mobile@3x.jpg"
-                  class="img-fluid"
-                  alt="logo">
-              </picture>
-              <picture>
-                <source
-                  media="(min-width: 768px)"
                   srcset="/assets/rmhc.jpg">
                 <img
                   src="/assets/rmhc-mobile@3x.jpg"
