@@ -1219,6 +1219,20 @@ article .post-tag {
   height: 106px;
 }
 
+@media (max-width: 340px) {
+  .ic-mcd{
+    margin-top: 20px;
+    height: 80px;
+  }
+
+  .dotdl {
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
 @media (min-width: 767px) {
   .ic-mcd{
     height: 90px;
