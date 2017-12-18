@@ -1059,7 +1059,7 @@ article .post-tag {
 
 .rmhc-img-wrapper {
   position: relative;
-  min-height: 275px;
+  /*min-height: 275px;*/
   overflow: hidden;
 }
 
@@ -1068,7 +1068,7 @@ article .post-tag {
 }
 
 .rmhc-logo {
-  width: 100px;
+  width: 70px;
 }
 
 .rmhc-overlay {
@@ -1084,7 +1084,7 @@ article .post-tag {
   background-color: rgba(189, 162, 57, 0.7);
 
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -1094,8 +1094,8 @@ article .post-tag {
     font-size: 24px;
     position: relative;
     width: 210px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 
