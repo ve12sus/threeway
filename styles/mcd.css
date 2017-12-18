@@ -1082,6 +1082,7 @@ article .post-tag {
 
 .rmhc-content {
   background-color: rgba(189, 162, 57, 0.7);
+  padding: 10px;
 
   h2 {
     font-size: 3rem;
@@ -1097,6 +1098,24 @@ article .post-tag {
     /*width: 210px;*/
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 575px) {
+  .rmhc-logo {
+    width: 70px;
+  }
+
+  .rmhhc-content {
+    
+    h2 {
+      font-size: 4.5rem;
+    }
+
+    .btn {
+      font-size: 24px;
+      width: 210px;
+    }
   }
 }
 
