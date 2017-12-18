@@ -54,9 +54,9 @@
                     {.section excerpt}
                     <h1>{@|safe}</h1>
                     <script>console.log({@|safe|json-pretty});</script>
-                    {.or}
-                    <h1>WELCOME TO OUR NEW<br>WEBSITE.</h1>
                     {.end}
+                  {.or}
+                    <h1>WELCOME TO OUR NEW<br>WEBSITE.</h1>
                   {.end}
                     <p class="welcome-readmore">
                       <a class="btn" href="#" role="button">READ MORE</a>
