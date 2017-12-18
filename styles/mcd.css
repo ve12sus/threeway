@@ -988,6 +988,7 @@ article .post-tag {
 .ub-content {
   text-align: center;
   margin-left: 0;
+  padding-bottom: 30px;
 
   .btn {
     background-color: @easter-purple;
