@@ -1199,8 +1199,9 @@ article .post-tag {
   margin-left: 0;
 
   .btn {
-    color: #fff;
+    color: #fff !important;
     background-color: @dodger-blue;
+    margin-top: 10px;
     position: relative;
     bottom: 0;
 
@@ -1208,10 +1209,17 @@ article .post-tag {
       background-color: @dodger-blue-hover;
     }
   }
+
+  h2 {
+    color: #fff;
+    margin-top: 110px;
+  }
 }
 
 .ic-mcd {
   height: 106px;
+  margin-top: 110px;
+  margin-left: 20px;
 }
 
 /* pages fix*/
