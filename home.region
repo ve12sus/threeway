@@ -48,7 +48,7 @@
                   </div>
                 </div>
               </div>
-              <squarespace:query collection="carousel-images" featured="true">
+              <squarespace:query collection="carousel-images">
               <script>console.log({@|json-pretty});</script>
               {.section items}
               <div class="carousel-item active">
