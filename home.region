@@ -165,7 +165,10 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="hidden-sm-down">
+                <img src="/assets/img-family@2x.png" alt="img-family">
+              </div>
+              <div class="hidden-md-up">
                 <div class="card text-white text-center border-0">
                   <div class="rmhc-img-wrapper">
                     <img class="card-img rmhc-img" src="/assets/img-family@2x.png" alt="Card image">
