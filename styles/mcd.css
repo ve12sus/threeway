@@ -1247,6 +1247,8 @@ article .post-tag {
 
     .btn {
       margin-top: 10px;
+      font-size: 24px;
+      width: 210px;
     }
   }
 }
@@ -1269,6 +1271,8 @@ article .post-tag {
 
     .btn {
       margin-top: 10px;
+      font-size: 0.875rem;
+      width: 140px;
     }
   }
 }
