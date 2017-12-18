@@ -973,6 +973,11 @@ article .post-tag {
 
 .ub-eats {
   background-color: #fff;
+  color: @easter-purple;
+  p {
+    color: #9b9b9b;
+  }
+  
 }
 
 .ub-img {
