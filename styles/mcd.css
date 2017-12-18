@@ -1102,6 +1102,10 @@ article .post-tag {
     /*width: 210px;*/
     margin-top: 5%;
     margin-bottom: 5%;
+
+    &:hover {
+      background-color: darken(#fff, 20%);
+    }
   }
 }
 
@@ -1190,6 +1194,24 @@ article .post-tag {
   background-size: cover;
 
   height: 300px;
+
+  margin-right: 0;
+  margin-left: 0;
+
+  .btn {
+    color: #fff;
+    background-color: @dodger-blue;
+    position: relative;
+    bottom: 0;
+
+    &:hover {
+      background-color: @dodger-blue-hover;
+    }
+  }
+}
+
+.ic-mcd {
+  height: 106px;
 }
 
 /* pages fix*/
