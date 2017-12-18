@@ -1103,10 +1103,10 @@ article .post-tag {
 
 @media (min-width: 575px) {
   .rmhc-logo {
-    width: 70px;
+    width: 100px;
   }
 
-  .rmhhc-content {
+  .rmhc-content {
     
     h2 {
       font-size: 4.5rem;
