@@ -303,33 +303,15 @@
               </div>
               
               <div id="carouselExampleTwitter" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
-                    <div class="card twitter">
-                      <img src="assets/ic-twitter-on.png"
-                           srcset="assets/ic-twitter-on@2x.png 2x,
-                                 assets/ic-twitter-on@3x.png 3x"
-                           class="ic-twitter-on">
-                      <img class="card-img-top" src="/assets/mcrib.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h4 class="card-title">@McDonalds</h4>
-                        <p class="card-text regular">When good things aren't meant to last, you get them while you can. <span class="hashtag">#WednesddayWisdom</span> At part. McDs for a limited time.</p>
-                      </div>
-                    </div>                    
+                    <div class="twitter-1"><h1>card1</h1></div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/22427212_904192256411988_8262467353137119232_n.jpg" alt="Second slide">
-                    <img src="assets/ic-instagram-on.png"
-                        srcset="assets/ic-instagram-on@2x.png 2x,
-                        assets/ic-instagram-on@3x.png 3x"
-                        class="ic-instagram-on">
+                    <div class="twitter-1"><h1>card2</h1></div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/22352233_1954233508161087_5643145057629372416_n.jpg" alt="Third slide">
-                    <img src="assets/ic-instagram-on.png"
-                        srcset="assets/ic-instagram-on@2x.png 2x,
-                        assets/ic-instagram-on@3x.png 3x"
-                        class="ic-instagram-on">
+                    <div class="twitter-1"><h1>card3</h1></div>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleTwitter" role="button" data-slide="prev">
@@ -341,7 +323,7 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-
+              
               <div class="row no-gutters ad-2-10 mcdapp">
                 <div class="col-12 col-md-2 logo">
                   <img src="assets/ic-mcd@2x.png">
