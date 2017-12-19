@@ -985,16 +985,23 @@ article .post-tag {
 }
 
 .ub-img {
-  width: 100%;
+  display:table-cell;
+  vertical-align:middle;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
 }
 
 .ub-content {
   text-align: center;
   margin-left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 30px;
+  padding: 20px;
 
+  a {
+    position: static;
+  }
   .btn {
     background-color: @easter-purple;
 
@@ -1007,14 +1014,14 @@ article .post-tag {
 
 @media (min-width: 767px) {
 
-  .ub-img {
-    height: 126px;
-    width: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
+  // .ub-img {
+  //   height: 126px;
+  //   width: auto;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   margin: auto;
+  // }
 
   .ub-content {
     // margin-left: -50px;
