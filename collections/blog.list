@@ -86,7 +86,7 @@
         {.equal?:@:"Local"}
           <h1>{@|json-pretty}</h1>
         {.or}
-          <h1>{@|json-pretty}</h1>
+          <h1>{@categoryF|json-pretty}</h1>
         {.end}
       {.end}
       {.main-image?}
