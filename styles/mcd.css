@@ -121,19 +121,50 @@ h4 {
   background-size: 100%;
 }
 
-.rmhc {
+.ad-2-10 {
 
-  background: url('../assets/img-family@2x.png') no-repeat;
+  &.rmhc {
+    background: url('../assets/img-family@2x.png') no-repeat;
+    background-size: cover;
+
+    .overlay {
+      background-color: @golden;
+    }
+
+    .btn {
+      background-color: @golden;
+
+      &:hover {
+        background-color: @golden-hover;
+      }
+    }
+  }
+
+  &.mcdapp {
+
+    background: url('../assets/img-mobile-hand@2x.png') no-repeat;
+    background-size: cover;
+    
+    .overlay {
+      background-color: @dodger-blue;
+    }
+
+    .btn {
+      background-color: @dodger-blue;
+
+      &:hover {
+        background-color: @dodger-blue-hover;
+      }
+    }
+  }
+
   background-color: #fff;
-  background-size: cover;
-
   position: relative;
 
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: @golden;
     opacity: 0.7;
     width: 100%;
     height: 100%;
@@ -172,13 +203,6 @@ h4 {
       position: static;
     }
 
-    .btn {
-      background-color: @golden;
-
-      &:hover {
-        background-color: @golden-hover;
-      }
-    }
   }
 }
 

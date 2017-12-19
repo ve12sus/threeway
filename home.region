@@ -183,7 +183,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row no-gutters rmhc">
+              <div class="row no-gutters ad-2-10 rmhc">
                 <div class="col-12 col-md-2 logo">
                   <img src="assets/logo-rmhc@2x.png">
                 </div>
@@ -269,15 +269,20 @@
                   </div>
                 </div>
               </div>
-              <div class="row dotdl">
-                <div class="col-12 col-md-2">
-                  <img src="/assets/ic-mcd@2x.png" class="ic-mcd">
+
+              <div class="row no-gutters ad-2-10 mcdapp">
+                <div class="col-12 col-md-2 logo">
+                  <img src="assets/ic-mcd@2x.png">
                 </div>
-                <div class="col-12 col-md-10">
-                  <h2>Deals on the download</h2>
-                  <a class="btn" href="/" role="button">DOWNLOAD THE APP</a>
+                <div class="col-12 col-md-10 content-wrapper">
+                  <div class="content">
+                    <h2>Deals on the download</h2>
+                    <a class="btn" href="/">DOWNLOAD THE APP</a>
+                  </div>
                 </div>
+                <div class="overlay"></div>
               </div>
+
             </div>
           </div>
         </div>
