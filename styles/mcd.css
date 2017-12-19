@@ -195,10 +195,6 @@ h4 {
     align-items: center;
     z-index: 2;
 
-    // img {
-    //   // width: 100%;
-    //   // margin: 30px;
-    // }
   }
 
   .content-wrapper {
@@ -255,7 +251,7 @@ h4 {
 
       .logo {
         margin-bottom: 20px;
-        
+
         img {
           height: 120px;
           width: auto;
