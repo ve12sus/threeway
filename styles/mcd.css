@@ -1303,6 +1303,7 @@ article .post-tag {
 @media (max-width: 320px) {
   #carouselExampleControls {
     display: block;
+  }
 }
 
 /* pages fix*/
