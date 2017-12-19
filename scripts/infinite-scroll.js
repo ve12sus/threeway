@@ -5,17 +5,9 @@ function infiniteScroll(parent, post) {
      var postIndex = 1,
          execute = true,
          stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY(),
-         urlQuery = window.location.href,
+         urlQuery = window.location.pathname,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
-         categoryFilter = Static.SQUARESPACE_CONTEXT.collection.categoryFilter,
-         presentNumber = Y.all(post).size(),
-         paramtype;
-         
-     if (categoryFilter) {
-       paramtype = '&page=';
-     } else {
-       paramtype = '?page=';
-     }
+         presentNumber = Y.all(post).size();
  
      Y.on('scroll', function() {
  
@@ -49,15 +41,13 @@ function infiniteScroll(parent, post) {
  
                  // Increment the post index.
                  postIndex++;
-                 
  
                  // Make the Ajax request.
-                 Y.io(urlQuery + paramtype + postIndex, {
+                 Y.io(urlQuery + '?page=' + postIndex, {
                      on: {
                          success: function (x, o) {
                              try {
                                  d = Y.DOM.create(o.responseText);
-                                 console.log(title);
                              } catch (e) {
                                  console.log("JSON Parse failed!");
                                  return;
@@ -70,7 +60,6 @@ function infiniteScroll(parent, post) {
                              stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY();
                              presentNumber = Y.all(post).size();
                              execute = true;
-                             console.log(urlQuery);
  
                          }
                      }
