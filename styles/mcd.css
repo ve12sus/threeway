@@ -1299,10 +1299,18 @@ article .post-tag {
   }
 }
 
+#carouselExampleControls {
+  display: none;
+}
 
 @media (max-width: 320px) {
   #carouselExampleControls {
     display: block;
+  }
+
+  .carousel-inner,
+  .carousel-item {
+    height: 320px;
   }
 }
 
