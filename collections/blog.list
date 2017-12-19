@@ -82,11 +82,10 @@
     {.repeated section items}
   {.var @categoryF categoryFilter}      
         <div class="card border-0 col-12 col-md-4">
+           <h1>{@categoryF|json-pretty}</h1>
       {.repeated section categories}
         {.equal?:@:"Local"}
-          <h1>{@|json-pretty}</h1>
-        {.or}
-          <h1>{@categoryF|json-pretty}</h1>
+        {.or}         
         {.end}
       {.end}
       {.main-image?}
