@@ -1191,7 +1191,10 @@ article .post-tag {
 
 @media (max-width: 575px) {
   #carouselExampleControls {
-    height: 100vw;
+    .carousel-inner,
+    .carousel-item {
+      height: 100vw;
+    }
   }
 }
 
