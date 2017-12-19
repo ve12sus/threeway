@@ -266,8 +266,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card-group d-none d-md-block">
-                <div class="card twitter">
+              <div class="card-group">
+                <div class="card twitter d-none d-md-block">
                   <img src="assets/ic-twitter-on.png"
                   		 srcset="assets/ic-twitter-on@2x.png 2x,
                   					 assets/ic-twitter-on@3x.png 3x"
