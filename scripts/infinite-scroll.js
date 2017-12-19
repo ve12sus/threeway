@@ -7,6 +7,7 @@ function infiniteScroll(parent, post) {
          stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY(),
          urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
+         cat = Static.SQUARESPACE_CONTEXT.categoryFilter,
          paramtype;
          presentNumber = Y.all(post).size();
          
@@ -57,7 +58,7 @@ function infiniteScroll(parent, post) {
                                  d = Y.DOM.create(o.responseText);
                              } catch (e) {
                                  console.log("JSON Parse failed!");
-                                 console.log( urlQuery + paramtype + postIndex );
+                                 console.log( cat );
                                  return;
                              }
  
