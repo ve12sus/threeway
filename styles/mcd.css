@@ -123,7 +123,10 @@ h4 {
 
 .rmhc {
 
+  background: url('../assets/img-family@2x.png') no-repeat;
   background-color: #fff;
+  background-size: cover;
+
   position: relative;
 
   .overlay {
@@ -145,7 +148,7 @@ h4 {
 
     img {
       width: 100%;
-      margin: 20px;
+      margin: 30px;
     }
   }
 
@@ -157,9 +160,6 @@ h4 {
   }
 
   .content {
-    // text-align: center;
-    // margin-left: 0;
-    // <!-- <img src="/assets/img-family@2x.png" alt="Card image"> -->
 
     padding: 20px;
 
@@ -186,13 +186,17 @@ h4 {
 
   .rmhc {
 
+    background-size: contain;
+
     .content {
       text-align: center;
+
+      h2 {
+        margin-top: 60px;
+      }
     }
 
     .logo {
-      // jeff todo: ie11 compatibility of flex
-      justify-content: center;
 
       img {
         height: 120px;
