@@ -1306,11 +1306,11 @@ article .post-tag {
 @media (max-width: 414px) {
   #carouselExampleControls {
     display: block;
-  }
-
-  .carousel-inner,
-  .carousel-item {
-    height: 100vw;
+  
+    .carousel-inner,
+    .carousel-item {
+      height: 100vw;
+    }
   }
 }
 
