@@ -7,9 +7,14 @@ function infiniteScroll(parent, post) {
          stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY(),
          urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
-         categoryFilter = Static.SQUARESPACE_CONTEXT.categoryFilter,
+         paramtype;
          presentNumber = Y.all(post).size();
          
+     if (urlQuery.indexOf('?category') > -1 {
+         paramtype = '&page=';
+     } else {   
+         paramtype = '?page=';
+     }
  
      Y.on('scroll', function() {
  
@@ -45,7 +50,7 @@ function infiniteScroll(parent, post) {
                  postIndex++;
  
                  // Make the Ajax request.
-                 Y.io(urlQuery + '&page=' + postIndex, {
+                 Y.io(urlQuery + paramtype + postIndex, {
                      on: {
                          success: function (x, o) {
                              try {
