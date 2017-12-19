@@ -726,6 +726,8 @@ h4 {
   margin: auto;
   margin-top: -11px;
   z-index: 100;
+  /* fix for ie */
+  text-align: center;
 }
 
 .post-tag-wrapper img {
