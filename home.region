@@ -302,7 +302,7 @@
                 </div>
               </div>
               
-              <div id="carouselExampleTwitter" class="carousel slide" data-ride="carousel">
+              <div id="carouselExampleTwitter" class="carousel slide hidden-md-up" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
                     <div class="card twitter">
