@@ -8,9 +8,9 @@ function infiniteScroll(parent, post) {
          urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
          cat = Static.SQUARESPACE_CONTEXT.categoryFilter,
-         paramtype;
+         paramtype,
          presentNumber = Y.all(post).size();
-         
+     console.log( cat );    
      if (urlQuery.indexOf('?category') > -1 ) {
          paramtype = '&page=';
      } else {   
@@ -57,8 +57,7 @@ function infiniteScroll(parent, post) {
                              try {
                                  d = Y.DOM.create(o.responseText);
                              } catch (e) {
-                                 console.log("JSON Parse failed!");
-                                 console.log( cat );
+                                 console.log("JSON Parse failed!");                                 
                                  return;
                              }
  
