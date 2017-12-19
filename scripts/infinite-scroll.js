@@ -25,7 +25,7 @@ function infiniteScroll(parent, post) {
          } else {
  
              // A few more variables.
-             var spaceHeight = document.documentElement.clientHeight + window.scrollY,
+             var spaceHeight = document.documentElement.clientHeight + window.pageYOffset,
              next = false;
  
              /*
