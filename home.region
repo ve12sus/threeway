@@ -172,32 +172,28 @@
                 </div>
               </div>
               <div class="row no-gutters ub-eats">
-                <div class="col-12 col-md-6">
-                  <img src="/assets/img-mcd@2x.png" class="ub-img">
+                <div class="col-12 col-md-4 ub-img">
+                   <img src="../assets/img-mcd@2x.png">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-8">
                   <div class="ub-content">
                     <h2>MCDELIVERY</h2>
-                    <p>Order your McDonald's faves on UberEATS</p>
+                    <p class="large">Order your McDonald's faves on UberEATS</p>
                     <a href="/" class="btn" role="button">DOWNLOAD THE APP</a>
                   </div>
                 </div>
               </div>
-              <div>
-                <div class="card text-white text-center border-0">
-                  <div class="rmhc-img-wrapper">
-                    <img class="card-img rmhc-img" src="/assets/img-family@2x.png" alt="Card image">
-                    <div class="card-img-overlay featured-events">
-                      <div class="featured-overlay-content">
-                        <img src="assets/logo-rmhc@2x.png" class="rmhc-logo">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rmhc-content">
+              <div class="row no-gutters ad-2-10 rmhc">
+                <div class="col-12 col-md-2 logo">
+                  <img src="assets/logo-rmhc@2x.png">
+                </div>
+                <div class="col-12 col-md-10 content-wrapper">
+                  <div class="content">
                     <h2>Baby Everett needed surgery 1,000 miles from home</h2>
                     <a href="/" class="btn">READ MORE</a>
                   </div>
                 </div>
+                <div class="overlay"></div>
               </div>
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -305,15 +301,20 @@
                   </div>
                 </div>
               </div>
-              <div class="row dotdl">
-                <div class="col-12 col-md-2">
-                  <img src="/assets/ic-mcd@2x.png" class="ic-mcd">
+
+              <div class="row no-gutters ad-2-10 mcdapp">
+                <div class="col-12 col-md-2 logo">
+                  <img src="assets/ic-mcd@2x.png">
                 </div>
-                <div class="col-12 col-md-10">
-                  <h2>Deals on the download</h2>
-                  <a class="btn" href="/" role="button">DOWNLOAD THE APP</a>
+                <div class="col-12 col-md-10 content-wrapper">
+                  <div class="content">
+                    <h2>Deals on the download</h2>
+                    <a class="btn" href="/">DOWNLOAD THE APP</a>
+                  </div>
                 </div>
+                <div class="overlay"></div>
               </div>
+
             </div>
           </div>
         </div>
