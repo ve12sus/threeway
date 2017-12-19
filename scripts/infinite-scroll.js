@@ -50,9 +50,6 @@ function infiniteScroll(parent, post) {
                  // Increment the post index.
                  postIndex++;
                  
-                 //chech for categoryFilter
-                 if (categoryFilter) {
-                   
  
                  // Make the Ajax request.
                  Y.io(urlQuery + paramtype + postIndex, {
