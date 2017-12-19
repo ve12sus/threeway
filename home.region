@@ -305,13 +305,23 @@
               <div id="carouselExampleTwitter" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
-                    <div class="twitter-1"><h1>card1</h1></div>
+                    <div class="twitter">
+                      <img src="assets/ic-twitter-on.png"
+                       srcset="assets/ic-twitter-on@2x.png 2x,
+                             assets/ic-twitter-on@3x.png 3x"
+                       class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/mcrib.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDonalds</h4>
+                        <p class="card-text regular">When good things aren't meant to last, you get them while you can. <span class="hashtag">#WednesddayWisdom</span> At part. McDs for a limited time.</p>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="twitter-1"><h1>card2</h1></div>
+                    <div class="twitter"><h1>card2</h1></div>
                   </div>
                   <div class="carousel-item">
-                    <div class="twitter-1"><h1>card3</h1></div>
+                    <div class="twitter"><h1>card3</h1></div>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleTwitter" role="button" data-slide="prev">
