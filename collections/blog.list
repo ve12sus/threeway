@@ -7,7 +7,12 @@
     <div class="category-overlay text-center">
 			<div class="category">
   {.var @collectName collection.urlId}
-  {.var @categoryF categoryFilter}
+  {.categoryFilter}
+    {.var @categoryF categoryFilter}
+  {.or}
+    {.var @categoryF "all"}
+    <script>console.log({@categoryF});</script>
+  {.end}
       {.section collection}
         <h1>{title}</h1>
       {.end}
