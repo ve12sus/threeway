@@ -1181,17 +1181,17 @@ article .post-tag {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #carouselExampleControls,
   #carouselExampleTwitter {
     display: block;
   }
   
+}
+
+@media (max-width: 575px) {
   #carouselExampleControls {
-    .carousel-inner,
-    .carousel-item {
-      height: 100vw;
-    }
+    height: 100vw;
   }
 }
 
