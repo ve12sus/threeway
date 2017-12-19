@@ -8,7 +8,6 @@
 			<div class="category">
   {.var @collectName collection.urlId}
   {.var @categoryF categoryFilter}
-  <script>console.log({@categoryF|json-pretty});</script>
       {.section collection}
         <h1>{title}</h1>
       {.end}
@@ -78,16 +77,8 @@
         </div>
       </div>
       <div class="row posts">
-<h1>{.collection}{urlId}{.end}</h1>
     {.repeated section items}
-  {.var @categoryF categoryFilter}      
         <div class="card border-0 col-12 col-md-4">
-           <h1>{@categoryF|json-pretty}</h1>
-      {.repeated section categories}
-        {.equal?:@:"Local"}
-        {.or}         
-        {.end}
-      {.end}
       {.main-image?}
           <a href="{fullUrl}">
           <div class="content-fill">
