@@ -45,7 +45,7 @@ function infiniteScroll(parent, post) {
                  postIndex++;
  
                  // Make the Ajax request.
-                 Y.io(urlQuery + "?category=" + categoryFilter'&page=' + postIndex, {
+                 Y.io(urlQuery + "?category=" + categoryFilter + '&page=' + postIndex, {
                      on: {
                          success: function (x, o) {
                              try {
