@@ -1196,6 +1196,13 @@ article .post-tag {
       height: 100vw;
     }
   }
+
+  #carouselExampleTwitter {
+    .carousel-inner,
+    .carousel-item {
+      height: auto;
+    }
+  }
 }
 
 /* pages fix*/
