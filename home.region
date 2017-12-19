@@ -327,6 +327,7 @@
     <script src="/scripts/jquery.bcSwipe.js"></script>
     <script>
       $('#carouselExampleControls').bcSwipe({ threshold: 50 });
+      $('#carouselExampleIndicators').bcSwipe({ threshold: 50 });
     </script>
   </body>
 </html>
