@@ -78,7 +78,7 @@
         </div>
       </div>
       <div class="row posts">
-
+<h1>{.collection}{urlId}</h1>
     {.repeated section items}
   {.var @categoryF categoryFilter}      
         <div class="card border-0 col-12 col-md-4">
