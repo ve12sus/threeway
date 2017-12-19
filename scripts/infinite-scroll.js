@@ -45,7 +45,7 @@ function infiniteScroll(parent, post) {
                  postIndex++;
  
                  // Make the Ajax request.
-                 Y.io(urlQuery + '?page=' + postIndex, {
+                 Y.io(urlQuery + '&page=' + postIndex, {
                      on: {
                          success: function (x, o) {
                              try {
