@@ -63,6 +63,7 @@ function infiniteScroll(parent, post) {
                              stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY();
                              presentNumber = Y.all(post).size();
                              execute = true;
+                             console.log(urlQuery);
  
                          }
                      }
