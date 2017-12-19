@@ -55,9 +55,9 @@ function infiniteScroll(parent, post) {
                          success: function (x, o) {
                              try {
                                  d = Y.DOM.create(o.responseText);
-                                 console.log(categoryFilter);
                              } catch (e) {
                                  console.log("JSON Parse failed!");
+                                 console.log( urlQuery + paramtype + postIndex );
                                  return;
                              }
  
