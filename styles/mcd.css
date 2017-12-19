@@ -1303,7 +1303,7 @@ article .post-tag {
   display: none;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 575px) {
   #carouselExampleControls {
     display: block;
   
