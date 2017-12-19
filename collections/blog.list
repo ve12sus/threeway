@@ -11,7 +11,7 @@
     {.var @categoryF categoryFilter}
   {.or}
     {.var @categoryF collection.typeName}
-    <script>console.log({@categoryF});</script>
+    <script>console.log({@categoryF|json-pretty});</script>
   {.end}
       {.section collection}
         <h1>{title}</h1>
