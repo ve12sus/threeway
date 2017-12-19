@@ -16,6 +16,7 @@ function infiniteScroll(parent, post) {
          paramtype = '?page=';
      }
  
+     console.log(urlQuery);
      Y.on('scroll', function() {
  
          if (presentNumber >= postNumber && execute === true) {
@@ -55,7 +56,6 @@ function infiniteScroll(parent, post) {
                          success: function (x, o) {
                              try {
                                  d = Y.DOM.create(o.responseText);
-                                 console.log(urlQuery);
                              } catch (e) {
                                  console.log("JSON Parse failed!");                                 
                                  return;
