@@ -121,7 +121,87 @@ h4 {
   background-size: 100%;
 }
 
+.rmhc {
+
+  background-color: #fff;
+  height: 320px;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @golden;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .logo {
+
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      margin: 20px;
+    }
+  }
+
+  .content-wrapper {
+    //jeff todo: flexbox ie 11 support
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .content {
+    // text-align: center;
+    // margin-left: 0;
+    // <!-- <img src="/assets/img-family@2x.png" alt="Card image"> -->
+
+    padding: 20px;
+
+    h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    a {
+      position: static;
+    }
+
+    .btn {
+      background-color: @golden;
+
+      &:hover {
+        background-color: @golden-hover;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
+
+  .rmhc {
+
+    .content {
+      text-align: center;
+    }
+
+    .logo {
+      // jeff todo: ie11 compatibility of flex
+      justify-content: center;
+
+      img {
+        height: 120px;
+        width: auto;
+      }
+
+    }
+  }
 
   #navbarNavDropdown {
 
@@ -1003,6 +1083,7 @@ article .post-tag {
   a {
     position: static;
   }
+
   .btn {
     background-color: @easter-purple;
 
@@ -1012,6 +1093,7 @@ article .post-tag {
   }
 
 }
+
 
 @media (min-width: 767px) {
 
@@ -1023,110 +1105,9 @@ article .post-tag {
       position: relative;
     }
   }
+
 }
 
-.rmhc-img-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.rmhc-img {
-  width: 120%;
-}
-
-.rmhc-logo {
-  width: 70px;
-}
-
-.rmhc-overlay {
-  background-color: rgba(189, 162, 57, 0.7);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.rmhc-content {
-  background-color: rgba(189, 162, 57, 0.7);
-  padding: 10px;
-
-  .btn {
-    background-color: #fff;
-    bottom: 0;
-    color: @golden;
-    position: relative;
-    margin-top: 5%;
-    margin-bottom: 5%;
-
-    &:hover {
-      background-color: darken(#fff, 20%);
-    }
-  }
-}
-
-@media (min-width: 575px) {
-  .rmhc-logo {
-    width: 100px;
-  }
-
-  .rmhc-content {
-
-    .btn {
-      font-size: 24px;
-      width: 210px;
-    }
-  }
-}
-
-@media (min-width: 767px) {
-  .rmhc-img {
-    width: 100%;
-  }
-
-  .rmhc-logo {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-  }
-
-  .rmhc-content {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    text-align: left;
-
-    h2 {
-      margin-left: 150px;
-      margin-top: 50px;
-      text-align: left;
-    }
-
-    .btn {
-      font-size: 0.875rem;
-      width: 140px;
-      margin-left: 150px;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .rmhc-logo {
-    width: 120px;
-  }
-
-  .rmhc-content {
-
-    h2 {
-      font-size: 3rem;
-      margin-left: 200px;
-    }
-
-    .btn {
-      margin-left: 200px;
-    }
-  }
-}
 /* download div */
 
 .dotdl {
@@ -1203,6 +1184,7 @@ article .post-tag {
 }
 
 @media (min-width: 767px) {
+
   .ic-mcd{
     height: 90px;
     margin-top:110px;
@@ -1227,6 +1209,7 @@ article .post-tag {
 }
 
 @media (min-width: 992px) {
+
   .ic-mcd{
     height: 106px;
     margin-top:110px;
