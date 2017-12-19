@@ -8,6 +8,7 @@ function infiniteScroll(parent, post) {
          urlQuery = window.location.pathname,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
          title = Static.SQUARESPACE_CONTEXT.collection.title,
+         categoryFilter = Static.SQUARESPACE_CONTEXT.collection.categoryFilter,
          presentNumber = Y.all(post).size();
  
      Y.on('scroll', function() {
@@ -44,7 +45,7 @@ function infiniteScroll(parent, post) {
                  postIndex++;
  
                  // Make the Ajax request.
-                 Y.io(urlQuery + '?page=' + postIndex, {
+                 Y.io(urlQuery + "?category=" + categoryFilter'&page=' + postIndex, {
                      on: {
                          success: function (x, o) {
                              try {
