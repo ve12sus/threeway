@@ -368,6 +368,7 @@ h4 {
   /* border bottom style */
   .nav-link {
     padding: 0;
+    padding-bottom: 4px;
     border-bottom: transparent solid 2px;
   }
 
@@ -521,6 +522,7 @@ h4 {
 /* rule for carousel caption button */
 
 .welcome-readmore > a {
+  margin-top: 10px;
   background-color: @easter-purple;
   border-radius: 18.5px;
   color: #fff;
