@@ -78,6 +78,7 @@
         </div>
       </div>
       <div class="row posts">
+  {.var @categoryF categoryFilter}
     {.repeated section items}
       {.repeated section categories}
         {.equal?:@:@categoryF}
