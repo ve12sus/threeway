@@ -1200,7 +1200,7 @@ article .post-tag {
   #carouselExampleTwitter {
     .carousel-inner,
     .carousel-item {
-      height: auto;
+      height: 120vw;
     }
   }
 }
