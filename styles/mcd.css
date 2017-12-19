@@ -1185,6 +1185,7 @@ article .post-tag {
   #carouselExampleControls,
   #carouselExampleTwitter {
     display: block;
+  }
   
   #carouselExampleControls {
     .carousel-inner,
