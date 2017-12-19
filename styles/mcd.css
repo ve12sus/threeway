@@ -1303,14 +1303,14 @@ article .post-tag {
   display: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   #carouselExampleControls {
     display: block;
   }
 
   .carousel-inner,
   .carousel-item {
-    height: 320px;
+    height: 100vw;
   }
 }
 
