@@ -1176,14 +1176,17 @@ article .post-tag {
 
 }
 
-#carouselExampleControls {
+#carouselExampleControls,
+#carouselExampleTwitter {
   display: none;
 }
 
-@media (max-width: 575px) {
-  #carouselExampleControls {
+@media (max-width: 768px) {
+  #carouselExampleControls,
+  #carouselExampleTwitter {
     display: block;
   
+  #carouselExampleControls {
     .carousel-inner,
     .carousel-item {
       height: 100vw;
