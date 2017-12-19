@@ -78,6 +78,11 @@
       </div>
       <div class="row posts">
     {.repeated section items}
+      {.repeated section categories}
+        {.equal?:@:@categoryF}
+          <script>console.log('yes');</script>
+        {.end}
+      {.end}
         <div class="card border-0 col-12 col-md-4">
       {.main-image?}
           <a href="{fullUrl}">
