@@ -318,10 +318,30 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="twitter"><h1>card2</h1></div>
+                    <div class="card twitter">
+                      <img src="assets/ic-twitter-on.png"
+                           srcset="assets/ic-twitter-on@2x.png 2x,
+                                 assets/ic-twitter-on@3x.png 3x"
+                           class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/kitchen.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDonalds</h4>
+                        <p class="card-text regular">Our annual <span class="hashtag">@RMHC</span> fundraiser may be over but you can still donate your time. RMHC is always looking for helping hands. rmhc.org/chapter-search</p>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="twitter"><h1>card3</h1></div>
+                    <div class="card twitter">
+                      <img src="assets/ic-twitter-on.png"
+                           srcset="assets/ic-twitter-on@2x.png 2x,
+                                 assets/ic-twitter-on@3x.png 3x"
+                           class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/frap.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDonalds</h4>
+                        <p class="card-text regular">Me: I'm going to start decorating right now.<br>Also me: Not before this <span class="hashtag">#McCafe</span> Peppermint Mocha.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleTwitter" role="button" data-slide="prev">
