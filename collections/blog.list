@@ -81,6 +81,8 @@
       {.repeated section categories}
         {.equal?:@:@categoryF}
           <script>console.log('yes');</script>
+        {.or}
+          <script>console.log('no');</script>
         {.end}
       {.end}
         <div class="card border-0 col-12 col-md-4">
