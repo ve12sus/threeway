@@ -10,7 +10,7 @@
   {.categoryFilter}
     {.var @categoryF categoryFilter}
   {.or}
-    {.var @categoryF "all"}
+    {.var @categoryF collection.typeName}
     <script>console.log({@categoryF});</script>
   {.end}
       {.section collection}
