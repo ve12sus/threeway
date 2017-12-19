@@ -7,10 +7,9 @@ function infiniteScroll(parent, post) {
          stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY(),
          urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
-         cat = Static.SQUARESPACE_CONTEXT.categoryFilter,
          paramtype,
          presentNumber = Y.all(post).size();
-     console.log( cat );    
+
      if (urlQuery.indexOf('?category') > -1 ) {
          paramtype = '&page=';
      } else {   
