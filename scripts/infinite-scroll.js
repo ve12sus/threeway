@@ -10,7 +10,7 @@ function infiniteScroll(parent, post) {
          paramtype;
          presentNumber = Y.all(post).size();
          
-     if (urlQuery.indexOf('?category') > -1 {
+     if (urlQuery.indexOf('?category') > -1 ) {
          paramtype = '&page=';
      } else {   
          paramtype = '?page=';
