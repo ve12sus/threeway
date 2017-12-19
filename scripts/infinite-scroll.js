@@ -8,7 +8,7 @@ function infiniteScroll(parent, post) {
          urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
          categoryFilter = Static.SQUARESPACE_CONTEXT.collection.categoryFilter,
-         presentNumber = Y.all(post).size();
+         presentNumber = Y.all(post).size(),
          paramtype;
          
      if (categoryFilter) {
