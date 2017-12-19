@@ -5,7 +5,7 @@ function infiniteScroll(parent, post) {
      var postIndex = 1,
          execute = true,
          stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY(),
-         urlQuery = window.location.pathname,
+         urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
          categoryFilter = Static.SQUARESPACE_CONTEXT.categoryFilter,
          presentNumber = Y.all(post).size();
