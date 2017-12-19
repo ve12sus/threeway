@@ -131,6 +131,15 @@ h4 {
     background-size: cover;
     background-position: 0 30%;
 
+    .logo {
+      margin: 20px;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+
     .overlay {
       background-color: @golden;
     }
@@ -146,8 +155,16 @@ h4 {
 
   &.mcdapp {
 
+    padding: 20px;
     background: url('../assets/img-mobile-hand@2x.png') #fff no-repeat;
     background-size: cover;
+
+    .logo {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
 
     .overlay {
       background-color: @dodger-blue;
@@ -178,21 +195,23 @@ h4 {
     align-items: center;
     z-index: 2;
 
-    img {
-      width: 100%;
-      margin: 30px;
-    }
+    // img {
+    //   // width: 100%;
+    //   // margin: 30px;
+    // }
   }
 
   .content-wrapper {
     //jeff todo: flexbox ie 11 support
-    // display: flex;
-    // align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     z-index: 2;
   }
 
   .content {
 
+    width: 100%;
     padding: 20px;
 
     h2 {
@@ -213,6 +232,7 @@ h4 {
 
     .content {
       text-align: center;
+      margin-top: 10%;
     }
 
     &.rmhc {
@@ -234,7 +254,8 @@ h4 {
       background-position: 50% 0;
 
       .logo {
-
+        margin-bottom: 20px;
+        
         img {
           height: 120px;
           width: auto;
