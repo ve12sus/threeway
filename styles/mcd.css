@@ -1185,11 +1185,15 @@ article .post-tag {
 /* show carousels */
 @media (max-width: 767px) {
   #carousel-ig,
-  #carousel-tw{
+  #carousel-tw {
     display: block;
 
     .card {
       border: none;
+    }
+
+    .carousel-indicators {
+      display: flex;
     }
   }
   
