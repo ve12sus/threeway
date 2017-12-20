@@ -196,6 +196,11 @@
                 <div class="overlay"></div>
               </div>
               <div id="carousel-ig" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-ig" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-ig" data-slide-to="1"></li>
+                  <li data-target="#carousel-ig" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e15/23594243_401385300275853_5632111106257321984_n.jpg" alt="First slide">
