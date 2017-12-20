@@ -390,9 +390,9 @@
       crossorigin="anonymous"></script>
     <script src="/scripts/jquery.bcSwipe.js"></script>
     <script>
-      $('#carousel-ig').bcSwipe({ threshold: 50 });
-      $('#carouselExampleIndicators').bcSwipe({ threshold: 50 });
-      $('#carousel-tw').bcSwipe({ threshold: 50 });
+      $('#carousel-ig').bcSwipe({ threshold: 20 });
+      $('#carouselExampleIndicators').bcSwipe({ threshold: 20 });
+      $('#carousel-tw').bcSwipe({ threshold: 20 });
     </script>
   </body>
 </html>
