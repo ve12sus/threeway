@@ -1234,7 +1234,7 @@ article .post-tag {
 
 /* pages clear nav*/
 #page {
-  padding-top: 200px;
+  /* padding-top: 200px;*/
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -1254,6 +1254,14 @@ article .post-tag {
 
   @media (min-width: 1200px) {
     max-width: 1140px;
+  }
+}
+
+/* remove pageHeader on mobile */
+
+@media (max-width: 757px) {
+  #pageHeader {
+    display: none;
   }
 }
 
@@ -1286,3 +1294,14 @@ article .post-tag {
     color: @pageH3Color;
   }
 }
+
+// tweak: { "type" : "image", "title" : "Header Image" }
+.header-img {
+  background-image: url('/assets/BuffaloBacon_Extended.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#pageHeader {
+  .header-img;
+}
+
