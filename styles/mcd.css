@@ -415,6 +415,11 @@ h4 {
     z-index: 2;
 }
 
+#carouselExampleIndicators .carousel-inner {
+  max-height: 600px;
+}
+
+
 @media (max-width: 767px) {
 
   .container {
