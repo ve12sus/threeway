@@ -1187,6 +1187,10 @@ article .post-tag {
   #carousel-ig,
   #carousel-tw{
     display: block;
+
+    .card {
+      border: none;
+    }
   }
   
 }
