@@ -1235,6 +1235,23 @@ article .post-tag {
 /* pages clear nav*/
 #page {
   padding-top: 200px;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 720px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 940px;
+  }
+
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
 }
 
 /* tweak definitions */
