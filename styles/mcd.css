@@ -1198,7 +1198,7 @@ article .post-tag {
   }
 
   /* move indicator past card body */
-  #carousel-ig .carousel-indicators {
+  #carousel-tw .carousel-indicators {
     bottom: 140px;
   }
 }
