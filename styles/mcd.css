@@ -1198,7 +1198,15 @@ article .post-tag {
   }
 
   #carouselExampleTwitter {
-    
+    .carousel-inner,
+    .carousel-item {
+      height: auto;
+    }
+
+    .card-body {
+      height: 135px;
+      padding: 1rem;
+    }  
   }
 }
 
