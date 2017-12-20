@@ -1235,6 +1235,9 @@ article .post-tag {
 /* pages clear nav*/
 #page {
   padding-top: 200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: 576px) {
     max-width: 540px;
