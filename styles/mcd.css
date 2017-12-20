@@ -1301,7 +1301,7 @@ article .post-tag {
 
 // tweak: { "type" : "image", "title" : "Header Image" }
 .header-img {
-  background-image: url('/assets/BuffaloBacon_Extended.jpg') center center no-repeat;
+  background-image: url('/assets/BuffaloBacon_Extended.jpg') center no-repeat;
   background-size: cover;
 }
 
