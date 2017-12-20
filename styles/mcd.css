@@ -1196,7 +1196,11 @@ article .post-tag {
       display: flex;
     }
   }
-  
+
+  /* move indicator past card body */
+  #carousel-ig .carousel-indicators {
+    bottom: 140px;
+  }
 }
 
 @media (max-width: 575px) {
