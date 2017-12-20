@@ -1257,6 +1257,10 @@ article .post-tag {
   }
 }
 
+#pageHeader {
+  height: 400px;
+}
+
 /* remove pageHeader on mobile */
 
 @media (max-width: 757px) {
@@ -1297,7 +1301,7 @@ article .post-tag {
 
 // tweak: { "type" : "image", "title" : "Header Image" }
 .header-img {
-  background-image: url('/assets/BuffaloBacon_Extended.jpg') center center no-repeat;
+  background-image: url('/assets/BuffaloBacon_Extended.jpg');
   background-size: cover;
 }
 
