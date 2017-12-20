@@ -7,7 +7,6 @@
     <div class="category-overlay text-center">
 			<div class="category">
   {.var @collectName collection.urlId}
-  {.var @categoryF categoryFilter}
       {.section collection}
         <h1>{title}</h1>
       {.end}
