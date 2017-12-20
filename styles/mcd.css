@@ -1134,7 +1134,7 @@ article .post-tag {
 }
 
 .ub-img {
-  display:table-cell;
+  /*display:table-cell;*/
   vertical-align:middle;
   text-align: center;
 
