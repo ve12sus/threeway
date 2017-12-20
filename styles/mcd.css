@@ -1242,6 +1242,27 @@ article .post-tag {
 // tweak: { "type" : "color", "title" : "Font color" }
 @pageFontColor: #6e6e6e;
 
+// tweak: { "type" : "color", "title" : "Heading 1 color" }
+@pageH1Color: #000;
+
+// tweak: { "type" : "color", "title" : "Heading 2 color" }
+@pageH2Color: #000;
+
+// tweak: { "type" : "color", "title" : "Heading 3 color" }
+@pageH3Color: #000;
+
 #page {
   color: @pageFontColor;
+
+  h1 {
+    color: @pageH1Color;
+  }
+  
+  h2 {
+    color: @pageH2Color;
+  }
+
+  h3 {
+    color: @pageH3Color;
+  }
 }
