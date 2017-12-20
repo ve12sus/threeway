@@ -172,6 +172,9 @@ h4 {
       img {
         width: 100px;
         height: auto;
+        /* fixes ie and chrome */
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
