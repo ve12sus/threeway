@@ -1176,28 +1176,31 @@ article .post-tag {
 
 }
 
-#carouselExampleControls,
-#carouselExampleTwitter {
+/* default hidden carousels */
+#carousel-ig,
+#carousel-tw {
   display: none;
 }
 
+/* show carousels */
 @media (max-width: 767px) {
-  #carouselExampleControls,
-  #carouselExampleTwitter {
+  #carousel-ig,
+  #carousel-tw{
     display: block;
   }
   
 }
 
 @media (max-width: 575px) {
-  #carouselExampleControls {
+  /* set carousel heights on small screens */
+  #carousel-ig {
     .carousel-inner,
     .carousel-item {
       height: 100vw;
     }
   }
 
-  #carouselExampleTwitter {
+  #carousel-tw {
     .carousel-inner,
     .carousel-item {
       height: auto;
