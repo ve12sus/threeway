@@ -9,28 +9,23 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-    <div class="pages-site-container">
+    <div class="site-container">
 
-      <header class="pages-site-header">
+      <header class="site-header">
         <!-- site navigation -->
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
 
-        <!-- site title or logo -->
-        {.section website}
-          <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle}</a>
-          </h1>
-        {.end}
       </header>
 
       <!-- cms content injection point -->
-      <main class="pages-content-container" role="main" data-content-field="main-content">
-       {squarespace.main-content}
+      <main class="content">
+        <section id="page" role="main" data-content-field="main-content">
+          {squarespace.main-content}
+        </section>
       </main>
 
       <!--Footer with open block field -->
-      <footer class="pages-site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
+      <footer class="site-footer">
         <squarespace:navigation navigationId="footerNav" template="footer-navigation" />
       </footer>
 

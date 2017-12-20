@@ -1232,15 +1232,16 @@ article .post-tag {
   }
 }
 
-/* pages fix*/
-.collection-type-page {
+/* pages clear nav*/
+#page {
   padding-top: 200px;
 }
 
-#collection-5a33153b652dea7bc2a7c596 {
-  padding-top: 0px;
-}
+/* tweak definitions */
+
+// tweak: { "type" : "color", "title" : "Font color" }
+@pageFontColor: #6e6e6e;
 
 #page {
-  color: #000;
+  color: @pageFontColor;
 }
