@@ -1198,10 +1198,7 @@ article .post-tag {
   }
 
   #carouselExampleTwitter {
-    .carousel-inner,
-    .carousel-item {
-      height: 120vw;
-    }
+    
   }
 }
 
