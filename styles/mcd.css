@@ -685,8 +685,8 @@ h4 {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     .ie10up{margin-left:0;}
-   }
+     #ie10up{margin-left:0;}
+}
 
 /* Category page */
 
