@@ -477,7 +477,7 @@ h4 {
 
   /* hides carousel indicators */
   .carousel-indicators {
-    display: none;
+    display: flex;
   }
 
   .carousel-control-prev {
