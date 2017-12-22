@@ -80,8 +80,9 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="featured-posts">
-            <div id="main" class="container">
+          
+          <div id="main" class="container">
+            <div class="featured-posts">
               <div class="row no-gutters">
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
@@ -166,6 +167,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="social-links">
               <div class="row no-gutters ub-eats">
                 <div class="col-12 col-md-4 ub-img">
                    <img src="../assets/img-mcd@2x.png">
