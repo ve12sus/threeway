@@ -86,6 +86,7 @@
               <div class="row no-gutters">
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
+                    <a href="/news" class="featured-anchor"></a>
                   <squarespace:query collection="header-images" category="news" limit="1">
                   {.section items}
                     {.section 0}
