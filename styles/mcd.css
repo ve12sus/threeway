@@ -573,12 +573,17 @@ h4 {
 
 /* absolute positions buttons from bottom */
 .featured-posts .btn {
-  color: #fff;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 8%;
   margin: auto;
+}
+
+.featured-posts,
+.social-links {
+  .btn {
+    color: #fff;
 }
 
 /* hover zoom effect */
