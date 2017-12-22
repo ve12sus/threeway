@@ -114,6 +114,11 @@ h4 {
 
 /* main navigation */
 
+#mcdapp,
+#rmhc {
+  overflow: hidden;
+}
+
 #logo {
   width: 268px;
   height: 101px;
@@ -166,12 +171,27 @@ h4 {
     background-size: cover;
     background-position: 0 30%;
     height: 240px;
+    /* hover zoom */
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      -moz-transform: scale(1.04);
+      -webkit-transform: scale(1.04);
+      transform: scale(1.04);
+    /* end hover zoom */
+    }
 
     .logo {
 
       img {
         width: 100px;
         height: auto;
+        /* fixes ie and chrome */
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -193,6 +213,19 @@ h4 {
     padding: 20px;
     background: url('../assets/img-mobile-hand@2x.png') #fff no-repeat;
     background-size: cover;
+    /* hover zoom */
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      -moz-transform: scale(1.04);
+      -webkit-transform: scale(1.04);
+      transform: scale(1.04);
+    }
+    /* end hover zoom */
+
 
     .logo {
       img {
@@ -412,6 +445,11 @@ h4 {
     z-index: 2;
 }
 
+#carouselExampleIndicators .carousel-inner {
+  max-height: 600px;
+}
+
+
 @media (max-width: 767px) {
 
   .container {
@@ -534,13 +572,40 @@ h4 {
 /* Rules for featured categories */
 
 /* absolute positions buttons from bottom */
-.featured-posts a {
-  color: #fff;
+.featured-posts .btn {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 8%;
   margin: auto;
+}
+
+.featured-posts,
+.social-links {
+  .btn {
+    color: #fff;
+  }
+}
+
+/* hover zoom effect */
+.featured-posts .card {
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.featured-posts img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.featured-posts .card:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* button and overlay styling */
@@ -679,6 +744,10 @@ h4 {
   *::-ms-backdrop, .featured-overlay-content h2 {
     margin-top: 50px;
   }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     #ie10up{margin-left:0;}
 }
 
 /* Category page */
@@ -873,6 +942,8 @@ h4 {
   margin: auto;
   margin-top: -11px;
   z-index: 100;
+  /* fix for ie */
+  text-align: center;
 }
 
 .post-tag-wrapper img {
@@ -1132,7 +1203,7 @@ article .post-tag {
 }
 
 .ub-img {
-  display:table-cell;
+  /*display:table-cell;*/
   vertical-align:middle;
   text-align: center;
 
@@ -1174,11 +1245,131 @@ article .post-tag {
 
 }
 
-/* pages fix*/
-.collection-type-page {
-  padding-top: 200px;
+/* default hidden carousels */
+#carousel-ig,
+#carousel-tw {
+  display: none;
 }
 
-#collection-5a33153b652dea7bc2a7c596 {
-  padding-top: 0px;
+/* show carousels */
+@media (max-width: 767px) {
+  #carousel-ig,
+  #carousel-tw {
+    display: block;
+
+    .card {
+      border: none;
+    }
+
+    .carousel-indicators {
+      display: flex;
+    }
+  }
+
+  /* move indicator past card body */
+  #carousel-tw .carousel-indicators {
+    bottom: 140px;
+  }
 }
+
+@media (max-width: 575px) {
+  /* set carousel heights on small screens */
+  #carousel-ig {
+    .carousel-inner,
+    .carousel-item {
+      height: 100vw;
+    }
+  }
+
+  #carousel-tw {
+    .carousel-inner,
+    .carousel-item {
+      height: auto;
+    }
+
+    .card-body {
+      height: 135px;
+      padding: 1rem;
+    }  
+  }
+}
+
+/* pages clear nav*/
+#page {
+  /* padding-top: 200px;*/
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 720px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 940px;
+  }
+
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+#pageHeader {
+  height: 400px;
+}
+
+/* remove pageHeader on mobile */
+
+@media (max-width: 757px) {
+  #pageHeader {
+    display: none;
+  }
+}
+
+/* tweak definitions */
+
+// tweak: { "type" : "color", "title" : "Font color" }
+@pageFontColor: #6e6e6e;
+
+// tweak: { "type" : "color", "title" : "Heading 1 color" }
+@pageH1Color: #000;
+
+// tweak: { "type" : "color", "title" : "Heading 2 color" }
+@pageH2Color: #000;
+
+// tweak: { "type" : "color", "title" : "Heading 3 color" }
+@pageH3Color: #000;
+
+#page {
+  color: @pageFontColor;
+
+  h1 {
+    color: @pageH1Color;
+  }
+  
+  h2 {
+    color: @pageH2Color;
+  }
+
+  h3 {
+    color: @pageH3Color;
+  }
+}
+
+// tweak: { "type" : "image", "title" : "Header Image" }
+.header-img {
+  background-image: url('/assets/placeholder_transparent.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pageHeader {
+  .header-img;
+}
+

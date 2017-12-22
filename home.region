@@ -6,11 +6,6 @@
 
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
-    <!--<script>
-      // Picture element HTML5 shiv
-      document.createElement( "picture" );
-    </script>
-    <script src="scripts/picturefill.min.js" async></script>-->
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
     <div class="site-container">
@@ -85,11 +80,12 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="featured-posts">
-            <div id="main" class="container">
+          
+          <div id="main" class="container">
+            <div class="featured-posts">
               <div class="row no-gutters">
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-news">
                   <squarespace:query collection="header-images" category="news" limit="1">
                   {.section items}
                     {.section 0}
@@ -109,7 +105,7 @@
                   </div>
                 </div>
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-food">
                   <squarespace:query collection="header-images" category="food" limit="1">
                   {.section items}
                     {.section 0}
@@ -131,7 +127,7 @@
               </div>
               <div class="row no-gutters justify-content-center">
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-people">
                   <squarespace:query collection="header-images" category="people" limit="1">
                   {.section items}
                     {.section 0}
@@ -151,7 +147,7 @@
                   </div>
                 </div>
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-events">
                   <squarespace:query collection="header-images" category="events" limit="1">
                   {.section items}
                     {.section 0}
@@ -171,6 +167,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="social-links">
               <div class="row no-gutters ub-eats">
                 <div class="col-12 col-md-4 ub-img">
                    <img src="../assets/img-mcd@2x.png">
@@ -179,31 +177,70 @@
                   <div class="ub-content">
                     <h2>MCDELIVERY</h2>
                     <p class="large">Order your McDonald's faves on UberEATS</p>
-                    <a href="/" class="btn" role="button">DOWNLOAD THE APP</a>
+                    <a href="https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html" class="btn" role="button">DOWNLOAD THE APP</a>
                   </div>
                 </div>
               </div>
-              <div class="row no-gutters ad-2-10 rmhc">
-                <div class="col-12 col-md-2 logo">
-                  <img src="assets/logo-rmhc@2x.png">
+              <div id="rmhc">
+                <div class="row no-gutters ad-2-10 rmhc">
+                  <div class="col-12 col-md-2 logo">
+                    <img src="assets/logo-rmhc@2x.png">
+                  </div>
+                  <div class="col-12 col-md-10 content-wrapper">
+                    <div class="content">
+                      <h2>Baby Everett needed surgery 1,000 miles from home</h2>
+                      <a href="http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html" class="btn">READ MORE</a>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
                 </div>
-                <div class="col-12 col-md-10 content-wrapper">
-                  <div class="content">
-                    <h2>Baby Everett needed surgery 1,000 miles from home</h2>
-                    <a href="/" class="btn">READ MORE</a>
+              </div>
+              <div id="carousel-ig" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-ig" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-ig" data-slide-to="1"></li>
+                  <li data-target="#carousel-ig" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e15/23594243_401385300275853_5632111106257321984_n.jpg" alt="First slide">
+                    <img src="assets/ic-instagram-on.png"
+                        srcset="assets/ic-instagram-on@2x.png 2x,
+                        assets/ic-instagram-on@3x.png 3x"
+                        class="ic-instagram-on">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/22427212_904192256411988_8262467353137119232_n.jpg" alt="Second slide">
+                    <img src="assets/ic-instagram-on.png"
+                        srcset="assets/ic-instagram-on@2x.png 2x,
+                        assets/ic-instagram-on@3x.png 3x"
+                        class="ic-instagram-on">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/22352233_1954233508161087_5643145057629372416_n.jpg" alt="Third slide">
+                    <img src="assets/ic-instagram-on.png"
+                        srcset="assets/ic-instagram-on@2x.png 2x,
+                        assets/ic-instagram-on@3x.png 3x"
+                        class="ic-instagram-on">
                   </div>
                 </div>
-                <div class="overlay"></div>
+                <a class="carousel-control-prev" href="#carousel-ig" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-ig" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
               <div class="card-group">
-                <div class="card text-white">
+                <div class="card text-white d-none d-md-block">
                   <img class="card-img h-100" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e15/23594243_401385300275853_5632111106257321984_n.jpg" alt="Card image">
                   <div class="card-img-overlay">
                     <img src="assets/ic-instagram-on.png"
                         srcset="assets/ic-instagram-on@2x.png 2x,
                         assets/ic-instagram-on@3x.png 3x"
                         class="ic-instagram-on">
-                    <h4 class="card-title">Icon</h4>
                   </div>
                 </div>
                 <div class="card text-white d-none d-md-block">
@@ -235,7 +272,7 @@
                 </div>
               </div>
               <div class="card-group">
-                <div class="card twitter">
+                <div class="card twitter d-none d-md-block">
                   <img src="assets/ic-twitter-on.png"
                   		 srcset="assets/ic-twitter-on@2x.png 2x,
                   					 assets/ic-twitter-on@3x.png 3x"
@@ -269,20 +306,77 @@
                   </div>
                 </div>
               </div>
-
-              <div class="row no-gutters ad-2-10 mcdapp">
-                <div class="col-12 col-md-2 logo">
-                  <img src="assets/ic-mcd@2x.png">
-                </div>
-                <div class="col-12 col-md-10 content-wrapper">
-                  <div class="content">
-                    <h2>Deals on the download</h2>
-                    <a class="btn" href="/">DOWNLOAD THE APP</a>
+              
+              <div id="carousel-tw" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-tw" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-tw" data-slide-to="1"></li>
+                  <li data-target="#carousel-tw" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="card twitter">
+                      <img src="assets/ic-twitter-on.png"
+                       srcset="assets/ic-twitter-on@2x.png 2x,
+                             assets/ic-twitter-on@3x.png 3x"
+                       class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/mcrib.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDonalds</h4>
+                        <p class="card-text regular">When good things aren't meant to last, you get them while you can. <span class="hashtag">#WednesddayWisdom</span> At part. McDs for a limited time.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card twitter">
+                      <img src="assets/ic-twitter-on.png"
+                           srcset="assets/ic-twitter-on@2x.png 2x,
+                                 assets/ic-twitter-on@3x.png 3x"
+                           class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/kitchen.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDonalds</h4>
+                        <p class="card-text regular">Our annual <span class="hashtag">@RMHC</span> fundraiser may be over but you can still donate your time. RMHC is always looking for helping hands. rmhc.org/chapter-search</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card twitter">
+                      <img src="assets/ic-twitter-on.png"
+                           srcset="assets/ic-twitter-on@2x.png 2x,
+                                 assets/ic-twitter-on@3x.png 3x"
+                           class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/frap.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDonalds</h4>
+                        <p class="card-text regular">Me: I'm going to start decorating right now.<br>Also me: Not before this <span class="hashtag">#McCafe</span> Peppermint Mocha.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="overlay"></div>
+                <a class="carousel-control-prev" href="#carousel-tw" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-tw" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-
+              <div id="mcdapp">    
+                <div class="row no-gutters ad-2-10 mcdapp">
+                  <div class="col-12 col-md-2 logo">
+                    <img src="assets/ic-mcd@2x.png" id="ie10up">
+                  </div>
+                  <div class="col-12 col-md-10 content-wrapper">
+                    <div class="content">
+                      <h2>Deals on the download</h2>
+                      <a class="btn" href="https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html">DOWNLOAD THE APP</a>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -301,8 +395,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
       integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
       crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>-->
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/homepage.js"></script>
+    <script src="/scripts/jquery.bcSwipe.js"></script>
+    <script>
+      $('#carousel-ig').bcSwipe({ threshold: 20 });
+      $('#carouselExampleIndicators').bcSwipe({ threshold: 20 });
+      $('#carousel-tw').bcSwipe({ threshold: 20 });
+    </script>
   </body>
 </html>

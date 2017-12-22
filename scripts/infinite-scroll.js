@@ -5,10 +5,18 @@ function infiniteScroll(parent, post) {
      var postIndex = 1,
          execute = true,
          stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY(),
-         urlQuery = window.location.pathname,
+         urlQuery = window.location.href,
          postNumber = Static.SQUARESPACE_CONTEXT.collection.itemCount,
+         paramtype,
          presentNumber = Y.all(post).size();
+
+     if (urlQuery.indexOf('?category') > -1 ) {
+         paramtype = '&page=';
+     } else {   
+         paramtype = '?page=';
+     }
  
+     console.log(urlQuery);
      Y.on('scroll', function() {
  
          if (presentNumber >= postNumber && execute === true) {
@@ -17,7 +25,7 @@ function infiniteScroll(parent, post) {
          } else {
  
              // A few more variables.
-             var spaceHeight = document.documentElement.clientHeight + window.scrollY,
+             var spaceHeight = document.documentElement.clientHeight + window.pageYOffset,
              next = false;
  
              /*
@@ -43,13 +51,13 @@ function infiniteScroll(parent, post) {
                  postIndex++;
  
                  // Make the Ajax request.
-                 Y.io(urlQuery + '?page=' + postIndex, {
+                 Y.io(urlQuery + paramtype + postIndex, {
                      on: {
                          success: function (x, o) {
                              try {
                                  d = Y.DOM.create(o.responseText);
                              } catch (e) {
-                                 console.log("JSON Parse failed!");
+                                 console.log("JSON Parse failed!");                                 
                                  return;
                              }
  
