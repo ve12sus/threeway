@@ -85,12 +85,12 @@
             <div class="featured-posts">
               <div class="row no-gutters">
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <a class="card text-white text-center border-0" style="display:block;">
                   <squarespace:query collection="header-images" category="news" limit="1">
                   {.section items}
                     {.section 0}
                     {.main-image?}
-                    <a href="#" style="display:block;"><img class="card-img h-100" src="{assetUrl}?format=500w" alt="Card image"></a>
+                    <img class="card-img h-100" src="{assetUrl}?format=500w" alt="Card image">
                     {.end}
                     <div class="card-img-overlay d-flex featured-news">
                       <a href="/news" class="btn">READ MORE</a>
@@ -102,7 +102,7 @@
                   {.end}
                   </squarespace:query>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
