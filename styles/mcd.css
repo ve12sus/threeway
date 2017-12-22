@@ -196,6 +196,18 @@ h4 {
     padding: 20px;
     background: url('../assets/img-mobile-hand@2x.png') #fff no-repeat;
     background-size: cover;
+    /* hover zoom */
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    /* end hover zoom */
+
 
     .logo {
       img {
