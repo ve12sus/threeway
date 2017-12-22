@@ -181,17 +181,19 @@
                   </div>
                 </div>
               </div>
-              <div class="row no-gutters ad-2-10 rmhc">
-                <div class="col-12 col-md-2 logo">
-                  <img src="assets/logo-rmhc@2x.png">
-                </div>
-                <div class="col-12 col-md-10 content-wrapper">
-                  <div class="content">
-                    <h2>Baby Everett needed surgery 1,000 miles from home</h2>
-                    <a href="http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html" class="btn">READ MORE</a>
+              <div id="rmhc">
+                <div class="row no-gutters ad-2-10 rmhc">
+                  <div class="col-12 col-md-2 logo">
+                    <img src="assets/logo-rmhc@2x.png">
                   </div>
+                  <div class="col-12 col-md-10 content-wrapper">
+                    <div class="content">
+                      <h2>Baby Everett needed surgery 1,000 miles from home</h2>
+                      <a href="http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html" class="btn">READ MORE</a>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
                 </div>
-                <div class="overlay"></div>
               </div>
               <div id="carousel-ig" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
