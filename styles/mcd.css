@@ -116,6 +116,7 @@ h4 {
 
 #mcdapp,
 #rmhc {
+  position: relative;
   overflow: hidden;
 }
 
