@@ -85,8 +85,7 @@
             <div class="featured-posts">
               <div class="row no-gutters">
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
-                    <a href="/news" class="featured-anchor"></a>
+                  <div class="card text-white text-center border-0" id="featured-news">
                   <squarespace:query collection="header-images" category="news" limit="1">
                   {.section items}
                     {.section 0}
@@ -402,6 +401,11 @@
       $('#carousel-ig').bcSwipe({ threshold: 20 });
       $('#carouselExampleIndicators').bcSwipe({ threshold: 20 });
       $('#carousel-tw').bcSwipe({ threshold: 20 });
+    </script>
+    <script>
+      $('#featured-news').click(function() {
+        window.location.href = '/news';
+      });
     </script>
   </body>
 </html>

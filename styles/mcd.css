@@ -551,14 +551,6 @@ h4 {
   margin: auto;
 }
 
-.featured-anchor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
 /* hover zoom effect */
 .featured-posts .card {
   overflow: hidden;
