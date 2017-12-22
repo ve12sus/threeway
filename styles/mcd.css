@@ -542,8 +542,7 @@ h4 {
 /* Rules for featured categories */
 
 /* absolute positions buttons from bottom */
-.featured-posts a,
-.social-links a {
+.featured-posts .btn {
   color: #fff;
   position: absolute;
   left: 0;
