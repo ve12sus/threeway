@@ -475,9 +475,10 @@ h4 {
     margin-bottom: 0.5rem;
   }
 
-  /* hides carousel indicators */
+  /* header indicators */
   .carousel-indicators {
     display: flex;
+    bottom: 0;
   }
 
   .carousel-control-prev {
