@@ -105,7 +105,7 @@
                   </div>
                 </div>
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-food">
                   <squarespace:query collection="header-images" category="food" limit="1">
                   {.section items}
                     {.section 0}
@@ -127,7 +127,7 @@
               </div>
               <div class="row no-gutters justify-content-center">
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-people">
                   <squarespace:query collection="header-images" category="people" limit="1">
                   {.section items}
                     {.section 0}
@@ -147,7 +147,7 @@
                   </div>
                 </div>
                 <div class="col-md">
-                  <div class="card text-white text-center border-0">
+                  <div class="card text-white text-center border-0" id="featured-events">
                   <squarespace:query collection="header-images" category="events" limit="1">
                   {.section items}
                     {.section 0}
@@ -401,11 +401,6 @@
       $('#carousel-ig').bcSwipe({ threshold: 20 });
       $('#carouselExampleIndicators').bcSwipe({ threshold: 20 });
       $('#carousel-tw').bcSwipe({ threshold: 20 });
-    </script>
-    <script>
-      $('#featured-news').click(function() {
-        window.location.href = '/news';
-      });
     </script>
   </body>
 </html>
