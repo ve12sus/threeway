@@ -85,7 +85,7 @@
             <div class="featured-posts">
               <div class="row no-gutters">
                 <div class="col-md">
-                  <a class="card text-white text-center border-0" style="display:block;">
+                  <div class="card text-white text-center border-0">
                   <squarespace:query collection="header-images" category="news" limit="1">
                   {.section items}
                     {.section 0}
@@ -102,7 +102,7 @@
                   {.end}
                   </squarespace:query>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="col-md">
                   <div class="card text-white text-center border-0">
