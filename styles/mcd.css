@@ -131,6 +131,7 @@ h4 {
   background: url('../assets/img-family@2x.png') #fff no-repeat;
   background-size: cover;
   background-position: 0 30%;
+  height: 240px;
 }
 
 #logo {
