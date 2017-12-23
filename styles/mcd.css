@@ -138,11 +138,14 @@ h4 {
   
 }
 
-.rmhc:hover::before {
+.rmhc:hover {
   cursor: pointer;
-  -moz-transform: scale(1.04);
-  -webkit-transform: scale(1.04);
-  transform: scale(1.04);
+
+  &::before {
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+  }
 }
 
 #logo {
