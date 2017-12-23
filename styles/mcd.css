@@ -120,7 +120,7 @@ h4 {
   overflow: hidden;
 }
 
-.rmhc .logo:before {
+.rmhc .logo::before {
   content: "";
   position: absolute;
   top: 0;
