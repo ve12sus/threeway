@@ -120,7 +120,7 @@ h4 {
   overflow: hidden;
 }
 
-.rmhc::before {
+/*.rmhc::before {
   content: "";
   position: absolute;
   top: 0;
@@ -146,7 +146,7 @@ h4 {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-}
+}*/
 
 #logo {
   width: 268px;
@@ -200,18 +200,35 @@ h4 {
     background-size: cover;
     background-position: 0 30%;*/
     height: 240px;
-    /* hover zoom 
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;*/
+    /* hover zoom pseudo element */ 
 
-    /*&:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: url('../assets/img-family@2x.png') #fff no-repeat;
+      background-size: cover;
+      background-position: 0 30%;
+      height: 240px;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    &:hover {
       cursor: pointer;
-      -moz-transform: scale(1.04);
-      -webkit-transform: scale(1.04);
-      transform: scale(1.04);
-    end hover zoom 
-    */
+
+      &::before {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+
+      }
+    }
 
     .logo {
 
@@ -290,6 +307,11 @@ h4 {
       background-size: contain;
       background-position: top;
       height: auto;
+
+      /* height for pseudo element */
+      &::before {
+        height: 160px;
+      }
 
       .logo {
 
