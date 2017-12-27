@@ -64,8 +64,12 @@
         
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
-          </a>    
+          </a>
+          {.excerpt?}
+          <p class="supporting-copy">{@}</p>
+          {.or}
           <p class="supporting-copy">{body|safe|truncate 400}</p>
+          {.end}
 
           <a class="btn" href="{fullUrl}" role="button">READ MORE</a>
           {.end}
