@@ -173,7 +173,7 @@ h4 {
     background-position: 0 30%;*/
     height: 240px;
 
-    /* hover zoom pseudo element */ 
+    /* hover zoom pseudo element */
     &::before {
       content: "";
       position: absolute;
@@ -724,12 +724,12 @@ h4 {
 /* footer styles */
 
 #footer a, #footer h4 {
-  color: #fff;
+  color: #111;
 }
 
 .footer {
-  background-color: #282828;
-  color: #fff;
+  background-color: #e8e8e8;
+  color: #111;
   margin-top: 118px;
 
   .card-body {
@@ -1052,7 +1052,7 @@ h4 {
 /* homepage */
 
 .homepage {
-  background-color: #1e1e1e;
+  background-color: #f2f2f2;
 }
 
 /* category / blog.list */
@@ -1333,7 +1333,7 @@ article .post-tag {
     .card-body {
       height: 135px;
       padding: 1rem;
-    }  
+    }
   }
 }
 
@@ -1402,7 +1402,7 @@ article .post-tag {
   h1 {
     color: @pageH1Color;
   }
-  
+
   h2 {
     color: @pageH2Color;
   }
@@ -1423,4 +1423,3 @@ article .post-tag {
 #pageHeader {
   .header-img;
 }
-
