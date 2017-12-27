@@ -294,7 +294,8 @@ h4 {
 
       /* height for pseudo element */
       &::before {
-        height: 160px;
+        height: 210px;
+        background-position: 50% 0;
       }
 
       .logo {
@@ -304,7 +305,7 @@ h4 {
         padding-top: 20px;
 
         img {
-          height: 120px;
+          height: 180px;
           width: auto;
         }
 
