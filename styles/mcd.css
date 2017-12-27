@@ -984,6 +984,7 @@ h4 {
   align-items: center;
   justify-content: center;
   background-color: #f7f7f7;
+  flex-direction: column;
 
   img {
     height: 45px;
