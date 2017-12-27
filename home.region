@@ -277,10 +277,10 @@
                   		 srcset="assets/ic-twitter-on@2x.png 2x,
                   					 assets/ic-twitter-on@3x.png 3x"
                   		 class="ic-twitter-on">
-                  <img class="card-img-top" src="/assets/sweater@2x.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="/assets/hashbrown@2x.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h4 class="card-title">@McDonalds</h4>
-                    <p class="card-text regular">Me: I'm going to start decorating right now.<br>Also me: Not before this <span class="hashtag">#McCafe</span> Peppermint Mocha.</p>
+                    <h4 class="card-title">@McDNYTriState</h4>
+                    <p class="card-text regular">You know you can't get work done on an<br>empty stomach &#x1F937<span class="hashtag">#SnackTime</span><br><span class="hashtag">Coffeebreak</span></p>
                   </div>
                 </div>
                 <div class="card twitter d-none d-md-block">
