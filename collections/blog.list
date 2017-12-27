@@ -125,7 +125,11 @@
           </div>
           <div class="card-body article">
             <a href="{fullUrl}"><p class="card-title">{title}</p></a>
+            {.section excerpt}
+            <p class="card-text">{@}</p>
+            {.or}
             <p class="card-text">{body|safe|truncate 350}</p>
+            {.end}
             <a href="{fullUrl}"><span class="article-read-more">READ MORE ⇾</span></a>
           </div>
         </div>
