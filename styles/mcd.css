@@ -977,6 +977,19 @@ h4 {
   }
 }
 
+/* fallback image */
+.img-fall {
+  min-height: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+
+  img {
+    height: 45px;
+  }
+}
+
 .post-tag-wrapper {
   margin: auto;
   margin-top: -11px;
