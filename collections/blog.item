@@ -4,7 +4,10 @@
   <!--WRAPPER-->
   <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
     <div class="container-fluid">
+    {.main-image?}
       <div id="post-header" style="background-image: url({assetUrl})"></div>
+    {.or}
+      <div id="post-header" style="background-image: url('/assets/img-fallback-large@2x.png')"></div>
     </div>
     <div class="container">
       <!--POST TAG-->
