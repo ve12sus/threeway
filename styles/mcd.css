@@ -724,12 +724,12 @@ h4 {
 /* footer styles */
 
 #footer a, #footer h4 {
-  color: #111;
+  color: #666;
 }
 
 .footer {
   background-color: #e8e8e8;
-  color: #111;
+  color: #666;
   margin-top: 118px;
 
   .card-body {
