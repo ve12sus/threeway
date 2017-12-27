@@ -116,6 +116,7 @@ h4 {
 
 #mcdapp,
 #rmhc {
+  position: relative;
   overflow: hidden;
 }
 
@@ -167,21 +168,38 @@ h4 {
 
   &.rmhc {
 
-    background: url('../assets/img-family@2x.png') #fff no-repeat;
+    /*background: url('../assets/img-family@2x.png') #fff no-repeat;
     background-size: cover;
-    background-position: 0 30%;
+    background-position: 0 30%;*/
     height: 240px;
-    /* hover zoom */
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+
+    /* hover zoom pseudo element */ 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: url('../assets/img-family@2x.png') #fff no-repeat;
+      background-size: cover;
+      background-position: 0 30%;
+      height: 240px;
+      -moz-transition: all 1s;
+      -webkit-transition: all 1s;
+      transition: all 1s;
+    }
 
     &:hover {
       cursor: pointer;
-      -moz-transform: scale(1.04);
-      -webkit-transform: scale(1.04);
-      transform: scale(1.04);
-    /* end hover zoom */
+
+      &::before {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+
+      }
     }
 
     .logo {
@@ -211,18 +229,30 @@ h4 {
   &.mcdapp {
 
     padding: 20px;
-    background: url('../assets/img-mobile-hand@2x.png') #fff no-repeat;
-    background-size: cover;
-    /* hover zoom */
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+
+    &::before {
+      background: url('../assets/img-mobile-hand@2x.png') #fff no-repeat;
+      background-size: cover;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      -moz-transition: all 1s;
+      -webkit-transition: all 1s;
+      transition: all 1s;
+    }
 
     &:hover {
       cursor: pointer;
-      -moz-transform: scale(1.04);
-      -webkit-transform: scale(1.04);
-      transform: scale(1.04);
+
+      &::before {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
     /* end hover zoom */
 
@@ -262,6 +292,12 @@ h4 {
       background-position: top;
       height: auto;
 
+      /* height for pseudo element */
+      &::before {
+        height: 210px;
+        background-position: 50% 0;
+      }
+
       .logo {
 
         justify-content: flex-start;
@@ -269,7 +305,7 @@ h4 {
         padding-top: 20px;
 
         img {
-          height: 120px;
+          height: 180px;
           width: auto;
         }
 
@@ -277,8 +313,10 @@ h4 {
     }
 
     &.mcdapp {
-      background-size: auto 100%;
-      background-position: 50% 0;
+      &::before {
+        background-size: auto 100%;
+        background-position: 50% 0;
+      }
 
       .logo {
         margin-bottom: 20px;
@@ -475,9 +513,10 @@ h4 {
     margin-bottom: 0.5rem;
   }
 
-  /* hides carousel indicators */
+  /* header indicators */
   .carousel-indicators {
-    display: none;
+    display: flex;
+    bottom: -10px;
   }
 
   .carousel-control-prev {
@@ -597,9 +636,9 @@ h4 {
 }
 
 .featured-posts img {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .featured-posts .card:hover img {
@@ -1270,6 +1309,10 @@ article .post-tag {
   #carousel-tw .carousel-indicators {
     bottom: 140px;
   }
+
+  #carousel-tw .card-body {
+    height:135px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1292,6 +1335,14 @@ article .post-tag {
       padding: 1rem;
     }  
   }
+}
+
+/* carousel ease speed */
+
+.carousel-item {
+  transition: -webkit-transform 0.85s ease;
+  transition: transform 0.85s ease;
+  transition: transform 0.85s ease, -webkit-transform 0.85s ease;
 }
 
 /* pages clear nav*/
