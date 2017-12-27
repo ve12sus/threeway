@@ -302,7 +302,7 @@
                   <img class="card-img-top" src="/assets/sweater@2x.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">@McDNYTriState</h4>
-                    <p class="card-text regular"><span class="hashtag">#MeTime</span> Post-<span class="hashtag">Thanksgiving</span>&#x1F64C &#x2615</p>
+                    <p class="card-text regular"><span class="hashtag">#MeTime</span> Post-<span class="hashtag">Thanksgiving</span> &#x1F64C &#x2615</p>
                   </div>
                 </div>
               </div>
@@ -320,10 +320,23 @@
                        srcset="assets/ic-twitter-on@2x.png 2x,
                              assets/ic-twitter-on@3x.png 3x"
                        class="ic-twitter-on">
-                      <img class="card-img-top" src="/assets/sweater@2x.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="/assets/hashbrown@2x.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">@McDNYTriState</h4>
+                        <p class="card-text regular">You know you can't get work done on an<br>empty stomach &#x1F937<span class="hashtag">#SnackTime</span><br><span class="hashtag">Coffeebreak</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card twitter">
+                      <img src="assets/ic-twitter-on.png"
+                           srcset="assets/ic-twitter-on@2x.png 2x,
+                                 assets/ic-twitter-on@3x.png 3x"
+                           class="ic-twitter-on">
+                      <img class="card-img-top" src="/assets/redcup@2x.jpg" alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">@McDonalds</h4>
-                        <p class="card-text regular">When good things aren't meant to last, you get them while you can. <span class="hashtag">#WednesddayWisdom</span> At part. McDs for a limited time.</p>
+                        <p class="card-text regular">Drizzled with peppermint chocolate syrup, topped with whipped cream and chocolate flavors, and steamed with your style of milk. Say hi to <span class="hashtag">#PeppermintMocha</span></p>
                       </div>
                     </div>
                   </div>
@@ -336,20 +349,7 @@
                       <img class="card-img-top" src="/assets/sweater@2x.jpg" alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">@McDonalds</h4>
-                        <p class="card-text regular">Our annual <span class="hashtag">@RMHC</span> fundraiser may be over but you can still donate your time. RMHC is always looking for helping hands. rmhc.org/chapter-search</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card twitter">
-                      <img src="assets/ic-twitter-on.png"
-                           srcset="assets/ic-twitter-on@2x.png 2x,
-                                 assets/ic-twitter-on@3x.png 3x"
-                           class="ic-twitter-on">
-                      <img class="card-img-top" src="/assets/sweater@2x.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h4 class="card-title">@McDonalds</h4>
-                        <p class="card-text regular">Me: I'm going to start decorating right now.<br>Also me: Not before this <span class="hashtag">#McCafe</span> Peppermint Mocha.</p>
+                        <p class="card-text regular"><span class="hashtag">#MeTime</span> Post-<span class="hashtag">Thanksgiving</span> &#x1F64C &#x2615</p>
                       </div>
                     </div>
                   </div>
