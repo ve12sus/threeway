@@ -1332,6 +1332,14 @@ article .post-tag {
   }
 }
 
+/* carousel ease speed */
+
+.carousel-item {
+  transition: -webkit-transform 0.85s ease;
+  transition: transform 0.85s ease;
+  transition: transform 0.85s ease, -webkit-transform 0.6s ease;
+}
+
 /* pages clear nav*/
 #page {
   /* padding-top: 200px;*/
