@@ -65,7 +65,7 @@
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
           </a>
-          {.excerpt?}
+          {.section excerpt}
           <p class="supporting-copy">{@}</p>
           {.or}
           <p class="supporting-copy">{body|safe|truncate 400}</p>
