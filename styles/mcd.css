@@ -1308,6 +1308,10 @@ article .post-tag {
   #carousel-tw .carousel-indicators {
     bottom: 140px;
   }
+
+  #carousel-tw .card-body {
+    height:135px;
+  }
 }
 
 @media (max-width: 575px) {
