@@ -195,7 +195,7 @@
                   <div class="overlay"></div>
                 </div>
               </div>
-              <div id="carousel-ig" class="carousel slide" data-ride="carousel data-interval="4000"">
+              <div id="carousel-ig" class="carousel slide" data-ride="carousel" data-interval="4000">
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-ig" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel-ig" data-slide-to="1"></li>
