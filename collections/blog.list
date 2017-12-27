@@ -85,7 +85,11 @@
           </div>
           </a>
       {.or}
-          <img src="http://via.placeholder.com/300x200">
+          <a href="{fullUrl}">
+          <div class="img-fall">
+            <img src="/assets/logo-grey@2x.png">
+          </div>
+          </a>
       {.end}
           <div class="post-tag-wrapper">
       {.equal?:@collectName:"news"}
