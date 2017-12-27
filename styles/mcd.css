@@ -186,9 +186,9 @@ h4 {
       background-size: cover;
       background-position: 0 30%;
       height: 240px;
-      -moz-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
+      -moz-transition: all 0.6s;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s;
     }
 
     &:hover {
@@ -240,9 +240,9 @@ h4 {
       right: 0;
       bottom: 0;
       z-index: -1;
-      -moz-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
+      -moz-transition: all 0.6s;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s;
     }
 
     &:hover {
@@ -635,9 +635,9 @@ h4 {
 }
 
 .featured-posts img {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .featured-posts .card:hover img {
