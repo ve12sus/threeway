@@ -6,7 +6,7 @@
     <div class="container-fluid">
     {.main-image?}
       <!--<div id="post-header" style="background-image: url({assetUrl})"></div>-->
-      <div id="content-fill">
+      <div id="content-fill post-header">
         <img {@|image-meta} />
       </div>
     {.or}
