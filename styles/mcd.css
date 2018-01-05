@@ -559,7 +559,7 @@ h4 {
     height: 200px;
   }
 
-  #carouselExampleIndicators .carousel-inner .carousel-item img {
+  #carouselExampleIndicators .carousel-inner .carousel-item .active img {
     position: absolute;
     left: -25%;
   }
