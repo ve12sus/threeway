@@ -404,6 +404,12 @@ h4 {
 
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .rmhc .log img {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 768px) {
 
   /* absolute positions navbar */
