@@ -550,6 +550,12 @@ h4 {
     font-size: 2.25rem;
   }
 
+  #carouselExampleIndicators .carousel-inner .carousel-item img {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
 
 @media (max-width: 320px) {
