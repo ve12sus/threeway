@@ -552,13 +552,8 @@ h4 {
 
   #carouselExampleIndicators .carousel-inner .carousel-item img {
     position: absolute;
-    /*margin-left: 50%;
-    transform: translateX(-50%);*/
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 
 }
@@ -572,13 +567,8 @@ h4 {
 
   #carouselExampleIndicators .carousel-inner .carousel-item img {
     position: absolute;
-    /*margin-left: 50%;
-    transform: translateX(-50%);*/
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 
 }
