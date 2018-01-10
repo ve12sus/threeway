@@ -5,7 +5,8 @@
   <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
     <div class="container-fluid">
     {.main-image?}
-      <div id="post-header" style="background-image: url({assetUrl})"></div>
+      <!--<div id="post-header" style="background-image: url({assetUrl})"></div>-->
+      <div id="post-header"><img {@|image-meta} />
     {.or}
       <div id="post-header" style="background-image: url('/assets/img-fallback-large@2x.png')"></div>
     {.end}
