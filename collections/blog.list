@@ -7,7 +7,7 @@
   </squarespace:query>-->
   {.section collection}
   <div id="category-header" class="{urlId} content-fill">
-    {.main-image?}
+    {.section mainImage}
     <img {@|image-meta}>
     {.end}
   {.end}
