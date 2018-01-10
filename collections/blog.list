@@ -5,8 +5,12 @@
   <div id="category-header" class="{.section items}{.section 0}{.section categories}{.section 0}{@}{.end}{.end}{.end}{.end}"
       style="background-image:url({.section items}{.section 0}{assetUrl}{.end}{.end})">
   </squarespace:query>-->
-  <div id="category-header" class="{.section collection}{urlId}{.end}"
-    style="background-image:url({.section collection}{.section mainImage}{assetUrl}{.end}{.end})">
+  {.section collection}
+  <div id="category-header" class="{urlId} content-fill">
+    {main-image?}
+    <img {@|image-meta}>
+    {.end}
+  {.end}
     <div class="category-overlay text-center">
 			<div class="category">
   {.var @collectName collection.urlId}
