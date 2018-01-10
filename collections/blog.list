@@ -86,61 +86,64 @@
       </div>
       <div class="row posts">
     {.repeated section items}
-        <div class="card border-0 col-12 col-md-4">
-      {.main-image?}
-          <a href="{fullUrl}">
-          <div class="content-fill">
-            <img {@|image-meta} />
-          </div>
-          </a>
+      {.if featured}
       {.or}
-          <a href="{fullUrl}">
-          <div class="img-fall">
-            <img src="/assets/logo-grey@2x.png">
-          </div>
-          </a>
-      {.end}
-          <div class="post-tag-wrapper">
-      {.equal?:@collectName:"news"}
-        {.repeated section categories}
-          {.equal?:@:"Local"}
-            <img src="/assets/tag-local@2x.png" alt="local tag">
-          {.end}   
-          {.equal?:@:"National"}
-            <img src="/assets/tag-national@2x.png" alt="national tag">
-          {.end} 
+          <div class="card border-0 col-12 col-md-4">
+        {.main-image?}
+            <a href="{fullUrl}">
+            <div class="content-fill">
+              <img {@|image-meta} />
+            </div>
+            </a>
+        {.or}
+            <a href="{fullUrl}">
+            <div class="img-fall">
+              <img src="/assets/logo-grey@2x.png">
+            </div>
+            </a>
         {.end}
-      {.end}
-      {.equal?:@collectName:"food"}
-            <img src="/assets/tag-food@2x.png" alt="food tag">
-      {.end}   
-      {.equal?:@collectName:"people"}
-            <img src="/assets/tag-people@2x.png" alt="people tag">
-      {.end}   
-      {.equal?:@collectName:"events"}
-        {.repeated section categories}
-          {.equal?:@:"Local"}
-            <img src="/assets/tag-events-local@2x.png" alt="events local tag">
-          {.end}   
-          {.equal?:@:"National"}
-            <img src="/assets/tag-events-national@2x.png" alt="events national tag">
-          {.end} 
+            <div class="post-tag-wrapper">
+        {.equal?:@collectName:"news"}
+          {.repeated section categories}
+            {.equal?:@:"Local"}
+              <img src="/assets/tag-local@2x.png" alt="local tag">
+            {.end}   
+            {.equal?:@:"National"}
+              <img src="/assets/tag-national@2x.png" alt="national tag">
+            {.end} 
+          {.end}
         {.end}
+        {.equal?:@collectName:"food"}
+              <img src="/assets/tag-food@2x.png" alt="food tag">
+        {.end}   
+        {.equal?:@collectName:"people"}
+              <img src="/assets/tag-people@2x.png" alt="people tag">
+        {.end}   
+        {.equal?:@collectName:"events"}
+          {.repeated section categories}
+            {.equal?:@:"Local"}
+              <img src="/assets/tag-events-local@2x.png" alt="events local tag">
+            {.end}   
+            {.equal?:@:"National"}
+              <img src="/assets/tag-events-national@2x.png" alt="events national tag">
+            {.end} 
+          {.end}
+        {.end}
+            </div>
+            <div class="card-body article">
+              <a href="{fullUrl}"><p class="card-title">{title}</p></a>
+              <p class="post-date">
+                {addedOn|date %B %d, %Y}
+              </p>
+              {.section excerpt}
+              <p class="card-text">{@|safe}</p>
+              {.or}
+              <p class="card-text">{body|safe|truncate 350}</p>
+              {.end}
+              <a href="{fullUrl}"><span class="article-read-more">READ MORE ⇾</span></a>
+            </div>
+          </div>
       {.end}
-          </div>
-          <div class="card-body article">
-            <a href="{fullUrl}"><p class="card-title">{title}</p></a>
-            <p class="post-date">
-              {addedOn|date %B %d, %Y}
-            </p>
-            {.section excerpt}
-            <p class="card-text">{@|safe}</p>
-            {.or}
-            <p class="card-text">{body|safe|truncate 350}</p>
-            {.end}
-            <a href="{fullUrl}"><span class="article-read-more">READ MORE ⇾</span></a>
-          </div>
-        </div>
     {.end}
       </div>
     </div>
