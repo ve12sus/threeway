@@ -169,34 +169,34 @@
               </div>
             </div>
             <div class="social-links">
-              <div class="row no-gutters ub-eats">
-                <div class="col-12 col-md-4 ub-img">
-                   <img src="../assets/img-mcd@2x.png">
-                </div>
-                <div class="col-12 col-md-8">
-                  <div class="ub-content">
-                    <h2>MCDELIVERY</h2>
-                    <p class="large">Order your McDonald's faves on UberEATS</p>
-                    <a href="https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html" target="_blank" class="btn" role="button">DOWNLOAD THE APP</a>
+              <div id="ub-eats">
+                <div class="row no-gutters ub-eats">
+                  <div class="col-12 col-md-4 ub-img">
+                     <img src="../assets/img-mcd@2x.png">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <div class="ub-content">
+                      <h2>McDELIVERY</h2>
+                      <p class="large">Order your McDonald's faves on UberEATS</p>
+                      <a href="https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html" target="_blank" class="btn" role="button">DOWNLOAD THE APP</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <a href="google.com" style="display:block;">
-                <div id="rmhc">
-                  <div class="row no-gutters ad-2-10 rmhc">
-                    <div class="col-12 col-md-2 logo">
-                      <img src="assets/logo-rmhc@2x.png">
-                    </div>
-                    <div class="col-12 col-md-10 content-wrapper">
-                      <div class="content">
-                        <h2>Baby Everett needed surgery 1,000 miles from home</h2>
-                        <a href="http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html" target="_blank" class="btn">READ MORE</a>
-                      </div>
-                    </div>
-                    <div class="overlay"></div>
+              <div id="rmhc">
+                <div class="row no-gutters ad-2-10 rmhc">
+                  <div class="col-12 col-md-2 logo">
+                    <img src="assets/logo-rmhc@2x.png">
                   </div>
+                  <div class="col-12 col-md-10 content-wrapper">
+                    <div class="content">
+                      <h2>Baby Everett needed surgery 1,000 miles from home</h2>
+                      <a href="http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html" target="_blank" class="btn">READ MORE</a>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
                 </div>
-              </a>
+              </div>
               <div id="carousel-ig" class="carousel slide" data-ride="carousel" data-interval="4000">
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-ig" data-slide-to="0" class="active"></li>
