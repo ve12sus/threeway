@@ -65,6 +65,9 @@
           <a href-"{fullUrl}">
             <p class="featured-post-title">{title}</p>
           </a>
+          <p class="post-date">
+            {addedOn|date %B %d, %Y}
+          </p>
           {.section excerpt}
           <p class="supporting-copy">{@|safe}</p>
           {.or}
@@ -125,6 +128,9 @@
           </div>
           <div class="card-body article">
             <a href="{fullUrl}"><p class="card-title">{title}</p></a>
+            <p class="post-date">
+              {addedOn|date %B %d, %Y}
+            </p>
             {.section excerpt}
             <p class="card-text">{@|safe}</p>
             {.or}
