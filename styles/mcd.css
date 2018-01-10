@@ -826,7 +826,7 @@ h4 {
   
   img {
     width: 100%;
-    top: 50%
+    top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
