@@ -86,7 +86,7 @@
       </div>
       <div class="row posts">
     {.repeated section items}
-      {.if featured}
+      {.if starred}
       {.or}
           <div class="card border-0 col-12 col-md-4">
         {.main-image?}
