@@ -823,14 +823,6 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
-  
-  img {
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
 }
 
 #category-header {
