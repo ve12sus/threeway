@@ -829,8 +829,8 @@ h4 {
   position: relative;
   height: 400px;
   &.news {
-    background: url('../assets/category-news.jpg') center center no-repeat;
-    background-size: cover;
+    /*background: url('../assets/category-news.jpg') center center no-repeat;
+    background-size: cover;*/
 
     .news-nav-link.active,
     .news-nav-link:hover,
@@ -842,16 +842,16 @@ h4 {
     }
   }
   &.food {
-    background: url('../assets/category-food.jpg') center center no-repeat;
-    background-size: cover;
+    /*background: url('../assets/category-food.jpg') center center no-repeat;
+    background-size: cover;*/
   }
   &.people {
-    background: url('../assets/category-people.jpg') center center no-repeat;
-    background-size: cover;
+    /*background: url('../assets/category-people.jpg') center center no-repeat;
+    background-size: cover;*/
   }
   &.events {
-    background: url('../assets/category-events.jpg') center center no-repeat;
-    background-size: cover;
+    /*background: url('../assets/category-events.jpg') center center no-repeat;
+    background-size: cover;*/
 
     .events-nav-link.active,
     .events-nav-link:hover,
