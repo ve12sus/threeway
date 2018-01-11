@@ -14,7 +14,7 @@ $('#featured-events').click(function() {
   window.location.href = '/events';
 });
 
-$('#ub-eats').click(function() {
+$('#ub-eats' ).click(function() {
   window.open('https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html', '_blank');
 });
 

@@ -364,8 +364,8 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
-              </div>
-              <div id="mcdapp">    
+              </div>              
+              <div id="mcdapp">                
                 <div class="row no-gutters ad-2-10 mcdapp">
                   <div class="col-12 col-md-2 logo">
                     <img src="assets/ic-mcd@2x.png" id="ie10up">
@@ -377,8 +377,8 @@
                     </div>
                   </div>
                   <div class="overlay"></div>
-                </div>
-              </div>
+                </div>                
+              </div>              
             </div>
           </div>
         </div>
