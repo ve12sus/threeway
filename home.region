@@ -87,7 +87,6 @@
                 <div class="col-md">
                   <div class="card text-white text-center border-0" id="featured-news">
                   <squarespace:query collection="news">
-                  <script>console.log({@|json-pretty});</script>
                   {.section collection}
                     {.section mainImage}
                     <img class="card-img h-100" src="{assetUrl}?format=500w" alt="Card image">
