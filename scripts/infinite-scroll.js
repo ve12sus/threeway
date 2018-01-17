@@ -1,3 +1,9 @@
+function loadAllImages() {
+  var images = document.querySelectorAll('img[data-src]' );
+  for (var i = 0; i < images.length; i++) {
+    ImageLoader.load(images[i], {load: true});
+  }
+}
    
 function infiniteScroll(parent, post) {
  
@@ -63,7 +69,7 @@ function infiniteScroll(parent, post) {
  
                              // Append the contents of the next page to this page.
                              Y.one(parent).append(Y.Selector.query(parent, d, true).innerHTML);
- 
+                              loadAllImages();
                              // Reset some variables.
                              stuffBottom = Y.one(parent).get('clientHeight') + Y.one(parent).getY();
                              presentNumber = Y.all(post).size();
@@ -83,5 +89,7 @@ function infiniteScroll(parent, post) {
          infiniteScroll('.posts','.lazy-post');
      });
  });
+ 
+ 
    
    

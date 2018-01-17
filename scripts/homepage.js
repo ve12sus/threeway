@@ -14,10 +14,14 @@ $('#featured-events').click(function() {
   window.location.href = '/events';
 });
 
+$('#ub-eats' ).click(function() {
+  window.open('https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html', '_blank');
+});
+
 $('#rmhc').click(function() {
-  window.location.href = 'http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html';
+  window.open('http://support.rmhc.org/site/PageNavigator/pw/Donation_Landing.html', '_blank');
 });
 
 $('#mcdapp').click(function() {
-  window.location.href = 'https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html';
+  window.open('https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html', '_blank');
 });
