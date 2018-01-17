@@ -146,7 +146,6 @@ h4 {
   }
 
   .logo, .content-wrapper {
-    //jeff todo: flexbox ie 11 support
     display: flex;
     justify-content:center;
     align-items: center;
@@ -172,9 +171,6 @@ h4 {
 
   &.rmhc {
 
-    /*background: url('../assets/img-family@2x.png') #fff no-repeat;
-    background-size: cover;
-    background-position: 0 30%;*/
     height: 240px;
 
     /* hover zoom pseudo element */
@@ -602,7 +598,6 @@ h4 {
 
 @media (min-width: 992px) {
 
-  /* max width of container */
   .container{
     max-width: 940px;
   }
@@ -636,7 +631,6 @@ h4 {
 
 /* Rules for featured categories */
 
-/* absolute positions buttons from bottom */
 .featured-posts .btn {
   position: absolute;
   left: 0;
@@ -652,7 +646,7 @@ h4 {
   }
 }
 
-/* hover zoom effect */
+/* hover zoom */
 .featured-posts .card {
   overflow: hidden;
 
@@ -747,7 +741,7 @@ h4 {
   color: #009bf6;
 }
 
-/* footer styles */
+/* footer */
 
 #footer a, #footer h4 {
   color: #666;
@@ -799,7 +793,7 @@ h4 {
   padding-bottom: 69px;
 }
 
-/* ie11 homepage fix*/
+/* ie11 homepage */
 
 @media (min-width: 992px) and (-ms-high-contrast:none) {
   .featured-overlay-content h2 {
@@ -1048,7 +1042,7 @@ h4 {
   margin-bottom: 82px;
 }
 
-/* after navbar extend */
+/* navbar extended */
 @media (min-width: 768px) {
   .category-overlay {
     position: absolute;
@@ -1281,7 +1275,6 @@ article .post-tag {
 }
 
 .ub-img {
-  /*display:table-cell;*/
   vertical-align:middle;
   text-align: center;
 
@@ -1390,7 +1383,6 @@ article .post-tag {
 
 /* pages clear nav*/
 #page {
-  /* padding-top: 200px;*/
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -1417,7 +1409,7 @@ article .post-tag {
   height: 400px;
 }
 
-/* remove pageHeader on mobile */
+/* hide pageHeader on mobile */
 
 @media (max-width: 757px) {
   #pageHeader {
